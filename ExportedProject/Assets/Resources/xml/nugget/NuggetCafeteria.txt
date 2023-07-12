@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>No one ever sits with poor Nugget. Nugget does not have any friends.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Teacher says you could use more friends.</OptionText>
+          <DestinationID>1</DestinationID>
+          <MissionLock>TeacherNuggetGainTrust</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Have you done anything bad lately?</OptionText>
+          <DestinationID>25</DestinationID>
+          <MissionLock>BuggsFindOutGoldStars</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I get the next nugget?</OptionText>
+          <DestinationID>27</DestinationID>
+          <MissionLock>NuggetTalkAtLunch</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away from Nugget.)</OptionText>          
+          <DestinationID>-1</DestinationID>          
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Perhaps she is right. Nugget would do well to make more friends. You will be Nugget's new friend. Does Nugget's new friend have something to eat?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>Donut</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Slop</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No. I'm gonna go get something.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Oh...~well a donut is not a very nutritious meal. Nugget will not stand for his new friend being malnourished. Here have a nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gee. Thanks.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetPoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh you got the slop. It's not very good. Nugget's new friend deserves something with...~flavor. Here have a nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gee. Thanks.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetPoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Nonsense! Nugget has plenty of nuggets to share with his new friend. Here you go.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gee. Thanks.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetPoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Eat it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Eat the nugget.)</OptionText>
+          <DestinationID>9</DestinationID>
+          <FunctionCall>EatPoisonNugget</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No thanks.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Nugget insists. Please consume the Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Eat the nugget.)</OptionText>
+          <DestinationID>9</DestinationID>
+          <FunctionCall>EatPoisonNugget</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not hungry.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Nugget is not pleased with this. You have offended poor Nugget. Return the Nugget and be gone!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+          <FunctionCall>LosePoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Nugget is still offended that you would not eat the nugget he so graciously offered you. Be gone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>There...~was it good? Very tasty, yes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>You couldn't taste the poison?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Wait, what?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Nugget poisoned the nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm gonna die?!</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>ThrowSlop</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Perhaps. That depends on what you do next.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buggs just threw slop at you.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>39</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Yes...~he does that every day, but today Nugget has poison and you are going to poison Buggs for Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why would I do that?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Because Nugget also has the antidote that will save your life.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I poison him?</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>GetPoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Here is another nugget. It is quite similar to the one you just ate only this one is far more...~potent. Just get Buggs to eat it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Just give me the antidote.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay. I'll try.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Better hurry. Nugget thinks \hyou have until the bell rings before the poison does it's work./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I hate you.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>17</ResolutionID>
+          <FunctionCall>ActivatePoisonBuggs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Is it done? Has Buggs been poisoned?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He won't eat it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>It's done.</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>BuggsFallOver</FunctionCall>
+          <MissionLock>NuggetGetAntidote</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No. I stabbed him.</OptionText>
+          <DestinationID>32</DestinationID>
+          <MissionLock>NuggetTellStabbedBuggs</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Not until Buggs is poisoned.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll have to take it from you then.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine...I'll do it.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Nugget does not believe you possess the strength to take it. Go do as Nugget asks and all will be well.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stab Nugget.)</OptionText>
+          <DestinationID>19</DestinationID>
+          <ItemToUse>Knife</ItemToUse>
+          <FunctionCall>StabNugget</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine...I'll do it.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Ouch...~This hurts Nugget quite a lot. Nugget wishes you hadn't done that.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How are you still alive right now?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Nugget is quite durable. Nugget is also missing that side of his brain so the knife didn't hit anything...~necessary.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Nugget does appreciate the effort though. Now please go poison Buggs.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess I don't have a choice.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>17</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Wonderful! Nugget is quite pleased. If what you say is true, Buggs should die any moment now...~~~and there he goes. Here's the antidote as promised.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take antidote.)</OptionText>
+          <DestinationID>24</DestinationID>
+          <FunctionCall>TakeAntidote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Nugget hopes you feel better. \hPlease come see Nugget at recess. Nugget would like to show you something./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Oooooooh...~you wish to know what Nugget does in the dark, do you?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Not how I would put it.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Nugget is sure there is something in his \hNugget Cave/h that would make teacher unhappy, but Nugget only let's certain friends of his in the cave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it. Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Excellent. It should happen any minute now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What should happen?</OptionText>
+          <DestinationID>28</DestinationID>
+          <FunctionCall>ThrowSlop</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>~~~That...~every single day Buggs thows nasty slop at poor Nugget, but today Nugget has a new potential friend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What am I supposed to do about it?</OptionText>
+          <DestinationID>29</DestinationID>
+          <FunctionCall>GetPoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>All Nugget needs from you is to make sure he eats this. Do this simple task and the next nugget of friendship is yours.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What did you do to this nugget?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Nugget poisoned it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You want me to kill Buggs?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Obviously. Buggs is a bully. He must be taught a lesson.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>If you say so.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>33</ResolutionID>
+          <FunctionCall>ActivateKillBuggs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Oh my!~ How...messy.~ Still, the job was completed. You may have the antidote as Nugget promised.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take antidote.)</OptionText>
+          <DestinationID>24</DestinationID>
+          <FunctionCall>TakeAntidote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Well? Did you do it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He ate it.</OptionText>
+          <DestinationID>34</DestinationID>
+          <MissionLock>NuggetTellPoisonedBuggs</MissionLock>
+          <FunctionCall>BuggsFallOver</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I stabbed him instead.</OptionText>
+          <DestinationID>36</DestinationID>
+          <MissionLock>NuggetTellStabbedBuggs</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I get him to eat it?</OptionText>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Excellent. This pleases Nugget greatly. Now we just wait for him to...~oh there he goes. You have earned this nugget of friendship. Yessir.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get the last one?</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>GetNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Nugget appreciates your enthusiasm. The last nugget of friendship can be acquired at recess. Nugget will see you then.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. See you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>37</ResolutionID>
+          <FunctionCall>ActivateNuggetAtRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>My my! How...~messy. Still...~the result is the same and Nugget is pleased. You have earned this nugget of friendship.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get the last one?</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>GetNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>No more talking now. The last nugget of friendship will be revealed at recess!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Buggs can be quite stubborn yes, but \hit's not that hard to outsmart him./h Nugget thinks you can convince him to eat the nugget. If not, \hmoney or sweets might work./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>33</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>...~Strange. Normally Buggs has thrown slop at Nugget's head by now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I got Buggs expelled this morning.</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>You did?!~ Oh my! Nugget's revenge on Buggs would have been so satisfying, but...I guess this does not cause any potential legal trouble for Nugget down the road.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So about that antidote...</OptionText>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Oh yes! Of course.~ Silly Nugget almost forgot! There you are. Wouldn't want Nugget's new friend to cough up his own stomach now, would we?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take antidote.)</OptionText>
+          <DestinationID>42</DestinationID>
+          <FunctionCall>TakeAntidote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Nugget is glad to have you as his friend. Please, come visit Nugget at recess. Nugget would like to show you something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Nugget is pleased you have returned. Tell Nugget, the nugget you consumed was very tasty, yes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure, I guess.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Are you ready to continue your quest for the nuggets of friendship?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure, I guess.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Nugget's friend has failed the test. Nugget's friend did not return in time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh. Sorry about that.</OptionText>
+          <DestinationID>46</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>It is fine...~NUGGET KNOWS WHERE BILLY IS!!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why did you just scream that?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DetonatePlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>Strange...~Nugget's failure of a friend should be in many pieces right now! Where is the strange device?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't have it anymore.</OptionText>
+          <DestinationID>48</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>This displeases Nugget greatly! Be gone! Nugget no longer wishes to be your friend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds good to me.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>49</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>You are no longer Nugget's friend! Be gone!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's for the best.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

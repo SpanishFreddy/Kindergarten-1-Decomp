@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is the mysterious note Billy gave to Nugget just before he went missing. \hLily would probably be very interested in what it says./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Bring the note to school.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BringBillyNote</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave it here.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

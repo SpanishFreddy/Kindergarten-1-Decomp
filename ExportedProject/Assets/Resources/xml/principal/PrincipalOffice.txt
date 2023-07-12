@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode name ="Cindy">
+      <NodeID>0</NodeID>
+      <DialogueText>I'm going to assume you are going to deny that you raped her. Is that correct?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's rape?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>1</NodeID>
+      <DialogueText>That's what I thought. Well since no one witnessed the incident and \hyou don't have any proof/h, there's not much I can do except separate you two for awhile.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I recorded the incident.</OptionText>
+          <ItemToUse>VoiceRecorder</ItemToUse>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>Recorded</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>2</NodeID>
+      <DialogueText>Wait...~you're saying you did do it? Well...~that's...~unusual, but it sure as hell makes my job easier. The student code of conduct is very clear on how to handle this situation.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Study hall?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayer1</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>3</NodeID>
+      <DialogueText>Uhhh...~it's when a man...~ummmm...~does some stuff...~you know what? Ask your parents!~ No wait, don't do that! What am I thinking?~ Just say you didn't do it so I can move on with my life.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I didn't do it.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I did it.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I want to know what it is.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>4</NodeID>
+      <DialogueText>It's not my job to teach you what it is! It's not something you're supposed to know until you're much older!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cindy knows what it is.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine. I didn't do it.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>5</NodeID>
+      <DialogueText>No she doesn't. If she did, we all wouldn't be here right now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what is it?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine. I didn't do it.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>6</NodeID>
+      <DialogueText>I'm getting more sick of you than I am of having these meetings. If I give you a buck will you shut up and just deny the accusation?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetBuck</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I REALLY want to know.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>7</NodeID>
+      <DialogueText>Okay. That's it. I give up. I can't reason with you. So there's only one thing I can do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's that?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayer2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>8</NodeID>
+      <DialogueText>Oh!~ Well that makes this a hell of a lot easier!</DialogueText>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>9</NodeID>
+      <DialogueText>Unused</DialogueText>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>10</NodeID>
+      <DialogueText>Not good enough. I think I'm going to enjoy not having you in my school for awhile, Cindy.~ I'm going to keep this recorder in case there's any trouble when your awful mother calls.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So I can't have it back?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>11</NodeID>
+      <DialogueText>No. Now why don't you run on back to class now. I think you've missed enough learning for today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceBackToClassExpelCindy</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Cindy">
+      <NodeID>12</NodeID>
+      <DialogueText>Now I forbid you two from talking to each other for the rest of the day and send you back to class. Now get out of my office.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>NotExpelled</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Hatch">
+      <NodeID>13</NodeID>
+      <DialogueText>Woah there! No need to go snooping around my office. Get out of here!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Hatch">
+      <NodeID>14</NodeID>
+      <DialogueText>None of your damn business! Now get away from there I mean it!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I hear noises coming from underneath.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Hatch">
+      <NodeID>15</NodeID>
+      <DialogueText>Last chance! Step away from the hatch!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>There's a fingernail on the carpet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Step away from the hatch.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>16</NodeID>
+      <DialogueText>So...~I've been told that you're feeling sad about Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who told you that?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I guess I have.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>17</NodeID>
+      <DialogueText>Oh you know. Word just...~uh...~gets around you know? It doesn't matter how I know. It's that I do know.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm not sad about Billy.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay. So what about it?</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>18</NodeID>
+      <DialogueText>You're not? Then why are you so interested in his disappearance?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Were you listening to my conversation with Nugget?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not.</OptionText>
+          <DestinationID>34</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lily is my friend.</OptionText>
+          <DestinationID>39</DestinationID>
+          <MissionLock>LilyLookForSomethingSuspicious</MissionLock>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>19</NodeID>
+      <DialogueText>What?~ No! You shouldn't accuse authority figures of eavesdropping!~ I know what I know cause I'm the principal! Got it?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Sorry.</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>GetPills</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>20</NodeID>
+      <DialogueText>It's becoming increasingly clear to me that Billy's disappearance has greatly affected you. I want you take these. They've helped Nugget immensly.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're giving me pills?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>21</NodeID>
+      <DialogueText>Don't think of them as drugs!~ Think of them as...~portable therapy to help you cope with your feelings.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummm...okay. Thanks.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>22</NodeID>
+      <DialogueText>Take one. Right now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>TakePill</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>23</NodeID>
+      <DialogueText>There you go. Isn't that better? How do you feel now?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I feel goooooood.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>24</NodeID>
+      <DialogueText>Excellent. I also want you to hold onto this for me. It's a little gadget, but don't worry about what it does.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I can do that.</OptionText>
+          <DestinationID>25</DestinationID>
+          <FunctionCall>GetBug</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>25</NodeID>
+      <DialogueText>Good. Now go head on back to class, and try not to think about Billy too much.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes sir.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>26</NodeID>
+      <DialogueText>Take it or there will be consequences!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>TakePill</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No way.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Nugget">
+      <NodeID>27</NodeID>
+      <DialogueText>Then you leave me no choice. I can't risk you getting too close to this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What does that mean?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPill</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>That's all this is about right? Billy's missing and it's making you sad. You're not trying to find him or anything. You're just sad he's gone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>*Phew* Okay.~ That makes this a whole lot easier.~ So here's what we're gonna do. I'm gonna give you something and I want you to take it whenever you're feeling sad about Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetPills</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Just a little something I ordered for this exact reason. Here. Take one whenever you miss Billy too much, okay?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're giving me pills?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Just don't tell anyone you got them from me. The hall monitor is waiting to take you back to class. Please head outside.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>You can't just be running around out of class without a pass. There are rules and they must be obeyed.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm sorry.</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Unfortunately for you, I'm in a hurry so I don't have time to look up the proper punishment for this. I'm just going to pick one.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. What's my punishment?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerHallMonitor</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>I've been doing this a long time. I know a lie when I see one. I know you're upset about this. The question is...~why? I don't recall you and Billy being close before his disappearance.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm not upset.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lily is my girlfriend.</OptionText>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Billy and I were friends.</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>If you insist...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I insist.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerInsistNotUpset</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Ah yes...~young love. So fast to build and even faster to crumble. I suppose Lily would spread her misery to those around her. Just be careful not to get dragged down with her.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I won't.</OptionText>
+          <DestinationID>37</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Good.~ Now before you head back to class, go ahead and take this for me. Don't worry about what it does. Just know that you need it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Um...okay.</OptionText>
+          <DestinationID>38</DestinationID>
+          <FunctionCall>GetBug</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Now run along back to class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Run along.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Lily doesn't have any friends!~ I'm starting to lose my patience!~ I need to know what you know about Billy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't know anything.</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lily wants me to help find her brother.</OptionText>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>No...~I suppose you don't. At least...~not after this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerDontKnowAnything</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>That's what I thought! Well...~if she's going to play games with me, I'm going to play games with her little friend here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You mean me?</OptionText>
+          <DestinationID>42</DestinationID>
+          <FunctionCall>GetPills</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Yes, I mean you. Here's a bottle of pills.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why are you giving me pills?</OptionText>
+          <DestinationID>22</DestinationID>
+          <FunctionCall>GetPills</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>'Were' friends? What do you mean 'were' friends?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's hard to be friends with someone who is missing.</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>We had a fight.</OptionText>
+          <DestinationID>46</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Yes...~I suppose it is. Perhaps you would do well to have some of these. They've helped Nugget immensely.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are they?</OptionText>
+          <DestinationID>45</DestinationID>
+          <FunctionCall>GetPills</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Just a little something to help you cope with Billy's...disappearence.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks...I guess.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>A fight? What were you fighting over?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Monstermon cards.</OptionText>
+          <DestinationID>47</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Cindy.</OptionText>
+          <DestinationID>49</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>Ugh...~I hate those infernal cards. Sometimes I take away Jerome's when he's being awful. Heh...~would I be a bad dad if I gave you one of his to annoy him?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>48</DestinationID>
+          <FunctionCall>GetCardFromPrincipal</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>48</DestinationID>
+          <FunctionCall>GetCardFromPrincipal</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Kinda.</OptionText>
+          <DestinationID>48</DestinationID>
+          <FunctionCall>GetCardFromPrincipal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>Doesn't matter. Take one anyway. Just don't tell him you got it from me. Now let's just put this whole thing behind us. Go on back to class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>Ah Cindy. That nasty demon child will only get you into trouble. I'd recommend you stay away from her...~and Lily. Abstinence only!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm five.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Oh right! Don't worry about any of that stuff. Erm...~I probably shouldn't have said that.~ Doesn't matter. Why don't you just run on back to class then?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds good to me.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>As for you...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about me?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerStatue</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>You can't just be running around the school during lunch. You should know better.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm sorry.</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Me too...~ Me too.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why are you sorry?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerCaughtInBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>What were you two doing in the bathroom together?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nothing.</OptionText>
+          <DestinationID>55</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Good. That's exactly what I'm going to do to you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Really?</OptionText>
+          <DestinationID>56</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Psh...~of course not.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerCaughtInBathroomLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>You couldn't bring one measily thing in for show and tell?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Is it really that big of a deal?</OptionText>
+          <DestinationID>58</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>58</NodeID>
+      <DialogueText>Of course it's a big deal!~ Students who can't even do simple things in kindergarten are likely to bring test scores down!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So?</OptionText>
+          <DestinationID>59</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>59</NodeID>
+      <DialogueText>So that means less funding for the school! Big fancy statues on the playground don't buy themselves you know!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay I get it.</OptionText>
+          <DestinationID>60</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>I'm sorry, but I can't have you bringing averages down in the future. Consider yourself expelled.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That seems a little harsh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerNoItems</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>I can put up with a lot in this school. Missing children, violence, a janitor with a questionable past...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's a lot to put up with.</OptionText>
+          <DestinationID>62</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>But the one thing I will not stand for in my school is DRUGS!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But...but...</OptionText>
+          <DestinationID>63</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>I know how to handle delinquents like you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Counseling?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerCigs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <DialogueText>I can't believe you would bring a knife to school! A gun maybe, but a knife? Come on.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lesson learned I guess?</OptionText>
+          <DestinationID>65</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>I believe a demonstration on the superiority of guns is in order!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't think so.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerKnife</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>So it was you who stole that hall pass. Hmmm...~I thought it was my disappointment of a son who did it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Jerome's not that bad.</OptionText>
+          <DestinationID>67</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>67</NodeID>
+      <DialogueText>No I suppose not, but you are.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Am I really?</OptionText>
+          <DestinationID>68</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>68</NodeID>
+      <DialogueText>Yes and I will not tolerate a student who steals from me. Consider yourself expelled.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That seems harsh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerPass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>69</NodeID>
+      <DialogueText>So you stole your teacher's phone?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Apparently.</OptionText>
+          <DestinationID>70</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Why? What's the point?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's complicated.</OptionText>
+          <DestinationID>71</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>So are my reasons for doing this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Doing what?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerPhone</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>72</NodeID>
+      <DialogueText>What the--?!~ How the heck did you get in here!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Don't worry about it.</OptionText>
+          <DestinationID>73</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>73</NodeID>
+      <DialogueText>Fine. I won't worry about it, but you might have to worry about this!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>About what?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerKey</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

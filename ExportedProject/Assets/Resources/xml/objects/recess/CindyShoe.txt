@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is Cindy's shoe. It's a little bloody, but she probably would have wanted me to have it~...or something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll take it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetShoe</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

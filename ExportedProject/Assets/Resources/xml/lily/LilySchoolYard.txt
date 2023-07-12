@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Oh...~um...~hey. I'm Lily. You've probably heard about what happened to my brother, Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I haven't.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have.</OptionText>
+          <DestinationID>6</DestinationID>
+          <ItemToUse>BillyNote</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TurnOnSurprised</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't really care.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>You haven't?~ It's been all over the news. He went missing a few days ago.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry to hear that.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Thanks. That makes you one of the few people that even seems to care. Ever since he went missing, people either ignore me or insult me. \hCindy has been trying to put gum in my hair./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah, I know.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <FunctionCall>LoseGum</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>She gave this to you? Wow. She can't even do her own dirty work. I'm ugly enough without having gum in my hair, so thanks for not doing it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're not ugly.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>LilyCompliment</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No problem.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Oh...~thanks. I guess Cindy has been getting to me lately. I appreciate the compliment. You're nice.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>I'm not really looking to be friends right now, but \hI do trust you/h for whatever that's worth. I'll see you around.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>What is that?! It looks like Billy's handwriting! Where did you get this? What do you know?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget gave it to me.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>I know Cindy probably offered to be your girlfriend or something, but I don't do anything like that. You can have this instead. I'm trying to lose weight so she picks on me less.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>8</DestinationID>
+          <FunctionCall>GetDonut</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>I'll see you around. Don't choke on that donut.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I won't.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>I don't know, but if I were you I'd stay away from her. She's really mean.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks for the tip.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>I wouldn't try being friends with Cindy. She can be pretty mean.</DialogueText>
+      <Options>        
+        <DialogueOption>
+          <OptionText>Yeah, I know.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <FunctionCall>LoseGum</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>        
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool, thanks.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>GetMagnifyingGlass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ActivateInvestigation</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>GetMoney</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fair enough.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>15</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave Lily alone.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>I knew Nugget was holding out on me! Do you know what it says? I can't read as well as my brother could.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Well then you have to find someone who can! Hurry!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ActivateReadNoteMission</FunctionCall>
+          <ResolutionID>18</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Well? What did it say?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Something about opening a secret hatch in the principal's office.</OptionText>
+          <DestinationID>19</DestinationID>
+          <UsesAction>true</UsesAction>
+          <MissionLock>LilyTellNote</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I haven't found anyone to read it yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>A secret hatch...~that's probably where he's keeping Billy! We've gotta get in there! We have to save him! Only...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>It probably has something to do with Billy breaking up with her before he went missing. Why she's taking it out on me is still a mystery, but I really would like to know what I did to offend her.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll go see what she's mad about.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>She legitimately doesn't have a reason.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>That would be so great. I've tried talking to her myself, but she's not interested in being nice to me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Be right back.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Well? What did she say?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I haven't talked to her about it yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>She legitimately doesn't have a reason.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>I need a way to get in there without the principal knowing. I've got a plan, but \hit requires getting a phone and a key to the principal's office./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I've got a phone.</OptionText>
+          <DestinationID>29</DestinationID>
+          <ItemToUse>Phone</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I get a phone?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>I need you to actually get sent to the office...~alone. Once inside, you need to find that hatch!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get sent there alone?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why don't you go?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Nugget has to be in on this somehow. \hI'm sure he could get you there, whether he knows it or not. Just pressure him and I'm sure something will happen./h Good luck.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Go annoy Nugget for awhile. He'll probably do something that will get you sent to the office.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Oh! One more thing. \hIf he gives you a strange device, do not come talk to me until you get rid of it./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why?</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>ActivateGetSentToOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>It's a listening device. The principal gives them to anyone he finds suspicious. He had me carry one for weeks before he gave up. I'm pretty sure Nugget has one now so be careful.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>ActivateGetSentToOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>No way! That's so great!~ Now all I need is a key to the office.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I've got the key.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>PrincipalKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How would I get a key?</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>UnlockKeyHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Wow...~you have everything I need. This is so great.~ I can tell you my plan now!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>The principal knows I'm onto him. No way he'll let me get away with poking around to find a secret hatch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get sent there alone?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>I don't know. I know the teacher has one, but I'm not sure how to get it off of her. \hThat's something more up Buggs's alley./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Noted.</OptionText>
+          <DestinationID>33</DestinationID>
+          <FunctionCall>UnlockPhoneHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Either way, the note is a great start. Thanks a bunch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're welcome.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Thanks again for that note. I really appreciate it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No problem.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>The principal is so secretive about his office. I doubt there are any spares. \hJerome might know how to get one made though./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll go talk to him about it.</OptionText>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>You can if you want, but in order for my plan to work, we have to start around this time. I'm not going forward with it unless I have those two things.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>37</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Thanks for the note. It's a start. Maybe we can execute my plan on another day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maybe.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

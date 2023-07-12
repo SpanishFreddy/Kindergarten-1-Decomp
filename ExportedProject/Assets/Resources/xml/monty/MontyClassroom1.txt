@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>What?~ You wanna be my morning buddy? I ain't got time for that nonsense, so unless you're buying or selling something, get lost.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I want to buy something.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I want to sell something.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't want anything.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode name ="base menu">
+      <NodeID>1</NodeID>
+      <DialogueText>What can I do ya for?</DialogueText>
+      <Options>
+        <DialogueOption>monty
+          <OptionText>I want to buy something.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I want to sell something.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nothing right now.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="buy menu">
+      <NodeID>2</NodeID>
+      <DialogueText>Here's what's for sale.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got anything to cause a distraction?</OptionText>
+          <DestinationID>17</DestinationID>
+          <MissionLock>BuggsCheckForDistraction</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo-yo.</OptionText>
+          <DestinationID>6</DestinationID>          
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Screwdriver.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Cigarettes.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nevermind.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="sell menu">
+      <NodeID>3</NodeID>
+      <DialogueText>What do ya got?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>A principal hall pass.</OptionText>
+          <ItemToUse>HallPass</ItemToUse>          
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>A breathalyzer.</OptionText>
+          <ItemToUse>Breathalyzer</ItemToUse>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>A bottle of pills.</OptionText>
+          <ItemToUse>Pills</ItemToUse>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>This flask.</OptionText>
+          <ItemToUse>Flask</ItemToUse>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nevermind.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Can afford">
+      <NodeID>4</NodeID>
+      <DialogueText>Pleasure doing business with ya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I want to buy something.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I want to sell something.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't need anything else.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Buy cigs">
+      <NodeID>5</NodeID>
+      <DialogueText>You want these?!~ Never took you for a bad apple!~ There's only a couple left in the pack, so it's at a discount. You can have 'em for $1.00.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>BuyCigs</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Buy yo-yo">
+      <NodeID>6</NodeID>
+      <DialogueText>Heh...~Yo-yos.~ \hDon't know what it is about these things, but Jerome loves 'em./h You can have it for $1.00. Whaddya say?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>4</DestinationID>
+          <MoneyLock>1</MoneyLock>
+          <FunctionCall>BuyYoyo</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="buy screw driver">
+      <NodeID>7</NodeID>
+      <DialogueText>Got this sucker off the janitor for a steal. It's weird that he's willing to sell me the tools provided by the school, but I ain't complaining. It'll run ya $1.00.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>BuyScrewdriver</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Sell pass">
+      <NodeID>8</NodeID>
+      <DialogueText>Oh snap, you got that from Jerome didn't you? I'll take it off your hands for you, but he's gonna be mad if he finds out. I'll give you $5.00 for it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellPass</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Sell pass">
+      <NodeID>9</NodeID>
+      <DialogueText>Uh oh. Somebody's a drinker. Who is it? Mom?~ Dad?~ Doesn't matter. I can't think of too many buyers for it. Best I can do is $2.25.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellBreathalyzer</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="unused">
+      <NodeID>10</NodeID>
+      <DialogueText>Just don't go showing 'em to anyone. \hIt could get us both in trouble./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Understood.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll help.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not interested.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll help.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Waste more of your time.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who is he?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption> 
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>$20.00</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Sorry. Don't have anything like that at the moment, but I'll tell you what. I'm pretty handy with gadgets. If you can \hfind me some sort of device,/h I can rig it to do what you need to do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You mean like this thing?</OptionText>
+          <DestinationID>18</DestinationID>
+          <ItemToUse>Bug</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Where can I find one?</OptionText>
+          <DestinationID>24</DestinationID>
+          <FunctionCall>UnlockBugHint</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Oh yeah! That's exactly what I'm talking about. It'll cost you $1.50 to get this done. You good with that?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>19</DestinationID>
+          <MoneyLock>1.5</MoneyLock>
+          <FunctionCall>GiveBug</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not paying that much.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Okay then!~ Just a solder here.~ Rewire that timer to pass through that capacitor.~ Set the receiver to the correct frequency. ~More technobabble to make me seem smart...~and it's done!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's it do?</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>GetRemote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Here's the remote. All you have to do is press that button, and this little doo dad you gave me will pop like a firecracker! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool thanks!</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>It's only good for one use though. So be careful with it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>ActivateTalkToBuggs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Okay, well I'm not doing it for free and you're wasting my time. Get lost.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>The principal gives 'em out to kids he finds suspicious. I saw Nugget with one the other day, but he likes having it. Only gives it to the kids who are trying to be his friend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Sell pill">
+      <NodeID>25</NodeID>
+      <DialogueText>Woah a whole bottle of those things?!~ My guy who likes 'em is gonna be thrilled!~ I'll give you $4.00 for the whole thing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellPills</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Sell flask">
+      <NodeID>26</NodeID>
+      <DialogueText>Jeez kid. Really laying it on hard here. I suppose I could take this off your hands, but it's hard to sell alcohol here. I can give you $2.00 for it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellFlask</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

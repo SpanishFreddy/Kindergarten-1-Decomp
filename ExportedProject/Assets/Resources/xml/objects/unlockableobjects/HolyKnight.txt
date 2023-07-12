@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is the \hHoly Knight/h card. He would have been a priest, but then he found out they aren't allowed to court women.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop reading the card.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

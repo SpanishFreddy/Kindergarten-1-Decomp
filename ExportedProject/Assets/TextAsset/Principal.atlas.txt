@@ -1,0 +1,41 @@
+
+Principal.png
+size: 128,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: true
+  xy: 53, 2
+  size: 17, 15
+  orig: 17, 15
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 28, 7
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 53, 21
+  size: 25, 9
+  orig: 25, 9
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 2, 5
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 80, 26
+  size: 7, 4
+  orig: 7, 4
+  offset: 0, 0
+  index: -1

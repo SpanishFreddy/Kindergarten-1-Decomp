@@ -1,0 +1,48 @@
+
+Janitor.png
+size: 128,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 0
+  rotate: true
+  xy: 44, 13
+  size: 17, 26
+  orig: 17, 26
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 72, 13
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 44, 2
+  size: 9, 28
+  orig: 9, 28
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 94, 17
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: true
+  xy: 74, 2
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: true
+  xy: 2, 7
+  size: 23, 40
+  orig: 23, 40
+  offset: 0, 0
+  index: -1

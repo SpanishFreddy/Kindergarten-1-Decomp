@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is the door to the cafeteria. It's not time for lunch yet, so it's locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I haven't gone to the \hjanitor's closet/h yet. I should do that before heading back to lunch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

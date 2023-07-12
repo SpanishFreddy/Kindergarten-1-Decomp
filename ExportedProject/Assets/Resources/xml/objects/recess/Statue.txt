@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is a statue of the principal. There is a red glint in its eyes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Place the device.)</OptionText>
+          <ItemToUse>Bug</ItemToUse>
+          <MissionLock>NuggetPlaceDevice</MissionLock>          
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlaceBug</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Creepy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

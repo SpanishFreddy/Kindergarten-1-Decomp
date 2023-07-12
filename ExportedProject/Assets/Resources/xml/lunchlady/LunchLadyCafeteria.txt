@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>How you doing there, sonny? Want some tasty nutritious slop for lunch?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes please.</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetSlop</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's in it?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got anything else?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Can I go to the bathroom?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Actually, I'm not hungry.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>There ya go buddy boy! Enjoy and don't be shy about coming back for seconds. Plenty of slop to go around!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>          
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>It's an old family recipe! Lot's of herbs and spices and salt and about 89 percent the principal's secret ingredient!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay, I'll take some.</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetSlop</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>89 percent is a lot.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh it's not that much!~ Supposedly it keeps the slop in regulation with the government's new health standards!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay, I'll take some.</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetSlop</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's the secret ingredient?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got anything else?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I can't tell you that! It's a secret!~ Also, I have no idea what it is either.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay, I'll take some.</OptionText>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You're feeding us a seasoned mystery ingredient.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got anything else?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay, I'll take some.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You're feeding us a seasoned mystery ingredient.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got anything else?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>But the seasoning is so good! It's the best part!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay, I'll take some.</OptionText>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not eating it.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got anything else?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Well that's your call. I can't make you eat it. I'd love it if you did, but it's fine. Just move along now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move along.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine, I'll take some.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Correct.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Hey! Stop!~ You can't leave until lunch is over!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetConvo</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>It's not time to go to recess yet! You need to sit down and eat your food!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetConvo</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Oh! Did the slop give you the runs? Sorry 'bout that! Hope it worked itself out. All the other kids are out at recess now. Go run along.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Okay kiddos! That's the recess bell! Go burn off all the delicious slop you just ate!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to recess.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Oh!~ I'm not allowed to let any of you kiddies out in the hall during lunch, but maybe you could do me a little something if you wanted me to look the other way.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Like what?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Well I seem to have misplaced my glasses. These old eyes can't read the menu without 'em. See if you can find a pair lying around and I'll let you out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I found some glasses.</OptionText>
+          <ItemToUse>MontyGlasses</ItemToUse>
+          <DestinationID>17</DestinationID>
+          <FunctionCall>GiveGlasses</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Will this work?</OptionText>
+          <ItemToUse>MagnifyingGlass</ItemToUse>
+          <DestinationID>22</DestinationID>
+          <FunctionCall>GiveMagnifyingGlass</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Is there anything else I can do?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll see what I can find.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Well \hthat mopey little girl has been paying me to let her out./h I don't see why you can't get the same deal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool. Thanks.</OptionText>
+          <DestinationID>16</DestinationID>
+          <MoneyLock>2</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll just try and find the glasses.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Oh I'm always happy to help a child in need! Keeps me young!~ Now run along. I didn't see nothin'!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Run along.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>PaidOff</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Oh lovely! Thanks so much!~ Go ahead and do what you gotta do. I won't stop you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Well the menu is kinda restricted right now, what with the new health regulations. I have a chocolate bar, but it's pretty darn expensive.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll take it.</OptionText>
+          <DestinationID>19</DestinationID>
+          <FunctionCall>GetChocolate</FunctionCall>
+          <MoneyLock>10</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why is it so expensive?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>The janitor said I could get it cheaper.</OptionText>
+          <DestinationID>20</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nevermind then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Well okay then Mr. Moneybags! You enjoy that!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Oh you must be the janitor's new little friend! Yup! He said you were a good kid. I can let you have the chocolate bar for a nickel!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>GetChocolate</FunctionCall>
+          <MoneyLock>0.05</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>It's all part of the government wanting you kids to be less fat. You poor things are wasting away before my very eyes!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll take the chocolate.</OptionText>
+          <DestinationID>19</DestinationID>
+          <FunctionCall>GetChocolate</FunctionCall>
+          <MoneyLock>10</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>The janitor said I could get it cheaper.</OptionText>
+          <DestinationID>20</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nevermind then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Sure it will!~ Thank you so much honey. Go on and do your business. I won't stop you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>You enjoy that then kiddo! Have a nice day!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>I think you've earned something special. My way of saying thank you for appreciating the slop. Here's a Monstermon card!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Now go on and finish that slop, and don't worry. I'll be serving it again tomorrow!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yippee.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

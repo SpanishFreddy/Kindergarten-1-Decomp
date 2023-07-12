@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>What are you kids doing out here?! You should be in the cafeteria!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lily was eavesdropping on you.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>We were eavesdropping on you.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>ShootBoth</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>If Lily was eavesdropping...~then what were YOU doing?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Also eavesdropping.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>ShootBoth</FunctionCall>>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I knocked to let you know.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>BringInLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Also eavesdropping.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I knocked to let you know.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Okay. Thank you for letting me know about her. I'm sure you heard the recess bell. Why don't you go out and play?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're covered in blood.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Was that a gun shot?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>What?~ Oh this?~ No. It's...~uh...~ketchup. You're very observant.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>        
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Listen very carefully.~ Lily is going to be punished very severely for being observant. Do you understand?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Oh that?~ No. It was just...~maintenence. Doing...~repairs...~to that one thing. You're very observant.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Good. Now get to recess.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Go away kid! I'll get in trouble if the principal hears you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Put gum in Lily's hair.)</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <MissionLock>CindyPutGumLunch</MissionLock>
+          <FunctionCall>CompleteGumLunch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away from Lily.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Let's do this! Unlock the door!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Are you freaking kidding me right now!?~ You followed me out here to put gum in my hair?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It appears that way.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Just leave me alone!~ I have more important things to worry about than jerks like you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away from Lily).</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Come on! Open the door! We have to hurry!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

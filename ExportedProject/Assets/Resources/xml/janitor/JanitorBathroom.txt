@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hehe...~What's going on there boy?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's in those bags?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>The toilet over there needs cleaning.</OptionText>
+          <DestinationID>22</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't even want to know.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>What bags?~ I don't see no bags.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Those bags.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You're kidding right?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ooooooh!~ THESE bags! Hehe...~ Nothing for you to worry your stupid little head about. Now run along.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's bleeding.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stop worrying my stupid little head.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>57</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh...~yes...~the uh...~bleeding.~ Say! Did you know I'm required by law to stay at least one mop's length away from children at all times?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's that got to do with the bleeding?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How did that judgement get passed down?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Get at least one mop length away from the janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>58</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Quite a bit actually, if you catch my drift.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't follow.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Catch the janitor's drift.)</OptionText>
+          <ResolutionID>59</ResolutionID>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Wow you really are a stupid kid. Oh well. At least I can bring the school's test score averages up.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerAt5</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>It's a long story, but it ends with someone on the end of a mop.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds riveting.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's all I needed to hear.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>You still bothered about my tale that ends with someone on the end of a mop?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It sounds riveting.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's all I needed to hear.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>It is, but that's a tale for another time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm morbidly curious.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yes...Another time.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>60</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Hehe...~Me too. That's what got me into that mess in the first place. Anyway, I don't think it would be appropriate for me to tell someone of your age that story.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But it's okay for me to see a bloody bag in a bin?</OptionText>
+          <DestinationID>10</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Probably not.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>61</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Righto! You sure are a chipper young sport. Here. Take this nickel and buy yourself a bar of chocolate.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>A nickel won't cut it.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sure...thanks.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetNickel</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>What do you mean a nickel won't cut it? A nickel is gonna have to cut it or I'm gonna have to cut you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Chocolate is more expensive than a nickel.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Give me more, or I'm telling about the bloody bag.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Oh...~in that case I'll let the ole' lunchlady know to give you chocolate at a price you would have seen back in my day...~before the whole...~mop incident. How about that?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>EnableCheapChocolate</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Oh really?! Well then maybe we can have ANOTHER bloody bag!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Applegate is expecting me back.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Actually, I'll take the nickel.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetNickel</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Is she now? Well then I'm sure you have one of her bathroom passes!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes, I do.</OptionText>
+          <ItemToUse>BathroomPass</ItemToUse>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yes, I do.</OptionText>
+          <ItemToUse>HallPass</ItemToUse>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Hmmm...~Well in that case...~will a buck keep you quiet?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetBuck</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gonna need a bit more.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Look, kid. If you don't take the buck, there will be another 'mop incident.'</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll take the dollar.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetBuck</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No deal.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Well then it looks like we'll be on the evening news!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Good. Now skedaddle.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Skedaddle.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>70</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>   
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>There.~ It's clean.~ Go enjoy your piss you little germaphobe.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thank you.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Toilet's clean. Now leave me to my...~business.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the janitor alone.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>~Yeah, I'm still gonna kill ya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Dammit.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Yeah, I know. Who do you think messed it up in the first place?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Well are you gonna clean it?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Not if I don't have to. I get paid by the hour, not by the toilet. Just use another stall!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>All the other ones are taken.</OptionText>
+          <DestinationID>24</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>CheckEndBathroom</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>56</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Ugh. Fine. I'll take care of it. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>WalkToStall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Unused</DialogueText>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Moppy moppy moppy.~ Plungy plungy plungy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Let him do his thing.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Hehehe...~you think you're so clever, don't ya?~ You didn't get this pass from Applegate. Nooooo.~ These passes are only given out by the boss. You got this from the principal's boy, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's right.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>I knew it. Speaking of that little devil, I swiped his laser thingy this morning...~Say, is that what this is about? You're here to get his laser thingy back?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't really care. I just wanted the pass.</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Well I don't have it. Got it in my closet where you rotten kids can't reach it. I'll be showing it to the principal as soon as I'm done in here. So get lost.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw man.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Hehe...~clever kid. You know what? I like you. You can have this silly card thing I knicked from that fat kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool. Thanks.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetCardJeromePass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oooooh...~liar liar.~ Do you know what happens to liars in this school?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Ummmm...~no...~no it's not! I don't know what you're talking about. Ummm...here! Take the stupid laser thingy and shut up about the whole thing!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool, thanks!</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetLaser</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You have Cindy's dog?</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Would you look at the time! I have to go mop up something somewhere now. Nice chatting with ya sonny!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about the bags?</OptionText>
+          <DestinationID>34</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Don't touch 'em!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm gonna touch 'em.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I won't.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Well in that case...</DialogueText>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Ummm...~No...~Uh, well...~yes! She was eating an unapproved biscuit. Coulda killed her!~ Yeah. I'm a hero!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So you're not gonna give me the laser?</OptionText>
+          <DestinationID>37</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Not unless you got something better!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have a flask.</OptionText>
+          <ItemToUse>Flask</ItemToUse>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have pills.</OptionText>
+          <ItemToUse>Pills</ItemToUse>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a pill.</OptionText>
+          <ItemToUse>Pill</ItemToUse>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have cigarettes.</OptionText>
+          <ItemToUse>Cigarettes</ItemToUse>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Well I don't.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Hmmmm...~What's in it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't know. I got it from Cindy.</OptionText>
+          <ItemToUse>Flask</ItemToUse>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Oh Cindy's got the best stuff. Okay. Give me the flask and you got yourself a deal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetLaser</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Give pill(s)">
+      <NodeID>40</NodeID>
+      <DialogueText>From that weird Nugget kid? I got a whole jar full of those things. Kid just gives 'em out like candy. Gimme something else.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have a flask.</OptionText>
+          <ItemToUse>Flask</ItemToUse>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have cigarettes.</OptionText>
+          <ItemToUse>Cigarettes</ItemToUse>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't have anything else.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Give ciggs">
+      <NodeID>41</NodeID>
+      <DialogueText>Some ciggies? Heh...~haven't had one of these since I was your age!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm five.</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Wow! Really?~ They keep startin' 'em younger and younger.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you want these or not?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Sure! I don't need this silly thing anyway. Just remember, you didn't see anything in here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetLaser</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Blank.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="Dont have anything">
+      <NodeID>45</NodeID>
+      <DialogueText>Then you can't have it. Go tell that little deviant Jerome to do his own dirty work from now on.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess I will.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>46</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="45 res">
+      <NodeID>46</NodeID>
+      <DialogueText>Get out of here! You can't have the laser thingy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Jeez.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>Little bugger stole my key ring. He was rambling on about something in the basement. He had the same look in his eyes that that weird Nugget kid gets after he's taken his meds.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What happened after you caught him?</OptionText>
+          <DestinationID>48</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You sure are chatty about the subject.</OptionText>
+          <DestinationID>49</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>What?~ Oh. Ummm...~nothing. Nothing happened. I told the principal and he gave Billy study hall.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>A lot of things go missing in your closet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You sure are chatty about the subject.</OptionText>
+          <DestinationID>49</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>I'm not telling you nothin' I didn't already tell the cops. I'm clean as a whistle. You know, one that's been mopping up blood all day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>We still haven't addressed that.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I think I'm done here.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>You're still hung up on the blood?~ You know kid, if all you ever do is pay attention to the blood in life, you might end up as old as I am seeing nothing but blood. In fact, that's exactly what I did. You don't want to wake up in 20 years and look like me do ya?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, I don't.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You're 25?</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>You calling me ugly, boy!?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Kinda.</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I just want this conversation to be over.</OptionText>
+          <DestinationID>55</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Hehe...~Telling it like it is. I can appreciate that. I like the cut of your jib, kid. You ever need something taken care of. You let me know.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds good to me.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>You're a nasty little liar. Do you know what happens to nasty little liars?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>They end up on the end of a mop?</OptionText>
+          <DestinationID>54</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>Yup.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Dammit.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Me too. What do you say we don't bother each other for the rest of the day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'd like that.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>I told you to use another stall? What's so hard about that?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>All the other ones are taken.</OptionText>
+          <DestinationID>24</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>CheckEndBathroom</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay...jeez.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>Don't you worry your stupid little head about what's in the bags. Just run along.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's bleeding.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stop worrying my stupid little head.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>58</NodeID>
+      <DialogueText>You know by law you're not supposed to be within one mop length of me, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's that got to do with the bleeding?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How did that judgement get passed down?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Get at least one mop length away from the janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>59</NodeID>
+      <DialogueText>Still not picking up what I'm putting out, boy?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't follow.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Catch the janitor's drift.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>It's a tale for another time. Stop pestering me about it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm morbidly curious.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yes...Another time.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>I told you. It's not appropriate for you to hear that story!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But it's okay for me to see a bloody bag in a bin?</OptionText>
+          <DestinationID>10</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Probably not.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>Hey!~ Don't you go messing around with those bags!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Sorry.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetConvo</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>That's the bell! What are you still doing in here? Get back to class!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Jeez.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <DialogueText>What the--?!~ What are you doing in here?~ You're not supposed to be out of the lunchroom!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm using the bathroom.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>BathroomCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>Hmmmm...~nothing. I'm still watching you boy. I'll see you and Jerome at recess. Now get out of here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get out of here.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>The lasery thingy!~ You were in my closet! How dare you?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>67</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>67</NodeID>
+      <DialogueText>No you're not...~but you will be.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerLaserBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>68</NodeID>
+      <DialogueText>There...~crapper's clean, not that you'll get a chance to use it. The bell just rang. Get out of here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw man.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>69</NodeID>
+      <DialogueText>~Sounds like that's the bell. Looks like I don't have to clean the stupid toilet after all. You gotta get back to class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw man.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Go head on back to class now. I'm very busy cleaning up this...~mess.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>Oh and that's the bell! Looks like I don't have to clean that up after all! Get back to class!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

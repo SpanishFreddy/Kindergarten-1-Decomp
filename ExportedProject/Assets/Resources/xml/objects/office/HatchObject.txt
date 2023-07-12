@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>There is a hatch on the floor. Dried blood stains the surrounding carpet. It is locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Open the hatch.)</OptionText>
+          <ItemToUse>GoldKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>OpenHatch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I can't fit the key into the lock. \hIt must take a different key./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>There is a hatch on the floor. Dried blood stains the surrounding carpet. It is locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Open the hatch.)</OptionText>
+          <ItemToUse>GoldKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>OpenHatch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

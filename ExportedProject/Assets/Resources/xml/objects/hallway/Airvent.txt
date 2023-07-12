@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I can see something behind the airvent, but \hI need something to unscrew it with./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Unscrew the vent.)</OptionText>
+          <ItemToUse>Screwdriver</ItemToUse>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnscrewVent</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

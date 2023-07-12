@@ -1,0 +1,12 @@
+namespace TextFx
+{
+	public enum LETTER_ANIMATION_STATE
+	{
+		PLAYING = 0,
+		STOPPED = 1,
+		WAITING = 2,
+		WAITING_INFINITE = 3,
+		CONTINUING = 4,
+		CONTINUING_FINISHED = 5
+	}
+}

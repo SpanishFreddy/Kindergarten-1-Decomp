@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>It looks like this screw is loose.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Unscrew the screw.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>Screwdriver</ItemToUse>
+          <FunctionCall>UnscrewShelf</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

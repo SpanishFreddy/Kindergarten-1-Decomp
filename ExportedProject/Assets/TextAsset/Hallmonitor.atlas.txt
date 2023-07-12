@@ -1,0 +1,48 @@
+
+Hallmonitor.png
+size: 64,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 12
+  rotate: false
+  xy: 41, 2
+  size: 9, 11
+  orig: 9, 11
+  offset: 0, 0
+  index: -1
+Layer 13
+  rotate: false
+  xy: 2, 6
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+Layer 14
+  rotate: false
+  xy: 52, 4
+  size: 9, 11
+  orig: 9, 11
+  offset: 0, 0
+  index: -1
+Layer 15
+  rotate: false
+  xy: 41, 15
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+Layer 16
+  rotate: false
+  xy: 52, 17
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: false
+  xy: 22, 9
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1

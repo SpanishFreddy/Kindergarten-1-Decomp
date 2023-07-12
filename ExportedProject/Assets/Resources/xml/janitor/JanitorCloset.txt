@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>What in the--?!~ What the hell are you doing in my closet?! No one's allowed in the janitor's closet except the GOD DAMN JANITOR!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>"Sorry?!"~ Sorry ain't gonna cut it kiddo. Sorry ain't gonna cut it at all.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm really sorry?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Me too...~but not really.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you sorry for?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KilledInCloset</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

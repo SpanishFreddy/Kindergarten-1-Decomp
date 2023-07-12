@@ -1,0 +1,62 @@
+
+Teacher.png
+size: 128,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 0
+  rotate: true
+  xy: 43, 3
+  size: 25, 18
+  orig: 25, 18
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 99, 16
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 3
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 80, 10
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: true
+  xy: 23, 3
+  size: 25, 18
+  orig: 25, 18
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: true
+  xy: 63, 4
+  size: 24, 15
+  orig: 24, 15
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 87, 2
+  size: 5, 6
+  orig: 5, 6
+  offset: 0, 0
+  index: -1
+Layer 7
+  rotate: false
+  xy: 80, 2
+  size: 5, 6
+  orig: 5, 6
+  offset: 0, 0
+  index: -1

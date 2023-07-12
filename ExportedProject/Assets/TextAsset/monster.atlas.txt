@@ -1,0 +1,55 @@
+
+monster.png
+size: 64,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 39
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 15
+  size: 16, 22
+  orig: 16, 22
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 20, 23
+  size: 8, 14
+  orig: 8, 14
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 30, 49
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: true
+  xy: 2, 2
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 30, 35
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: -1
+Layer 7
+  rotate: false
+  xy: 42, 54
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1

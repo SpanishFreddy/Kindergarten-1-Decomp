@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is the door to the janitor's closet. It's locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Unlock the door.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>JanitorKey</ItemToUse>
+          <FunctionCall>GoToJanitorCloset</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
