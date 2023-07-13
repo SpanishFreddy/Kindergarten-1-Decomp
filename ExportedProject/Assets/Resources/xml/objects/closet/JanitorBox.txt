@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>There's a note, a Monstermon card, and a five dollar bill in this box.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the note.)</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>TakeNote</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Take the Monstermon card.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeCardFromBox</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Take the money.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+          <FunctionCall>TakeMoney</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode> <!--take note first-->
+      <NodeID>1</NodeID>
+      <DialogueText>I'll take the note, but I can't read it because I'm in kindergarten.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh. Bummer.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="monstermon + money">
+      <NodeID>2</NodeID>
+      <DialogueText>It's a box with a Monstermon card and a five dollar bill in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the money.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeMoney</FunctionCall>
+          <ResolutionID>8</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Take the Monstermon card.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeCardFromBox</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I'll take the note, but I can't read it because I'm in kindergarten.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh. Bummer.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="note + money">
+      <NodeID>4</NodeID>
+      <DialogueText>It's a box with a note and $5.00 in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the note.)</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>TakeNote</FunctionCall>
+          <ResolutionID>5</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Take the money.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeMoney</FunctionCall>
+          <ResolutionID>6</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="only money">
+      <NodeID>5</NodeID>
+      <DialogueText>It's a box with a five dollar bill in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the money.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeMoney</FunctionCall>
+          <ResolutionID>9</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="only note">
+      <NodeID>6</NodeID>
+      <DialogueText>It's a box with a note in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the note.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeNote</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="note + card">
+      <NodeID>7</NodeID>
+      <DialogueText>There's a note and a Monstermon card in this box.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the note.)</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>TakeNote</FunctionCall>
+          <ResolutionID>5</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Take the Monstermon card.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeCardFromBox</FunctionCall>
+          <ResolutionID>6</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="only card">
+      <NodeID>8</NodeID>
+      <DialogueText>It's a box a Monstermon card in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the Monstermon card.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeCardFromBox</FunctionCall>
+          <ResolutionID>9</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't take anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name ="only card">
+      <NodeID>9</NodeID>
+      <DialogueText>It's an empty box.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the box.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

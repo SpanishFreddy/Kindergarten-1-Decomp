@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>There is a lock on the desk drawer. \hIt looks like it takes a code of some sort./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Open the drawer.)</OptionText>
+          <DestinationID>1</DestinationID>
+          <ItemToUse>BillyCode</ItemToUse>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>There is a fancy key inside the desk drawer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the key.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+          <FunctionCall>GetHatchKey</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the key.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>The desk drawer is empty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Do nothing.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

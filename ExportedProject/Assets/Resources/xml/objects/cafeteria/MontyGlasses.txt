@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>These are Monty's glasses. They went flying when the janitor hit him in the face.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take glasses.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetGlasses</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave glasses.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

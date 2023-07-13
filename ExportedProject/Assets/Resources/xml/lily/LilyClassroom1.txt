@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Oh. I don't really do the whole morning buddy thing anymore. My brother Billy was normally my buddy, but he's missing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Put gum in Lily's hair.)</OptionText>
+          <ItemToUse>Gum</ItemToUse>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>PutGumInHair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a letter from Nugget.</OptionText>
+          <ItemToUse>LoveLetter</ItemToUse>
+          <DestinationID>4</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Did you just...~oh. You did. You put gum in my hair. That's...~so mean. Cindy put you up to this, didn't she? Well. I don't even care. Leave me alone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>    
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>What?! You have more gum to put in my hair? I said to leave me alone, so leave me alone. You've hurt me enough.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh hey. I'm glad you were nice to me this morning and all, but I'm not really looking for a morning buddy right now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have a letter from Nugget.</OptionText>
+          <ItemToUse>LoveLetter</ItemToUse>
+          <DestinationID>5</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Oh. Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Look...~no offense, but \hI don't trust you or Nugget enough to even think about opening that./h Tell him I said thanks, but no thanks.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FailGiveLetter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh!~ I didn't know that he...~was capable of having complex emotions. It's still a sweet gesture. I just wish I could read it.~ I guess I'll go ask the teacher to read it for me!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+          <FunctionCall>TeacherReadLetter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Well...~that was mortifying. Please go away.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>You didn't get sent to the office. In order for my plan to work, \hyou need to be sent there before morning time./h Try again tomorrow I guess.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Well? Did you see the hatch? Do you know where Billy is?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I saw the hatch.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>CheckForBug</FunctionCall>
+          <MissionLock>LilyTellAboutTheHatch</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I took pills to feel good.</OptionText>
+          <DestinationID>9</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <FunctionCall>CheckForBug</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I couldn't find it.</OptionText>
+          <DestinationID>9</DestinationID>          
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Took pills? Oh no! You have that same blank stare Nugget has. So you don't know anything about the hatch?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What hatch?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Great! Just great! You're completely useless to me now! We'll have to try again tomorrow. You can't take those pills! It makes you...~complacent.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Whatever Lily.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Go away. You can't help me now. I can't trust you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Whatever Lily.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Excellent. Now we move onto the next phase. We need a way to get into the principal's office while he's not in there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do we do that?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>We need a way to get him out and a way to get us in. I think I can lure him out if I can call him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So I'll go talk to him about it.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I do.</OptionText>
+          <DestinationID>18</DestinationID>
+          <ItemToUse>PrincipalKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How would I get that?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what do we do?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Monty said he'll have the code for the hatch at lunch, right? Come see me then.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>There is one more thing though. If this all goes horribly wrong, we're going to need a probable cause for doing what we did. We need some actual evidence.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where do we get that?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Well...~if there's a mess in this school, who cleans it up? I'm guessing the janitor has something to do with all this. See if he's doing anything suspicious.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+          <FunctionCall>ActivateJanitorMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Did you find anything? We need some insurance before we do anything crazy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I found this shoe in a bag.</OptionText>
+          <ItemToUse>Shoe</ItemToUse>
+          <DestinationID>23</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseShoe</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I found this severed finger.</OptionText>
+          <ItemToUse>SeveredFinger</ItemToUse>
+          <DestinationID>24</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseFinger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>That's Billy's shoe!~ It's exactly what we need. Okay! We go forward with the plan. I'll see you at lunch. We make our move after we get the code from Monty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>GoForwardWithPlan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>That's disgusting!~ Oh God...~I really hope that's not Billy's finger.~ Oh jeez.~ Okay...*whew*...~It works anyway. It doesn't have to be Billy's. A severed finger is reason enough to panic.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So it works?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Sure...~just get it away from me. It's so gross.~ I'll see you at lunch. We make our move after we get the code from Monty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>GoForwardWithPlan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Just hold onto that for now. We'll need it as evidence if we get caught. We make our next move at lunch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Darn it! I'm not going in there blind. We'll just have to try again tomorrow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>28</ResolutionID>
+          <FunctionCall>FailFindHatch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>We'll have to try again tomorrow. We need to find that hatch before I can go forward with my plan.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

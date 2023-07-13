@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I can hear someone grunting on the other side of the door. It must be in use.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Find another stall.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CheckStall2</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

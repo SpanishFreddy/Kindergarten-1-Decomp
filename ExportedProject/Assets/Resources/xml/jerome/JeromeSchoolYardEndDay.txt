@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Well kid, I'm impressed.~ You put up with this whole crazy day just because I told you it'd be worth it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It better be.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>It is. Trust me. It's just a shame it required Monty taking the laser pointer until I pay him back. Either way, you've earned this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>Getmold</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Awesome. Thanks. This is for you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>Getmold</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>It's a mold for a key to my dad's office! You get this made, and you can go in there anytime!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You couldn't just give me a key?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How can I even get this made?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>My dad is pretty secretive about his office. I'm pretty sure he has the only key to it, so be grateful you even have the chance to make a key for it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How can I even get this made?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Monty can hook you up. Just bring it to him at the beginning of the day and he'll figure it out for you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>This is where we part ways, man. You're pretty cool. I'll see you around.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JeromeEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

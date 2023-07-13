@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>It's a bucket that's catching the blood from that thing on the table. \hThis would be a truly vile thing to dump on someone's head./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the bucket.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeBucket</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gross.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is the \hOglebop Golem/h card. No one knows what Oglebop really is, but everyone is too afraid to ask him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop reading the card.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

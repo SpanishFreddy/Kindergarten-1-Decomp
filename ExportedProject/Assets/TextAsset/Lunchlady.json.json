@@ -1,0 +1,205 @@
+{
+"skeleton": { "hash": "gYdnurlpbSUJugHAr45HdAvfIVY", "spine": "3.4.02", "width": 41, "height": 49, "images": "../images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "apron", "parent": "root", "length": 25.32, "rotation": -95.71, "x": -0.13, "y": 29.85 },
+	{ "name": "arm", "parent": "root", "length": 12.49, "rotation": -48.5, "x": 9.12, "y": 27.87 },
+	{ "name": "arm2", "parent": "root", "length": 13.29, "rotation": -134.72, "x": -8.5, "y": 28.59 },
+	{ "name": "body", "parent": "root", "length": 26.81, "rotation": 90.19, "x": -0.04, "y": 0.06 },
+	{ "name": "head", "parent": "root", "length": 18.86, "rotation": 82.87, "x": -0.22, "y": 26.79 },
+	{ "name": "legs", "parent": "root", "length": 17.11, "rotation": -96.34, "x": 0.94, "y": 17.88 }
+],
+"slots": [
+	{ "name": "Layer 4", "bone": "arm2", "attachment": "Layer 4" },
+	{ "name": "Layer 6", "bone": "legs", "attachment": "Layer 6" },
+	{ "name": "Layer 1", "bone": "body", "attachment": "Layer 1" },
+	{ "name": "Layer 5", "bone": "apron", "attachment": "Layer 5" },
+	{ "name": "Layer 3", "bone": "arm", "attachment": "Layer 3" },
+	{ "name": "Layer 2", "bone": "head", "attachment": "Layer 2" }
+],
+"skins": {
+	"default": {
+		"Layer 1": {
+			"Layer 1": { "x": 18.97, "y": -0.1, "rotation": -90.19, "width": 35, "height": 30 }
+		},
+		"Layer 2": {
+			"Layer 2": {
+				"type": "mesh",
+				"uvs": [ 1, 0.89886, 1, 1, 0, 1, 0, 0, 0.42409, 0, 1, 0 ],
+				"triangles": [ 4, 5, 0, 2, 3, 4, 2, 4, 0, 2, 0, 1 ],
+				"vertices": [ 4.3, -15.3, 2.2, -15.56, -0.77, 8.24, 20.06, 10.85, 21.32, 0.75, 23.03, -12.96 ],
+				"hull": 6,
+				"edges": [ 2, 4, 4, 6, 6, 8, 8, 10, 2, 0, 0, 10, 8, 0 ],
+				"width": 24,
+				"height": 21
+			}
+		},
+		"Layer 3": {
+			"Layer 3": { "x": 6.88, "y": -0.26, "rotation": 48.5, "width": 14, "height": 15 }
+		},
+		"Layer 4": {
+			"Layer 4": { "x": 7.45, "y": 0.35, "rotation": 134.72, "width": 24, "height": 24 }
+		},
+		"Layer 5": {
+			"Layer 5": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0.43583, 1, 0, 1, 0, 0, 0.45174, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 4, 1, 3, 4, 5, 0, 1, 4, 0 ],
+				"vertices": [ 26.51, 14.34, 27.8, 1.42, 28.79, -8.54, -1.04999, -11.53, -2.08, -1.19, -3.33, 11.35 ],
+				"hull": 6,
+				"edges": [ 4, 6, 0, 10, 6, 8, 8, 10, 0, 2, 2, 4, 8, 2 ],
+				"width": 23,
+				"height": 30
+			}
+		},
+		"Layer 6": {
+			"Layer 6": { "x": 15.34, "y": 0.75, "rotation": 96.34, "width": 31, "height": 7 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"bones": {
+			"legs": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.2333, "x": 1, "y": 1.035 },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"body": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.2333, "x": 0.36, "y": -0.61 },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.2333, "x": 1, "y": 1.047 },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"arm2": {
+				"rotate": [
+					{ "time": 0, "angle": -23.61 },
+					{ "time": 0.1333, "angle": 232.66 },
+					{ "time": 0.3, "angle": 47.38 },
+					{ "time": 0.5, "angle": -25.16 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1333, "x": 2.82, "y": -1.33 },
+					{ "time": 0.3, "x": 0, "y": -2.99 },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.1333, "x": 0.824, "y": 1 },
+					{ "time": 0.3, "x": 1.095, "y": 1 },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"arm": {
+				"rotate": [
+					{ "time": 0, "angle": 24.68 },
+					{ "time": 0.1333, "angle": -95.94 },
+					{ "time": 0.3, "angle": 64.26 },
+					{ "time": 0.5, "angle": 30.45 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1333, "x": 2.38, "y": -0.65 },
+					{ "time": 0.3, "x": 0, "y": -1.47 },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"apron": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1666, "angle": -1.88 },
+					{ "time": 0.3333, "angle": 1.81 },
+					{ "time": 0.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1333, "angle": -10.19 },
+					{ "time": 0.3333, "angle": 7.77 },
+					{ "time": 0.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1333, "x": 0, "y": -0.86 },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"Layer 2": {
+					"Layer 2": [
+						{
+							"time": 0,
+							"offset": 1,
+							"vertices": [ -0.31752, 0, 0, 0, 0, 0, 0, -2.0E-5, -0.31752 ]
+						},
+						{
+							"time": 0.1333,
+							"vertices": [ 0.93267, -0.29438, 0, 0, 0, 0, 0, 0, 0.93267, -0.29438 ]
+						},
+						{
+							"time": 0.3333,
+							"vertices": [ -0.34779, 2.31752, 0, 0, 0, 0, 0, 0, -1.12432, 2.56327 ]
+						},
+						{
+							"time": 0.5,
+							"offset": 1,
+							"vertices": [ -0.26791, 0, 0, 0, 0, 0, 0, -2.0E-5, -0.26791 ]
+						}
+					]
+				},
+				"Layer 5": {
+					"Layer 5": [
+						{ "time": 0 },
+						{
+							"time": 0.2333,
+							"offset": 2,
+							"vertices": [ -0.71589, -5.56867 ]
+						},
+						{ "time": 0.5 }
+					]
+				}
+			}
+		}
+	}
+}
+}

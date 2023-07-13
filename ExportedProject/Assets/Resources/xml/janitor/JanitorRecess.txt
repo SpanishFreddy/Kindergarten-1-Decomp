@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Go run along and play little child.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why are you out here?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Your teacher ran off during lunch. She isn't picking up her phone either. Probably got sick of having to deal with you all day. I'm out here to make sure you all don't kill each other.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Go run along and play little child.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Okay you rotten kids! That's the bell! Get your worthless hides back inside!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go back inside.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToCS2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Bugger off kid. I'm trying to come up with a good reason to impale the little junior principal with my mop.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Bugger off.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TurnBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>The lasery thingy! You are in on this! You know what that means!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm dead, aren't I?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>TurnBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Righto!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

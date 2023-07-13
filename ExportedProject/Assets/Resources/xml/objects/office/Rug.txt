@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This rug seems a little out of place.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Look under the rug.)</OptionText>
+          <DestinationID>-2</DestinationID>
+          <MissionLock>LilyLookForSomethingSuspicious</MissionLock>
+          <FunctionCall>LookUnderRug</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ignore the rug.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

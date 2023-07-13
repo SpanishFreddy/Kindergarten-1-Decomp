@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Don't bother me kid. I'm trying to figure this out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Figure what out?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No no no!~ Kid, what are you thinking?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>JanitorJeromeKillRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Wait...~so you don't have it, which means Monty won't help you, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I'd be hard pressed to find someone more useless than you. If this old lunatic kills me, I'm going to haunt you til the day I die.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds fair.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Go away. I need to come up with a plan to get away from the mop-wielding monster over here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>It's this riddle about these stupid duck things. Apparently if you shake them in the right order something is supposed to happen.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's the riddle?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>"Go twice the duck that's furthest south. Then two blue before red. After, return to the first duck then blue. Get it wrong and you're dead."</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's ominous.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Yeah. Good luck solving that. I don't want to get involved now that I think about it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hmmmm...</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+          <FunctionCall>JeromeSolveDucks</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>What do you want?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can I hear that riddle again?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nothing.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>"Go twice the duck that's furthest south. Then two blue before red. After return to the first duck then blue. Get it wrong and you're dead."</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it. Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>I can't believe you solved it. I'll have to figure it out faster next time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

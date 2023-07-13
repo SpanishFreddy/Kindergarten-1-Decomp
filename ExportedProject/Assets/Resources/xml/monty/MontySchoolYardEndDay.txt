@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Okay kid. It's the end of the day. You got the money?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>1</DestinationID>
+          <MoneyLock>20</MoneyLock>
+          <FunctionCall>GetPrincipalKey</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Wow.~ You raised all that in one day?~ I'm impressed.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Whatever you plan on doing with that key...~be careful. Something fishy is going on at this school.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I will.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I'll see you around. Pleasure doing business with ya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's been a pleasure.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndDayMonty</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Aww jeez. Well that sucks.~ Screw you man. I'm gonna have to eat the cost of this. Get bent.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You too.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FailToBuy</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

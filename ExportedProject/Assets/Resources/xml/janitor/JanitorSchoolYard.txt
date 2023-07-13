@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>How ya doin' there sonny? Don't mind the ole janitor here. Just sweeping up after you silly cretins.~ Sweepy sweepy sweepy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's a mop.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stop talking to the creepy janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ah...~so it is.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're also mopping the sidewalk.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I'll be mopping your blood off it if you don't skedaddle.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't want to skedaddle.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Skedaddle.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I'm a man of my word.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're gonna kill me?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

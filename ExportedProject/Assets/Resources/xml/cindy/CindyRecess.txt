@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Go away. I'm spending recess with my boyfriend!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Whatever Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Well? What did you get?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>This paper.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Recipe</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Five dollars.</OptionText>
+          <DestinationID>5</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>This bucket filled with blood.</OptionText>
+          <DestinationID>10</DestinationID>
+          <ItemToUse>BucketBlood</ItemToUse>
+          <FunctionCall>CheckActionsLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I didn't grab anything.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not ready to show you yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Nothing?!~ You didn't grab anything?!~ What the hell are you even good for?! I hope you die! We're through!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm sorry you feel that way.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>A stupid note?! We can't even read! You better \hfind someone who can read this who won't get us into trouble/h and it better be worth it!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. I'll find someone.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>ActivateReadNote</FunctionCall>
+        </DialogueOption>        
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>And don't you dare show it to the teacher!~ We'll get in trouble if you do that!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh great! I'll take that.~ What else did you get?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nothing.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Look...~sweetie...~when I tell you to get me something gross to dump on Lily, that's what I want. It doesn't mean get me money. I can't be bought off. I'm not a hooker.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>I can't stand disobedience in my boyfriends.~ I'm sorry to say, but we're through. Goodbye.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>We're through. You aren't allowed to talk to me anymore.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't know.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Oh.~ My.~ God.~ It's perfect. That is so disgusting! Whose blood is it?~ Nevermind. I don't want to know.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me neither.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>You're the best. Climb up there and I'll call her over.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm gonna get in position.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetInPosition</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Are you ready to make my day?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetInPosition</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Give me a minute.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name =" After the dumping of blood">
+      <NodeID>13</NodeID>
+      <DialogueText>That was so great. You've made me so happy today.~ I want you to take this flower. It's pretty like me. This way you'll always have a little piece of me with you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take Cindy's flower.)</OptionText>
+          <DestinationID>31</DestinationID>
+          <FunctionCall>GetFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name =" Read the note">
+      <NodeID>14</NodeID>
+      <DialogueText>Did you find out what that stupid note said yet?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's a recipe for the Janitor's 'Biscuit Balls'.</OptionText>
+          <DestinationID>15</DestinationID>
+          <MissionLock>CindyTellPaper</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name =" Read the note">
+      <NodeID>15</NodeID>
+      <DialogueText>It's just a stupid recipe!? I can't believe I went to all the trouble of stealing the key to the janitor's closet just so you could steal a dumb recipe!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Your dog is an ingredient.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name =" Read the note">
+      <NodeID>16</NodeID>
+      <DialogueText>\bWHAT?!/b</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Your dog is an ingredient.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>THAT CREEPY OLD MAN IS SO DEAD!! WHERE IS HE?! I'M GONNA KILL HIM!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You are?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>18</ResolutionID>
+          <FunctionCall>KillJanitor</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>I wasn't expecting to find out what happened to my dog today. I'm sorry for dragging you into this, but you have exceeded my expectations as a boyfriend today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That was pretty messed up.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>I know, but I'll make it up to you.~ Here. You can have this flower. It's pretty like me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...thanks</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>GetFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>I can tell by that look in your eyes that you think you deserve a little more. Here's a special Monstermon card. You really are the best boyfriend I've ever had.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>21</DestinationID>
+          <FunctionCall>GetOhFaka</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>This has been a fun recess. I'll see you at show and tell.~ \hI just know you'll have something good to show now!/h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>See you at show and tell boyfriend!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess you will.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Hahaha! Just look at her she looks so miserable. Good work!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>What are you waiting for? Go stick that gum in her hair!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Hahaha! Nice work! Here's some money. It was worth every penny!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>26</DestinationID>
+          <FunctionCall>GetMoneyForLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>This was fun. We should do it again some time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah. Maybe.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>We're through! Go away.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>The principal said we can't talk to each other. Leave me alone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Ugh.~ Don't bother. The bell is about to ring. We'll be out of time before we pull this off.~ Get here sooner next time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>There's not enough time to pull this off. Get here sooner next time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>\hNow you'll have the best thing ever for show and tell!/h Gosh, I am so great.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You sure are.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

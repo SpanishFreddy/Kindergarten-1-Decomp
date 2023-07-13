@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Screw off kid. I'm busy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Want some cigarettes?</OptionText>
+          <DestinationID>16</DestinationID>
+          <ItemToUse>Cigarettes</ItemToUse>
+          <FunctionCall>UseCigarettes</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Screw off.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>What do you want dweeb? I'm not giving you your money back.~ Get out of here before I squish you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Squishing me won't make your dad come back.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>My dad will come back! He just went to the store to get some cigarettes is all! Get out of here, or I'll beat you so hard it'll make him proud!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He'll never be proud of you.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Yes he will! If you don't leave right now, I'll kill you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Dying wouldn't be so bad.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>StartPunching</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I want to live actually.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>9</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Fine! You asked for it! This is for you, Dad!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Accept your fate.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KnockPlayerOver</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Call for teacher.)</OptionText>
+          <DestinationID>5</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Doesn't look like she's paying attention. That's okay. I love killing rats!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Die like a rat.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KnockPlayerOver</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Die like a rat.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KnockPlayerOver</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>You lookin' to get squished?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Squishing me won't bring your dad back.</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetThreatened</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not today Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>What do you want? Come to make more jokes about my dad before I beat you to death? He'll be so proud of me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He'll never be proud of you.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Make like Bugs's dad and leave)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Ready to die?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure, I've got nothing else to do.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>StartPunching</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I want to live actually.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Hey kid.~ You carrying any cash?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Excellent. Give me half or I'll split your empty skull with my foot.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine. Here.</OptionText>
+          <DestinationID>12</DestinationID>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No way!</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Good boy. \hNow don't go telling teacher about this, or you might turn up missing like that Billy kid./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>GetThreatened</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Look kid. I don't have time to argue this with you. Give it to me or you're dead meat.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine. Here.</OptionText>
+          <DestinationID>12</DestinationID>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Go make your own money!</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>StartPunching</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Don't say I didn't warn you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh-oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerSteal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Don't lie to me! I know when I smell money! Give me half or else!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine. Here.</OptionText>
+          <DestinationID>12</DestinationID>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No way!</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Woah!~ I've been robbing kids so I could buy these from Monty. Thanks a bunch!~ You can have this Monstermon card. It's one of my favorites.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>17</ResolutionID>
+          <FunctionCall>GetCactusOutlaw</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Thanks for the cigarettes. I know what I'm doing when I get home.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Have fun with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

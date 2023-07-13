@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>How dare you?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What'd I do?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Really?!~ You have the gall to stand there as if you have no idea what you did wrong back there?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I honestly have no idea.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>The flower! My special flower! The one I gave to you for being the best boyfriend I ever had!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about it?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>You didn't show it during show and tell! If it means that little to you then I'm just going to take it back! We're through! Goodbye!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LoseFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>That was so sweet of you to show the flower to everyone. You really are the best boyfriend I've ever had. You can keep it forever and always.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Joy.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>I'll be seeing you tomorrow...~boyfriend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndCindyWithFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

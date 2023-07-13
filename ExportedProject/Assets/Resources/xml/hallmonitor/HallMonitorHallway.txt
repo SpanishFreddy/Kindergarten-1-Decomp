@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Not so fast there little dude.~ I'm gonna need to \hsee your hall pass/h before I can let you by.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here's my pass.</OptionText>
+          <ItemToUse>BathroomPass</ItemToUse>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Here's my pass.</OptionText>
+          <ItemToUse>HallPass</ItemToUse>
+          <FunctionCall>ShowHallPass</FunctionCall>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't have a pass.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Okay. I'll let you pass, but I can't let you go any further than the bathroom.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's fair.</OptionText>
+          <FunctionCall>ShowBathroomPass</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Sorry little man. Can't let you go any further than the bathroom.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>A principal pass? Woah.~ Yeah...~ go do whatever man.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sweet.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>You can go do whatever as long as you have that pass. I don't really care.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Uh...~ that's not cool bro. Not cool at all. I'm gonna have to take you in to the principal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw man.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToPrincipal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Hey man! You heard the bell. Go on back to your class!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Head back to class.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>HeadBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Hey! You shouldn't be in here. It's recess time! Go out and play!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Bummer dude. That's the bell. Looks like you won't get to do your business after all.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>HeadBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

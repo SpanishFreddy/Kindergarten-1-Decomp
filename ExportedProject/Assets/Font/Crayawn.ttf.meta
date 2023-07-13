@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: ce4207dfa7267f24db4d1e33fb951c34
+timeCreated: 1689096214
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  name:
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Crayawn
+  fontNames:
+  - Crayawn
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3f9e4cf40e014954dae830d902e95924, type: 3}
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:

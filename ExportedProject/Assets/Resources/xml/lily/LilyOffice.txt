@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I can't believe it.~ We're in.~ Where is that hatch?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Under the rug in the corner.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>WalkToHatch</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>The key has to be hidden around here somewhere. Hurry up and look for it!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I found it.</OptionText>
+          <DestinationID>4</DestinationID>
+          <ItemToUse>GoldKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Okay...~that did it.~ Hey, ummmm...~before we go down there, I just want to say thanks.~ I wouldn't have gotten this far without you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No problem.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Whatever happens down there...~stay close. We can do this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go down the hatch.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoDownHatch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Well what are you waiting for?! Put it in the lock on the hatch!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
