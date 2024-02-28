@@ -628,7 +628,6 @@ public class Jerome : NPCBehavior
 
 	private void JeromeEndDay()
 	{
-		SteamScript.UnlockAchievement("JeromeAchievement");
 		UI.CompleteDay(Item.KeyMold);
 		WalkToPoint(new Vector3(-36f, Random.Range(-2f, -1.5f), -1.14f), 7f, false);
 		SetDirection(false);

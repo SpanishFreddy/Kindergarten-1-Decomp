@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Parece que Buggs tenía un escondite secreto debajo de estea baldosa. Hay una tarjeta Monstermon junto con el dinero que me robó esta mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar dinero.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetMoneyBack</FunctionCall>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Tomar tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetCardFromStash</FunctionCall>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomar nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> Parece que Buggs tenía un escondite secreto debajo de esta baldosa. Aquí hay una tarjeta Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar la tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetCardFromStash</FunctionCall>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomar nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText> Parece que Bugs tenía un escondite secreto debajo de esta baldosa. Aquí está el dinero que me robó esta mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar dinero.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetMoneyBack</FunctionCall>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomar nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText> Parece que Bugs tenía un escondite secreto debajo de esta baldosa. Ya  tomé todo lo que había aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Irse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

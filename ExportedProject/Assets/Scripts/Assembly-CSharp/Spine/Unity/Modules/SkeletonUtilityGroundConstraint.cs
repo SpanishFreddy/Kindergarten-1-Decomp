@@ -71,7 +71,6 @@ namespace Spine.Unity.Modules
 			}
 			else
 			{
-				bool flag = false;
 				RaycastHit hitInfo;
 				if ((!useRadius) ? Physics.Raycast(rayOrigin, rayDir, out hitInfo, castDistance + groundOffset, groundMask) : Physics.SphereCast(rayOrigin, castRadius, rayDir, out hitInfo, castDistance + groundOffset, groundMask))
 				{

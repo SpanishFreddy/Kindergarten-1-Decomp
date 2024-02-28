@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Jerome_Material
   m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
@@ -23,7 +23,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4d25f481000776648a0225151d5df54e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 713b44fb7171e76408d6e06951a10b90, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:

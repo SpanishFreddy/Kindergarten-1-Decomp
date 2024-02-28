@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: Buggs_SkeletonData
   m_EditorClassIdentifier:
   atlasAssets:
-  - {fileID: 11400000, guid: 005e9acd06e4b4142b4740f65cbee04a, type: 2}
+  - {fileID: 11400000, guid: 8ebbe8f94191c034281e6ab2c025407a, type: 2}
   scale: 0.125
-  skeletonJSON: {fileID: 4900000, guid: 2000e25f271a70f4db3fc54bf889b578, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 767b880096e3c5a4b9e8a9355757a0a2, type: 3}
   fromAnimation: []
   toAnimation: []
   duration: []

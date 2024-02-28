@@ -22,7 +22,7 @@ Sprite:
   m_PackingTag:
   m_RD:
     serializedVersion: 2
-    texture: {fileID: 2800000, guid: 4688f64d2124d2e4ab52dd67bef726a2, type: 3}
+    texture: {fileID: 2800000, guid: b8556437724419248b1b98e8ccdf8461, type: 3}
     alphaTexture: {fileID: 0}
     m_SubMeshes:
     - serializedVersion: 2

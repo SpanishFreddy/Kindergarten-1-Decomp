@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Hola guapón. Soy Cindy. ¿Quieres ser mi novio?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Heh...~ Eso es lo que me gusta escuchar y seremos la pareja más linda de la escuela, pero primero tienes que hacer algo por mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+
+        <DialogueOption>
+          <OptionText>¿El amor no es suficiente?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿Ves allí una niña? Es Lily. Ella es, con mucho, la chica más fea y desagradable que jamás conocerás. Quiero que llevas este chicle y lo pegas en su cabello en las clases matutinas. ¿Captaste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>GetGum</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>De ninguna manera.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh, ¡yay! Esto va a ser genial. Ella finalmente tendrá lo que se merece, al igual que su hermano hizo por botarme. Ven a buscarme en las clases matutinas después de haberlo hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+          <FunctionCall>ActivateGumMission</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasó con su hermano?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¿No lo has escuchado? Él desapareció. Su desaparición se llevó totalmente la palma de mi perro, Galleta, tambien desaparecido. ¡Supongo que todo el mundo se preocupa más por él que por mí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tu perro también ha desaparecido?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Me importas a mí.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Sí. Lo traje para mostrar y contar, pero el conserje dijo que los perros no están permitidos así que él lo llevó. Aparentemente se escapó de su armario y no pudieron encontrarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Tal vez podría encontrar a tu perro?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Hmmmm...~ Una propuesta interesante. Echo de menos a Galleta. La pregunta es, ¿me gusta Galleta más que odio a Lily?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tú amas a Galleta más.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tú odias a Lily más.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Ummmm...no. No, yo definitivamente odio más a Lily.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>9</ResolutionID>
+          <FunctionCall>TakeGum</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Sin usar</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Sí. Lily es en realidad una persona despreciable y su existencia me molesta. No te preocupes por Galleta. Solo pega este chicle en su cabello en las clases matutinas y ven a hablar conmigo después.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendiste.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+          <FunctionCall>ActivateGumMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Esto será increíble. No puedo esperar a ver esta Mirada en su feísima cara.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo tambien. </OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Tal vez hablar con el conserje">
+      <NodeID>12</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo puedo hablar con él.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tampoco podría yo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Regrésa pronto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tampoco podría yo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Me importas">
+      <NodeID>14</NodeID>
+      <DialogueText>¡Síp! ¡Es por eso que vas a pegar este chicle en el cabello de Lily durante las clses! Ven a verme después de haberlo hecho!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+          <FunctionCall>ActivateGumMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" ¿No es suficiente nuestro amor?">
+      <NodeID>15</NodeID>
+      <DialogueText>Jajaja.~ Eso es lindo, pero no...~no, no lo es. Tendrás que demostrarmelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo haré?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No voy a comprobarte nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="  ¿No es suficiente nuestro amor? ">
+      <NodeID>16</NodeID>
+      <DialogueText>¡Oh, mira quien vino arrastrándose de vuelta! ¿Listo para demostrarme tu amor?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo haré?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No voy a comprobar nada para tí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¿Por qué? ¿Porque soy la chica más linda, inteligente y bonita que jamás conocerás? ¿Eso te importa?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy agotado. ¿Qué tengo que hacer?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> No pareces a ninguna de esas cosas.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¡¿Perdón?!~ ¡Sé que no me lo dijiste, porque si lo hicieras...~ me gustaría que te sacaran!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo harías?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo quiero verte tratando.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText> Una chica tiene sus costumbres. Ahora quiero una disculpa o te vas abajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No estoy pidiendo perdón.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Bien. Es bueno ver que te puedes entrenar. Tal vez, te harás un buen novio después de todo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tal vez lo seré.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no soy tu novio.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText> Lo que nos trae de vuelta a lo de cómo vas a probar tu amor para mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo puedo hacer?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien. Todavía no lo estoy haciendo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Bien. Me lo pediste.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es lo que vas a hacer?</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>CallRape</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Sin usar</DialogueText>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¡Bien, pero no vengas conmigo chillando cuando vas a morir solo y viejo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>25</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText> El miedo de morir solo, finalmente se ha apoderado y ¿estás listo para poner ese chicle en el cabello de Lily?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>GetGum</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

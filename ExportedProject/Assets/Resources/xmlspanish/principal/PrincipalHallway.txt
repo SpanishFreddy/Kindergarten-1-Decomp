@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡¿Niños qué están haciendo aquí?! ¡Deberían estar en la  cafetería!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Lily lo estaba espiando.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nosotros lo estábamos espiando.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>ShootBoth</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Si Lily me estaba espiando...~¿qué estaba haciendo USTED?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tambien espiando.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>ShootBoth</FunctionCall>>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Vine para informárselo.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>BringInLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tambien espiando.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Vine para informárselo</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Ok. Gracias por informarme. Estoy seguro de que ya escucho la campana para el recreo. ¿Por qué no sale a jugar?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está empapado en sangre.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Fue un disparo?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¿Qué?~ ¿Ésto?~ No. Ésto es...~uh...~salsa de tomate. Usted es muy observador.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Verdadero.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Escúcheme muy bien.~ Lily va a ser castigada severamente por ser tan observadora. ¿Me entiende?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Oh, ¿ésto?~ No. Solo fue...~ mantenimiento. Estaba.... ~haciendo reparaciones ... ~ a esa cosa. Usted es muy observador.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Bien. Ahora váyase al recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

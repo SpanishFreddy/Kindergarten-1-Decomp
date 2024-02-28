@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Tener un almuerzo especial con mi estudiante favorito en lugar de receso para fumar, es una de mi cosas favoritas de ser profesora. Aquí hay un McGlob Comida Tontal. Disfrútalo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>1</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Adelante. ¡Come un pedacito! ¡Es delicioso y tal vez nutritivo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Activar distracción.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>Remote</ItemToUse>
+          <FunctionCall>ActivateDistraction</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Tomar trocito.)</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Perfecto! Eso se encargará de un estudiante insubordinado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿En qué te refueres?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Yo envenené tu tonta comida. Creo que después de todo no es tan tonta.~ Te ví hablar con Buggs. Buggs jamás habla con estudiantes a menos de que esté planeando algo en contra mia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estoy muerto?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Síp!~ Fue un placer ser tu maestra...~tú sabes...~hasta este momento.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te odio.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPoisoned</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText> He oído que viene con esas tarjetas tontas Monstermon. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super.</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>GetMonstermonSillyMeal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText> Realmente no hago mucho durante este tiempo. Solo espero aquí hasta que suene la campana..</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Que emocionante.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+          <FunctionCall>WaitForBell</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Ya te vas?~ Todavía no has terminado tu Comida Tonta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No tengo hambre.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¿Ya te vas?~ Todavía no has terminado tu Comida Tonta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No tengo hambre.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText> Oh, chico, deja esta mierda. Ambos sabemos lo que está pasando aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Lo sabemos?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Buggs te está usando para matarme, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh...eso.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText> Eso es lo que pensé, pero no te sientas mal. ~ No es tan difícil para mí ser más listo que un niño de cinco años.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entonces, ¿Qué va a pasar ahora?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText> Ahora detonaré el dispositivo que puse en ti esta mañana después de que me dijiste que no me ayudarías a deshacerme de Buggs.~ Adiós, adiooooos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ay-no.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DetonatePlayerLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText> ¿Qué estás haciendo fuera de tu puesto? ~ ¿Qué está pasando aquí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nada.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Ppff...~nada. ¿Crees que soy tonta?~ Buggs está tratando de que me mates, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mmmm...tal vez.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Oh!~ ¡Duh!~ Tú y Buggs colocaron esa distracción, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummm...no.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡Finalmente!~ Ok. ¡Vamos a recoger a tus pequeños compañeros de clase y salir al recreo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

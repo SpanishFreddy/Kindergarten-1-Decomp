@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Tengo que decir, estoy un poco ofendida. ¡Vete a la oficina del director! Ésto te enseñará.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ir a la oficina del director.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToOfficeNoItems</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

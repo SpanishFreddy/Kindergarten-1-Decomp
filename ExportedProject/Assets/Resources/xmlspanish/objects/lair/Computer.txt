@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>INTRODUZCA EL COMANDO.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Presionar el botón amarillo.)</OptionText>
+          <DestinationID>0</DestinationID>
+          <FunctionCall>PressYellow</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón rojo.)</OptionText>
+          <DestinationID>0</DestinationID>
+          <FunctionCall>PressRed</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón verde.)</OptionText>
+          <DestinationID>0</DestinationID>
+          <FunctionCall>PressGreen</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón azul.)</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>PressBlue</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ExitComputer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

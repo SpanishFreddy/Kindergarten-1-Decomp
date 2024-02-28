@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+<Nodes>
+<DialogueNode>
+<NodeID>0</NodeID>
+<DialogueText>¡De ninguna manera un gusano como tú se sentará conmigo!</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Quiero que comas esto.</OptionText>
+<ItemToUse>PoisonNugget</ItemToUse>
+<MissionLock>NuggetPoisonBuggs</MissionLock>
+<DestinationID>1</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText> Quiero que comas esto.</OptionText>
+<ItemToUse>PoisonNugget</ItemToUse>
+<MissionLock>NuggetKillBuggs</MissionLock>
+<DestinationID>1</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>(Apuñalar a Buggs.)</OptionText>
+<ItemToUse>Knife</ItemToUse>
+<MissionLock>NuggetKillBuggs</MissionLock>
+<DestinationID>21</DestinationID>
+<FunctionCall>StabBuggs</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>(Apuñalar a Buggs.)</OptionText>
+<ItemToUse>Knife</ItemToUse>
+<MissionLock>NuggetPoisonBuggs</MissionLock>
+<DestinationID>21</DestinationID>
+<FunctionCall>StabBuggs</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Ni quería sentarme contigo.</OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>1</NodeID>
+<DialogueText>¿Qué?~ ¿Por qué?~ ¿Qué es esto?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Es un nugget.</OptionText>
+<DestinationID>2</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>2</NodeID>
+<DialogueText>Sí. Eso lo veo.~ ¿Por qué, carambas,  yo comería algo que me diste?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Porque yo apuñalé a Nugget.</OptionText>
+<DestinationID>3</DestinationID>
+<IsAvailable>false</IsAvailable>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Porque eres pobre y necesitas comida.</OptionText>
+<DestinationID>10</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Porque te daré una rosquilla si lo hagas.</OptionText>
+<ItemToUse>Donut</ItemToUse>
+<DestinationID>12</DestinationID>
+<FunctionCall>GiveBuggsDonut</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Porque si no, parecerás a un marica.</OptionText>
+<DestinationID>14</DestinationID>
+<FunctionCall>DisableSissy</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>3</NodeID>
+<DialogueText>¡¿Lo hiciste?! Oh, wow. Está bien...~diablos,  creo que yo no quisiera ser apuñalado también.</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Bien. Cómelo.</OptionText>
+<DestinationID>4</DestinationID>
+<FunctionCall>CompletePoisonBuggs</FunctionCall>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>4</NodeID>
+<DialogueText>Ok. *Traga* ¿Y de qué se trata todo esto?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Pronto lo sabrás.</OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>5</NodeID>
+<DialogueText>¿Por qué me hiciste comer este nugget?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Pronto lo sabrás. </OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>6</NodeID>
+<DialogueText>Ok. Eso es de lo que me enteré hasta ahora.\hSi tienes seis estrellas de oro al final de ´mostrar y contar´ la maestra te dará un pase./h</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Ok.</OptionText>
+<DestinationID>7</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>7</NodeID>
+<DialogueText>El chiste es conseguir las estrellas de oro. No te las darán por “ser buen niño”, como ella dice. Las consigues por ser una rata./h</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>¿Como espiar?</OptionText>
+<DestinationID>8</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>8</NodeID>
+<DialogueText>Peor. \h¡Ella te las da solo por espiar de otro niño para que lo manden a la casa por un día!/h¿Qué tan estropeado es esto?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Bastante.</OptionText>
+<DestinationID>9</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>9</NodeID>
+<DialogueText>Empieza a hablar con los demás niños y checa si tengan unos tantos esqueletos en sus armarios.\hTenemos que encontrar el modo de mandarlos a casa...~o peor./h</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Entendido.</OptionText>
+<DestinationID>-1</DestinationID>
+<FunctionCall>ActivateBuggsFindOutGoldStars</FunctionCall>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>10</NodeID>
+<DialogueText>Ok, niño. Yo soy tan pobre y tú eres tan generoso, ¿por qué no gastes un par de dólares?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Claro.</OptionText>
+<DestinationID>13</DestinationID>
+<MoneyLock>2.00</MoneyLock>
+<FunctionCall>CompletePoisonBuggs</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>De ninguna manera.</OptionText>
+<DestinationID>11</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>11</NodeID>
+<DialogueText>Ok...entonces, ¿por qué tengo que comer este estúpido nugget?</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Porque yo apuñalé a Nugget.</OptionText>
+<DestinationID>3</DestinationID>
+<IsAvailable>false</IsAvailable>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Porque eres pobre y necesitas comida.</OptionText>
+<DestinationID>10</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Porque te daré una rosquilla si lo haces.</OptionText>
+<ItemToUse>Donut</ItemToUse>
+<DestinationID>12</DestinationID>
+<FunctionCall>GiveBuggsDonut</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Porque si no - parecerás a marica.</OptionText>
+<DestinationID>14</DestinationID>
+<FunctionCall>DisableSissy</FunctionCall>
+<UsesAction>true</UsesAction>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Creo que no lo tienes que hacer.</OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>12</NodeID>
+<DialogueText>Oh, ¡me encantan las rosquillas! Sí, hombre, comeré el estúpido nugget  si me das una rosquilla. ¡Gracias! *mastica* </DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Por supuesto.</OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>13</NodeID>
+<DialogueText>¡¿En serio?! ¡Super, gracias! ¡Considéralo comido a este estúpido nugget! *masca*</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Disfrútalo.</OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>14</NodeID>
+<DialogueText>¡¿Qué?! ¡¿Quién aquí atreve a pensar que soy un marica solo porque no quiero comer el estúpido nugget?!</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Nugget.</OptionText>
+<DestinationID>15</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Cindy.</OptionText>
+<DestinationID>16</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Jerome.</OptionText>
+<DestinationID>18</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Monty.</OptionText>
+<DestinationID>19</DestinationID>
+</DialogueOption>
+<DialogueOption>
+<OptionText>Lily.</OptionText>
+<DestinationID>20</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>15</NodeID>
+<DialogueText>¿Realmente piensas que me importa, Nugget? Yo aviento la papilla a la cabeza de este empollón cada día.</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Es lo que escuché.</OptionText>
+<DestinationID>11</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>16</NodeID>
+<DialogueText>¡¿Qué?! ¡Cindy no piensa que soy marica!</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Por supuesto nunca lo pensará si comerás este nugget.</OptionText>
+<DestinationID>17</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>17</NodeID>
+<DialogueText>¡Sí! ¡Dáme el nugget! ¡Le mostraré! *mastica*</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Le mostraste.</OptionText>
+<DestinationID>-1</DestinationID>
+<ResolutionID>5</ResolutionID>
+<FunctionCall>CompletePoisonBuggs</FunctionCall>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>18</NodeID>
+<DialogueText>Jerome siempre viene con sus estúpidas competencias. Ni modo. ¡Le mostraré a él! *mastica*</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Por supuesto lo mostraste. </OptionText>
+<DestinationID>-1</DestinationID>
+<ResolutionID>5</ResolutionID>
+<FunctionCall>CompletePoisonBuggs</FunctionCall>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>19</NodeID>
+<DialogueText>Este nerd se cree muy listo, pero él sabe que no soy marica. Probablemente él solo trata de molestarme.</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Tal vez.</OptionText>
+<DestinationID>11</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>20</NodeID>
+<DialogueText>¿Quién? ¿Esta chica mofa? No creo que tenga opiniones ni mucho menos la capacidad de llamarme mariquita sobre Nugget.</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Oh.</OptionText>
+<DestinationID>11</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>21</NodeID>
+<DialogueText>\b¡¡¡WAAAAAAAAAAAAH!!!/b</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>Disfrútalo, gordito.</OptionText>
+<ResolutionID>22</ResolutionID>
+<DestinationID>-1</DestinationID>
+<FunctionCall>RunOutOfCafeteria</FunctionCall>
+</DialogueOption>
+</Options>
+</DialogueNode>
+<DialogueNode>
+<NodeID>22</NodeID>
+<DialogueText>....................</DialogueText>
+<Options>
+<DialogueOption>
+<OptionText>(Alejarse del cuerpo de Buggs.)</OptionText>
+<DestinationID>-1</DestinationID>
+</DialogueOption>
+</Options>
+</DialogueNode>
+</Nodes>
+</Dialogue>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Fuera. ¡Estoy disfrutando recreo con mi novio!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No importa, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Bien? ¿Qué consiguiste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Este papelito.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Recipe</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Cinco dólares.</OptionText>
+          <DestinationID>5</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Un cubo lleno de sangre.</OptionText>
+          <DestinationID>10</DestinationID>
+          <ItemToUse>BucketBlood</ItemToUse>
+          <FunctionCall>CheckActionsLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No encontré nada.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No quiero mostrártelo todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡¿Nada?!~ ¡¿No encontraste nada?!~ ¡Demonios! ¡Inútil, no sirves para nada! ¡Muérete! ¡Todo ha terminado entre nosotros!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Qué lástima, que lo ves de este modo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡¿Una estupida nota?! ¡Ni siquiera la podemos leer! ¡Mejor \hbusca a alguien quien pueda leerla y quien no nos meterá en problemas/h y mejor que valga la pena!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok. Encontraré a alguien.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>ActivateReadNote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Y ni te atrevas a mostrarla a la maestra!~ ¡Tendrémos problemas si lo harás!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Oh, maravilloso! Lo tomaré.~ ¿Qué más encontraste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nada.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Mira...~querida...~cuando te pido encontrar algo asqueroso para volcar a Lily, eso es exactamente lo que quiero. Esto no significa que te pedí dinero. No me puedes comprar, no soy una prostituta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText> No puedo soportar la desobediencia en mis novios.~ Perdón por decir, pero eso se acabó. Adios.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adios.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Todo ha terminado entre nosotros. Ya no puedes hablar conmigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok, entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo no sé.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Oh.~ Por.~ Dios.~ Es perfecto. ¡Es tan asqueroso! ¿Sangre de quién es esa?~ No me importa. No quiero saberlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tampoco yo.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Eres el mejor. Sube y la llamaré.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Voy a ponerme en posición.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetInPosition</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿Estás preparado hacer mi día?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sipi.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetInPosition</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" Después de aventar la sangre">
+      <NodeID>13</NodeID>
+      <DialogueText>Eso fue increíble. Me has hecho tan feliz hoy.~ Quiero que tomas esta flor. Se parece a mí. Así siempre sentirás mi presencia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar la flor de Cindy.)</OptionText>
+          <DestinationID>31</DestinationID>
+          <FunctionCall>GetFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" Leer la nota">
+      <NodeID>14</NodeID>
+      <DialogueText>¿Ya sabes que dice esta nota?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Es receta de ´Galletas del Conserje´.</OptionText>
+          <DestinationID>15</DestinationID>
+          <MissionLock>CindyTellPaper</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" Leer la nota">
+      <NodeID>15</NodeID>
+      <DialogueText>¡¿Solo es una estupida receta!? ¡No puedo creer que me metí en tantos problemas robando la llave del armario del conserje solo por estúpida receta!      </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tu perro es un ingrediente.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" Leer la nota">
+      <NodeID>16</NodeID>
+      <DialogueText>\b¡¿QUÉ?!/b</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tu perro es un ingrediente.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡¡ESTE MONSTRUOSO VIEJO DEFINITIVAMENTE ESTÁ MUERTO!! ¡¿DÓNDE ESTÁ?! ¡¡LO VOY A MATAR!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De verdad?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>18</ResolutionID>
+          <FunctionCall>KillJanitor</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>No he pensado que encuentro hoy la causa de muerte de mi perro. Lo siento por meterte en esto, pero has superado hoy mis expectativas como novio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Eso estuvo bastante malo.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Yo sé, pero te lo compensaré.~ Aquí está. Toma esta flor. Se parece a mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...gracias</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>GetFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText> Puedo decir por esa mirada en tus ojos que crees que mereces un poco más. Aquí hay una tarjeta especial Monstermon. Realmente eres el mejor novio que he tenido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>21</DestinationID>
+          <FunctionCall>GetOhFaka</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Eso fue un recreo divertido. Te veré en ´mostrar y contar´.~ \h¡Seguramente tienes algo muy interesante para ´mostrar y contar´!/h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¡Te veré en ´mostrar y contar´, novio!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seguro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Jajajaja! Mírala, se ve tan miserable. ¡Buen trabajo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¿Qué es lo que estás esperando? ¡Ve a pegar este chicle a su cabello!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Jajajaja! ¡Buen trabajo! Aquí tienes un poco dinero. ¡Valió la pena cada centavo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>26</DestinationID>
+          <FunctionCall>GetMoneyForLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Eso fue divertido. Alguna vez vale la pena repetirlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Tal vez.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¡Todo se acabó entre nosotros! Vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>El director dijo que no podemos hablar. Así que déjame en paz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Uff.~ No te molestes. La campana está a punto de sonar. Nos vamos a tardar si lo haremos ahora.~ Próxima vez tienes que apurarte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>No hay tiempo para hacerlo. Apúrate próxima vez.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>\h¡Ahora tienes una cosa excelente para ´mostrar y contar´!/h Dios, soy un genio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

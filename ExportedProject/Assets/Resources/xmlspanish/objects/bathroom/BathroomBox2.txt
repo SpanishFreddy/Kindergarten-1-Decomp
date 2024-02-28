@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Hay una tarjeta Monstermon en esta caja. ¿Debería tomarla?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>GetCardBathroom</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ya he sacado la tarjeta Monstermon de esta caja.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh, sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

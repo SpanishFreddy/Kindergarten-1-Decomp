@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Nugget está listo para darte lo que Billy le dio a Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetNote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Es una nota misteriosa. Nugget puede leerla, pero no puede entender las palabras que dejó el pobre Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hago yo con esto?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>La bonita Lily está bastante triste porque Billy desapareció. Tal vez ella sabe que hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Nugget está feliz porque otra vez tiene amigos. Gracias.~ Adiós.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkAwayEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

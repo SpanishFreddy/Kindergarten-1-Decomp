@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>No me molestes, niño. Estoy tratando arreglar ésto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Arreglar qué?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡No no no!~ ¿Niño, en qué estás pensando?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo qué?</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>JanitorJeromeKillRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Espera...~si no lo tienes significa que Monty no podrá ayudarte, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Verdad.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Será difícil encontrar a alguien más inútil que tú. Si este viejo loco me mata, te voy a perseguir hasta el día que me muera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me parece justo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Fuera. Necesito encontrar un plan para escapar del monstruo-trapeador.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suerte con eso.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText> Es un acertijo sobre esas cosas estúpidas de pato. Al parecer si se agitan en el orden correcto, se supone que algo sucede. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Cuál acertijo?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Suerte.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>"Dirígete dos veces hacia el pato que está más al sur. Luego ve hacia el pato azul dos veces, antes de ir hacia el pato rojo. Después regresa al primer pato y luego al pato azúl. Hazlo mal, y estarás muerto."</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Eso es inquietante.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Síp. Suerte con esto. No quiero involucrarme ahora que lo pienso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hmmmm...</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+          <FunctionCall>JeromeSolveDucks</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¿Qué quieres?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Podrías repetirme el acertijo?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>"Que vayas a doble distancia al pato que está más al sur. Luego dos azules antes de rojo. Después, regresa al primer pato azul. Hazlo mal y estás muerto."</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tengo. Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>No puedo creer que lo hayas resuelto. Tendré que hacerlo más rápido la próxima vez.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sip.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

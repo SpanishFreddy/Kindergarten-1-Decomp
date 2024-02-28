@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Nugget no quiere pasar la mañana contigo!~ Nugget está muy ocupado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres que seamos amigos?</OptionText>
+          <DestinationID>24</DestinationID>
+          <UsesAction>true</UsesAction>
+          <MissionLock>TeacherNuggetGainTrust</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Con qué estás ocupado?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ayy...~el amigo de Nugget regresó. ¿Tienes bien guardado el nugget de la amistad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Nugget conoce esa mirada en tus ojos.~ Nugget se ve como tú te ves. Has consumido de las pastillas de la paz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Nugget está feliz de saber que no es el único. Deberíamos ser amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>GetNugget</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Maravilloso. Toma el nugget de la amistad. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hace?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Simboliza nuestra nueva amistad. Ahora somos amigos y juntos vamos a hacer lo que los amigos hacen.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suena bien.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>No te comas el nugget de la amistad, porque mientras él se deshace en tu panza – se deshace también nuestra .</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tienes.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡El amigo de Nugget está de regreso! ¿Quieres continuar con la misión de recuperar los cinco Nuggets de la Amistad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro que sí.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText> Nugget está satisfecho con tu persistencia. Uno de los nuggets se oculta dentro de esta habitación. Nugget tiene el otro. Debes encontrar el nugget oculto antes de que puedas obtener el que tiene Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo ya lo encontré.</OptionText>
+          <DestinationID>14</DestinationID>
+          <ItemToUse>Nugget</ItemToUse>
+          <IsAvailable>false</IsAvailable>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>SkipNuggetCubbyMission</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Alguna pista?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Regresaré con él.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+          <FunctionCall>ActivateNuggetCubbyMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡El salón no es tan grande! Deberías buscar bien por todos lados, \htal vez en los casilleros/h, pero ten cuidado ... ~ A la maestra no le gustan los fisgones.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Regresaré con él.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+          <FunctionCall>ActivateNuggetCubbyMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¿Has encontrado el segundo Nugget de la Amistad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>14</DestinationID>
+          <ItemToUse>Nugget</ItemToUse>
+          <MissionLock>NuggetStartThirdNugget</MissionLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>La maestra no me dejará buscar en los casilleros.</OptionText>
+          <DestinationID>11</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Ayy sí...~pobre Maestra. Siempre tan nerviosa. ¿Quizás podrías darle algo para ... para tranquilizarla? O tal vez solo necesitas de una breve distracción.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo puedo tranquilizarla?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo la puedo distraer?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>\hLa maestra es aficionada a las pastillas de Nugget./h Tal vez sería bueno si compartes algunas con ella. Puedes tener una por un dólar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+          <MoneyLock>1</MoneyLock>
+          <FunctionCall>GetPill</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Encontraré otra manera de hacerlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText> Nugget sabe que Jerome es un buen conversador.\hTal vez él podría llamar su atención./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¡Maravilloso! Nugget está emprecionado. La prueba de buscar en los casilleros, es normalmente muy difícil para los amigos potenciales de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ahora qué sigue?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText> ¿Ves a la bonita Lily allá? A Nugget le gusta la bonita Lily. Nugget ha escrito un poema precioso para la bonita Lily . Debes entregárselo a ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vale.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+          <FunctionCall>ActivateLilyNuggetMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¿Has entregado el bonito poema a la bonita Lily ?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella no confia en mi.</OptionText>
+          <DestinationID>17</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText> Ay sí. La bonita Lily está muy a la defensiva desde que su hermano desapareció. \hNugget piensa que sería bueno ganar su confianza antes de ir nuevamente./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText> Desafortunadamente esto significa que has fallado en la búsqueda de los cinco nuggets de la amistad y en consecuencia debes ser castigado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Vas a castigarme?</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>StabPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>ayyy...ugggh...~aaaaah.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo entregué la carta.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>\b¡¡NUGGET SE DIO CUENTA!!/b</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Siento mucho que haya pasado de esta manera.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Eso...~no fue como lo imaginé. Pero igual....~entregaste la carta como lo prometiste. Por eso te mereces el cuarto nugget de la amistad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hurraa!.</OptionText>
+          <DestinationID>22</DestinationID>
+          <FunctionCall>ActivateLunchNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Ven a compartir el almuerzo con Nugget y él te dirá como continuar  la búsqueda.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡¡NUGGET SABE DONDE ESTÁ BILLY!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué acabas de gritar?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DetonatePlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¡Ayy! Nugget suele pasar las clases de la mañana solo y almorzar solo y vivir su vida solo. Nugget cree que podría ser tu amigo si...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Si qué?</OptionText>
+          <DestinationID>25</DestinationID>
+          <FunctionCall>GetPoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Te comes este nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Solo eso?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Sí. Hazlo por Nugget y seremos amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok. (Comer nugget.)</OptionText>
+          <DestinationID>29</DestinationID>
+          <FunctionCall>EatPoisonNugget</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText> Nugget no está contento con ésto. Has ofendido al pobre Nugget. ¡Devuelve el nugget de la amistad y desaparece de acá!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>28</ResolutionID>
+          <FunctionCall>LosePoisonNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText> Nugget todavía está ofendido, por que no te comiste el nugget que él tan gentilmente te ofreció. Fuera de  aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>¡Bien! Ahora acuerda el sabor del nugget.~ Comeremos juntos en el almuerzo. ~ Nugget te verá hasta entonces.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vale.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>30</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Nugget te verá en el almuerzo...~amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText> ¿Estás curioso acerca de cómo es Nugget? ~ Interesante. ~ Tal vez podrías ser útil para Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tal vez.</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText> Nugget necesita una lupa. Búscala para Nugget antes de que suene la siguiente campana y serás recompensado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>33</ResolutionID>
+          <FunctionCall>ActivateGetMagnifyingGlass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText> ¿Has encontrado lo que Nugget solicita?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>MagnifyingGlass</ItemToUse>
+          <FunctionCall>GiveMagnifyingGlass</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Excelente. Nugget está satisfecho. Te doy la tarjeta Monstermon. Nugget es muy aficionado a ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>GetTowerBeetle</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>¡Ahora véte! Nugget tiene cosas importantes que hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>36</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>¡Fuera! Nugget no quiere que lo molesten.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

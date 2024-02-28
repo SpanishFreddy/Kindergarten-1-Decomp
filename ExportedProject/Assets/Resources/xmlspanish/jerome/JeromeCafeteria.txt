@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Tu no eres muy cool para sentarte con nosotros. ¡Fuera de aquí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Igual ni quería sentarme con ustedes.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> Eres un descarado. ¿Perdiste el pase que te di y ahora te quieres sentar conmigo? De ninguna manera. ¡Piérdete!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De todas maneras, no quería sentarme contigo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡¿Entonces?! ¿Lo conseguiste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, lo tengo.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <ItemToUse>LaserPointer</ItemToUse>
+          <FunctionCall>StartJanitorCafeteria</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo tengo.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <FunctionCall>StartJanitorCafeteriaNoLaser</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No logré conseguirlo.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Ay, por Dios!~ ¡Parece que se dio cuenta! ¡Será mejor que te apresures y escondas esa cosa, antes de que él llegue! ¡Si te atrapa con eso, eres un hombre muerto!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde lo escondo?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Ummm...~¡el bote de basura! ¡Rápido! ¡Tíralo allí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+          <FunctionCall>ActivateHideMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Pues...~ no salió completamente como lo planeamos. Al menos tu no estás muerto. Es un alivio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ahora qué?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText> Odio pedirte ésto, pero tienes que ir a conseguirlo. El conserje dijo que estaba en el baño.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Qué hay ahí para mí?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Ya sé que te he pedido demasiado, pero ayúdame con ésto. Haré que valga la pena.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText> Iré a sobornar a la cocinera para que puedas salir. Regresa pronto. \hEl conserje sacará esta basura poco después de que suene la campana. /h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entonces, ve a sobornarla.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+          <FunctionCall>PayOffLunchLady</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>9</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText> ¿Estás listo para ir a buscar mi láser?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+          <FunctionCall>PayOffLunchLady</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>9</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Ok. Ella dijo que te dejará salir.~ ¡Apúrate!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+          <FunctionCall>ActivateGetLaserFromBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Apúrate! Esa bolsa saldrá poco después de que suene la campana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡¿Qué estás esperando?! ¡Te va a matar si te atrapa con esa cosa!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Ay, hombre. ¡Qué lástima!~ Parece que voy a tener que lidiar con cualquier castigo que me toque por ésto. Puedes quedarte con el pase. ~ Te veré por ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super. Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Quédate con el pase. He estado en la cuerda floja últimamente, así que deséame suerte para cuando tenga que enfrentar este castigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse de Jerome.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText> ¡¿Qué diablos?! Creí que habías dicho que podías conseguir el láser.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Desenrosqué la repisa.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡¿Qué Carajos?!~ ¡Maravilloso!~ ¡Nada que decir!~ Él va a estar en una cacería por toda la escuela para averiguar quién lo hizo, y como lo fastidié esta mañana, ¡va a sospechar de mí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Ya me metiste en suficientes problemas. ¡Lárgate de aquí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse de Jerome.)</OptionText>
+          <DestinationID>-2</DestinationID>
+          <ResolutionID>18</ResolutionID>
+          <FunctionCall>CallAppearNow</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¿Eres sordo o estúpido? Te dije que te largaras.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse de Jerome.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

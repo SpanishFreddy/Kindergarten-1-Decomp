@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>No tan rápido, amiguito. ~ Voy a necesitar \hver tu pase /h antes de dejarte pasar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí está mi pase.</OptionText>
+          <ItemToUse>BathroomPass</ItemToUse>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aquí está mi pase.</OptionText>
+          <ItemToUse>HallPass</ItemToUse>
+          <FunctionCall>GiveHallPass</FunctionCall>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo pase.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ok. Te permito pasar, pero solo al baño.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bueno.</OptionText>
+          <FunctionCall>GiveBathroomPass</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Perdón, amiguito. Solo puedes pasar al baño.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+    <NodeID>3</NodeID>
+    <DialogueText>¿El pase? Wow.~ Sí...~ puedes ir adonde sea, hombre.</DialogueText>
+    <Options>
+      <DialogueOption>
+        <OptionText>Genial.</OptionText>
+        <DestinationID>-1</DestinationID>
+        <ResolutionID>4</ResolutionID>
+      </DialogueOption>
+    </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Puedes ir adonde sea mientras tengas este pase. A mí no me importa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Uh...~ ésto no está bien, hermano. Para nada. Tengo que llevarte donde el director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ay, hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>IrDondeElDirector</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Hey, hombre! Escuchaste la campana. ¡Regresa a clase!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ir a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>HeadBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Hey! No puedes estar aquí. ¡Es recreo! ¡Sal a jugar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Mierda, amigo. Es la campana. Parece que después de todo, no podrás hacer tu negocio aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maldita sea.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>HeadBackToClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

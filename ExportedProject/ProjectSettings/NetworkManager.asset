@@ -6,4 +6,4 @@ NetworkManager:
   m_DebugLevel: 0
   m_Sendrate: 15
   m_AssetToPrefab:
-  - 24fec4e2360204a4cbc70f97eefa33ae: {fileID: 1073199394686545, guid: dcffa295e29997f488b6b43cd25a801d, type: 2}
+  - 24fec4e2360204a4cbc70f97eefa33ae: {fileID: 1704670890205344, guid: ccc1bf22d2575a54a914e3a3f53d5c50, type: 2}

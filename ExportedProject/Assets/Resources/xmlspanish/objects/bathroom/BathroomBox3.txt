@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Es una bolsa extremadamente sangrienta y asquerosa. Las partes que hay en ella son demasiado grandes para llevar, excepto un dedo cortado. ¿Debería tomarlo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>GetFinger</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No voy a sacar nada más de esta asquerosa bolsa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

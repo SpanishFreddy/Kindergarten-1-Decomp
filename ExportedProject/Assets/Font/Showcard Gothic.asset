@@ -8,9 +8,9 @@ Font:
   m_PrefabInternal: {fileID: 0}
   m_Name: Showcard Gothic
   m_LineSpacing: 89.12109
-  m_DefaultMaterial: {fileID: 2100000, guid: d26c1ceecec6fc24fbd4696d7c8a28f6, type: 2}
+  m_DefaultMaterial: {fileID: 2100000, guid: 7cb1e8f90f075dc4a95e6e3c6056948f, type: 2}
   m_FontSize: 72
-  m_Texture: {fileID: 2800000, guid: f127213bbcb64254d9a817ae923d5a19, type: 3}
+  m_Texture: {fileID: 2800000, guid: b9736d33140440d4d83f7522cf4b9e3e, type: 2}
   m_AsciiStartOffset: 0
   m_Tracking: 1
   m_CharacterSpacing: 0

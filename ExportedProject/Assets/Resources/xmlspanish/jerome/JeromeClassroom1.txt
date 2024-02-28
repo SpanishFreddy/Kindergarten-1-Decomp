@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Amigo...~tú sabes que no eres lo suficientemente´cool´ para hablar conmigo ni mucho menos para ser mi compañero de la mañana. Además, Monty me va a entretener con un divertido yo-yo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Robaste el pase?</OptionText>
+          <DestinationID>1</DestinationID>
+          <MissionLock>TeacherTryToGetPass</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Te refieres a este yo-yo?</OptionText>
+          <ItemToUse>Yoyo</ItemToUse>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo que sea, idiota.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Por qué? ¿Te interesa tener uno?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Ay…! Él me dijo que me iba a guardar uno a mi.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Puedes tenerlo si aceptas ser mi compañero.</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>TakeYoyo</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok, ahora es mío.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Trato hecho, entonces ahora que somos amigos creo que deberías ayudarme con algo. Tú sabes...~como los amigos lo suelen hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por ejemplo?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¿Conoces al horrible y viejo conserje? Él robó mi puntero laser esta mañana. Dijo que era “demasiado luminoso y brillante” para sus viejos ojos. Necesito que me ayudes a recuperarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hago?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Cuando estés listo te daré el pase. Puedes usarlo para pasar por el vigilante del pasillo. Una vez lo pases, dirígete al armario del conserje. Mi láser debe estar ahí adentro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo puedo hacer.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué no te vas?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>De ninguna manera. Ya me han atrapado con un pase robado antes. El vigilante me atrapará otra vez.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perfecto. Dame el pase.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Perfecto! Debe estar dentro una caja en algún lado. Solo agárralo y vete. No te quedes ahí demasiado tiempo. Apúrate.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tengo.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText> Avísame cuando estés listo y te daré el pase. No seré capaz de distraer a la maestra por mucho tiempo, así que dirígete directamente a la puerta.\No hables con nadie./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy listo. Distráela.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+          <FunctionCall>JeromeDistract</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>15</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText> Pues que mal. No estoy interesado en ayudar a un bobo como tú.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Mire hombre. Mientras \hno haya algo interesante para mí en este asunto, olvídalo... Ahora, desaparece.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Son divertidos los yo-yos?</OptionText>
+          <ItemToUse>Yoyo</ItemToUse>
+          <DestinationID>12</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Desaparecer)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+          <FunctionCall>ActivateNotCool</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Ya te lo dije. No estoy interesado en tomar el pase, a menos de que \hme des algo /h divertido. Ahora desaparece.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Son divertidos los yo-yos?</OptionText>
+          <ItemToUse>Yoyo</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Desaparecer)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡Oh yes aquí están! Tal vez después de todo sí eres 'cool'.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te cambio el yo-yo por el pase.</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>TakeYoyo</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Bien. Encontraré a alguien se sea ´cool´ para hacerlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Diviértete.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¿Cambiaste de opinión? ¿ahora sí quieres ser ´cool´?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¿Estás listo para la acción? No podré distraerla por mucho tiempo. Tal vez máximo 15 segundos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy listo. Distráela.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+          <FunctionCall>JeromeDistract</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Niño...~eres tan solo...~el peor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡Lo arruinaste! Es imposible volverla a distraer. ¡Estoy arruinado! Regrésame el pase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <ItemToUse>HallPass</ItemToUse>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GivePassBack</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo vendí.</OptionText>
+          <DestinationID>19</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Bien. Ahora lárgate de aquí. Ya perdí mucho tiempo por tu culpa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>¡¿Tú qué?!~ ¡¿Por qué lo hiciste?! Te di esa cosa para que pudieras recuperar mi puntero láser ¡no venderlo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Eso fue rápido.~ ¿Lo conseguiste?~ ¿Qué pasó?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No pude conseguirlo.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Apuesto a que ni siquiera lo intentaste! ¡Gracias por nada, chico!~ ¡Regrésame mi pase! ¡Fuera de aquí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>No puedo creer que no pudiste conseguir mi estúpido láser. Eres un perdedor. Vete de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Irse)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Hablaremos en el almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ir al almuerzo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¡Gracias, campeón! ¡Supongo que aún no has aprendido a decir la hora! El tiempo de la mañana ya casi se acaba.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Dame todo tu dinero. Es lo justo. Si no lo haces, voy a hacer que te expulsen ¿entendido?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Aquí está.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>TakeAllMoney</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText> He perdido mucho tiempo por tu culpa. Desaparece</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(¡!)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

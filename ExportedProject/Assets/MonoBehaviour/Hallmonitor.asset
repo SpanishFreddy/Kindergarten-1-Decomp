@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: Hallmonitor
   m_EditorClassIdentifier:
   atlasAssets:
-  - {fileID: 11400000, guid: f3e1b324bc5f97b4ea272df15d473dbb, type: 2}
+  - {fileID: 11400000, guid: a34ddc5e796ac88438cb5ddca94560b0, type: 2}
   scale: 0.125
-  skeletonJSON: {fileID: 4900000, guid: f6ec7c1ecfc3d8e43831360e763b7432, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: f10ee04d2042e2343a4256443691467e, type: 3}
   fromAnimation:
   - idle
   - walk

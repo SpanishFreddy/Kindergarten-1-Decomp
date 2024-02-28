@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Bienvenida a la Cueva Nugget! ¡He aquí la benevolencia nuggetty! ¡Por favor echa un vistazo! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Estás disfrutando de tu estancia en la Cueva Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp. Voy a seguir mirando.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí, pero ya quiero salir.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ExitToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ésto es un altar para el buen amigo de Nugget, Billy. \Las flores ya están muriendo,/h al igual que la esperanza de Nugget de volver a ver a Billy. Nugget extraña mucho a Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Poner una flor en el altar.)</OptionText>
+          <DestinationID>4</DestinationID>
+          <ItemToUse>Flower</ItemToUse>
+          <FunctionCall>PlaceFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No toques el altar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Ay sí...~ la misteriosa señal de lo siniestro. Dice "\hPermite que aquél que trae los 25 talismanes libere el mayor de todos los males sobre el mundo./h"</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Presentar los talismanes.)</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>MonstermonCardComplete</ItemToUse>
+          <FunctionCall>PlaceCards</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Eso es horripilante.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText> Por favor no dejes cosas donde Nugget-- ~ oh. Tú ... ~ tú estás dejando una flor. Eso es tan ... ~ tan precioso. ¿Echas de menos a Billy tanto como Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText> Él fue el único que encontró los cinco nuggets de la amistad ... ~ Él ... ~ Nugget ... ~ Nugget ya no puede seguir haciendo ésto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Hacer qué?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Billy le contó a Nugget muchas cosas antes de desaparecer. Nugget tomó las pastillas del director para que le ayuden a olvidar, pero Nugget no quiere  seguir olvidando.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué sabes?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Las pastillas han hecho efecto. Nugget ya no sabe nada...~pero Billy le dio algo a Nugget. Algo que tal vez te ayudará a encontrar lo que Nugget olvidó.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText> Nugget lo dejó en su casillero. Nugget te lo mostrará después de ´Mostrar y Contar´. \hSupera el resto del día y Nugget te buscará después de la escuela./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BellRingMemorial</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Ay! ¡Un perrito! Nugget había olvidado que estaba ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Está muerto?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> Sí está muerto, pero no te preocupes, Nugget no lo hizo. Nugget estaba cavando la Cueva de Nugget cuando cayó del cielo. Nugget no se atreve a traerlo a la superficie. \hEso puedría causar problemas./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar el perro.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>GetDog</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar el perro.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Es la campana!~ Tenemos que salir de la Cueva de Nugget o la maestra se enojará. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Irse de la Cueva Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveCave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡¿Tienes los 25 talismanes?!~ ¡Esto no tiene precedentes!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué está temblando la tierra?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Eso no importa! ¡Nugget y su amigo deben subir! ¡Nugget y su amigo deben ver lo que sucede!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Subir con Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ExitToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

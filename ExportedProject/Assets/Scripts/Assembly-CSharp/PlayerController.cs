@@ -418,23 +418,11 @@ public class PlayerController : MonoBehaviour
 		List<Item> list = new List<Item>();
 		foreach (Item item in mInventory)
 		{
-			IEnumerator enumerator2 = Enum.GetValues(typeof(MonsterMon)).GetEnumerator();
-			try
+			foreach (MonsterMon value in Enum.GetValues(typeof(MonsterMon)))
 			{
-				while (enumerator2.MoveNext())
+				if (value.ToString() == item.ToString())
 				{
-					if (((MonsterMon)enumerator2.Current).ToString() == item.ToString())
-					{
-						list.Add(item);
-					}
-				}
-			}
-			finally
-			{
-				IDisposable disposable;
-				if ((disposable = enumerator2 as IDisposable) != null)
-				{
-					disposable.Dispose();
+					list.Add(item);
 				}
 			}
 		}

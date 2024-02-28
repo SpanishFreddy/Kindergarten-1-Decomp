@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Ésta es la puerta para entrar al armario del conserje. Está cerrada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Abrir la puerta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>JanitorKey</ItemToUse>
+          <FunctionCall>GoToJanitorCloset</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Retirarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

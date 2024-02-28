@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡¿Cómo te atreves?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué tengo que hacer?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> ¡¿En serio?!~ ¡Tienes esta expresión como si no tuvieras ninguna idea en que fallaste!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Honestamente no tengo ni idea.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡La flor! ¡Mi flor especial! ¡La que te dí por ser el mejor novio que he tenido!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hay sobre ella?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡No la mostraste en ´mostrar y contar´! Si a tí no te importa ni un poco, ¡regrésamela! ¡Hemos terminado! ¡Adios! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adios.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LoseFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Fue tan lindo mostrar la flor a todo el mundo en el juego. Realmente eres el mejor novio que he tenido. Puedes llevarla por siempre de siempres.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Te veré mañana...~novio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndCindyWithFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

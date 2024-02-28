@@ -21,7 +21,6 @@ namespace TextFx
 				{
 					tfxJSONArray.Add(item);
 				}
-				return tfxJSONArray;
 			}
 			return tfxJSONArray;
 		}

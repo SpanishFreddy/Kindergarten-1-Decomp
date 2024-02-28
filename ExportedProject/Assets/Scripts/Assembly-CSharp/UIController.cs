@@ -771,23 +771,10 @@ public class UIController : MonoBehaviour
 
 	public void UnHighlightAllItems()
 	{
-		IEnumerator enumerator = inventoryBar.GetEnumerator();
-		try
+		foreach (Transform item in inventoryBar)
 		{
-			while (enumerator.MoveNext())
-			{
-				Transform transform = (Transform)enumerator.Current;
-				transform.GetComponent<Image>().color = new Color(1f, 1f, 0f, 0.517f);
-				transform.GetComponent<RectTransform>().localScale = Vector3.one;
-			}
-		}
-		finally
-		{
-			IDisposable disposable;
-			if ((disposable = enumerator as IDisposable) != null)
-			{
-				disposable.Dispose();
-			}
+			item.GetComponent<Image>().color = new Color(1f, 1f, 0f, 0.517f);
+			item.GetComponent<RectTransform>().localScale = Vector3.one;
 		}
 	}
 

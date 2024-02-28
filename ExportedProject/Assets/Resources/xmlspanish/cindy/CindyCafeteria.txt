@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode name="inicio neutro">
+      <NodeID>0</NodeID>
+      <DialogueText>Perdón, querido. Este lugar está reservado para mi novio. Siéntate allí,  con la fea Lily.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes algun chisme sobre Lily?</OptionText>
+          <DestinationID>19</DestinationID>
+          <MissionLock>BuggsFindOutGoldStars</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>El conserje quiere que pruebas esto.</OptionText>
+          <DestinationID>1</DestinationID>
+          <ItemToUse>BiscuitBall</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Fea Lily?</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>De ninguna manera comeré algo que este loco preparó.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tampoco yo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="rompiendo las relaciones durante las clases matutinas">
+      <NodeID>2</NodeID>
+      <DialogueText>No, querido. Uno quien rompe conmigo durante las clases matutinas no sentará junto a mi ni tampoco tendrá el placer de ser mi novio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entre nosotros se acabó?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Sip. Pasemos buen tiempo juntos pero creo que ahora es el momento de seguir adelante. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo tambien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Oh, ¡hey, novio! Te guardé un lugar. Ven conmigo a comer algo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo la papilla. (Comer papilla.)</OptionText>
+          <ItemToUse>Slop</ItemToUse>
+          <FunctionCall>UseSlop</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo tengo una ensalada. (Comer ensalada.)</OptionText>
+          <ItemToUse>Salad</ItemToUse>
+          <FunctionCall>UseSalad</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo tengo una rosquilla. (Comer rosquilla.)</OptionText>
+          <ItemToUse>Donut</ItemToUse>
+          <FunctionCall>UseDonut</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo tengo esta cosa. (Comer galleta.)</OptionText>
+          <ItemToUse>BiscuitBall</ItemToUse>
+          <FunctionCall>UseBiscuitBall</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo tengo un nugget. (Comer nugget.)</OptionText>
+          <ItemToUse>Nugget</ItemToUse>
+          <FunctionCall>UseNugget</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¿Hey, querido? No seas malo: búscame algo vegetariano.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Algo vegetariano?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>StartVegan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Sí. Tú sabes...~ummmm...~algo...~No sé exactamente que significa esto, pero sé que es saludable. Así que pregunta y verás que encuentras algo vegetariano. Oh, y la papilla definitivamente no lo es.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo tengo esto.</OptionText>
+          <ItemToUse>BiscuitBall</ItemToUse>
+          <DestinationID>8</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aquí está una ensalada.</OptionText>
+          <ItemToUse>Salad</ItemToUse>
+          <DestinationID>26</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>A ver.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Qué me trajiste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Esto.</OptionText>
+          <ItemToUse>BiscuitBall</ItemToUse>
+          <DestinationID>8</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aquí está una ensalada.</OptionText>
+          <ItemToUse>Salad</ItemToUse>
+          <DestinationID>26</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía estoy buscando algo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¿Es vegetariano? ¿Estás seguro?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sip.</OptionText>
+          <DestinationID>9</DestinationID>
+          <FunctionCall>FeedBiscuitBall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Ummmm...~ok. Te creo. *masticando masticando*~ Hey es bien bueno. Como que me acuerda sobre mi perro en un sentido raro. No entiendo porque. Muchas gracias por traerme esto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> Hoy estás siendo tan bueno conmigo. Probablemente eres el chico más bien entrenado que he conocido. Debería usarte para algo en el recreo.~ Jmmmmm...~Tengo una idea.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Realmente disfruto este chicle en el cabello de Lily, pero tal vez nosotros podemos hacer algo más.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿En qué estás pensando?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Jerome me estaba diciendo que el conserje tiene muchas cosas asquerosas en su armario. \hEstoy pensando que encontramos algo útil para dar a Lily</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿A poco no lo tiene cerrado?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Oh, de esto no te preocupes.~ ¡Mira qué tengo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Una llave?</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>GetKey</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¡Exacto! Una niña sabe como hacerlo. Voy a pagar el almuerzo a la cocinera y tú – al armario del conserje. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay sobre el vigilante del pasillo?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Oh, este tontito. \hÉl estará en el baño fumando./h Solo no vayas por allá y estarás bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>El almuerzo casi se acabó, así que \hescucha la campana mientras estés ahí. El conserje regresará justo después de que suena la campana: tendrás que salir más pronto posible./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Harémoslo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DistractLunchLady</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>17</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¿Estás listo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Harémoslo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DistractLunchLady</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dame un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¿Encontraste algo para comer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. (Comer papilla.)</OptionText>
+          <ItemToUse>Slop</ItemToUse>
+          <FunctionCall>UseSlop</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí. (Comer ensalada.)</OptionText>
+          <ItemToUse>Salad</ItemToUse>
+          <FunctionCall>UseSalad</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí. (Comer rosquilla.)</OptionText>
+          <ItemToUse>Donut</ItemToUse>
+          <FunctionCall>UseDonut</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí. (Comer galleta.)</OptionText>
+          <ItemToUse>BiscuitBall</ItemToUse>
+          <FunctionCall>UseBiscuitBall</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo un nugget. (Comer nugget.)</OptionText>
+          <ItemToUse>Nugget</ItemToUse>
+          <FunctionCall>UseNugget</FunctionCall>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Oooooh. ¡Este niño me cae bien! Tal vez lo hago. Ella es la mejor mascota de la maestra. Es dificil caerle bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Pero tú tienes algo?</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¿Viste como ella solo se levantó y se fue? Creo que ella soborna a la cocinera para que la deja salir.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué ella está haciendo?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Escuché que ella está tratando de escuchar las conversaciones del director a través de su puerta. \hElla estará en taaaaantos problemas si él lo descubre. /h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesante.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>El chiste es atravesar el pasillo. \hLa cocinera no deja salir a nadie hasta que le pagues./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Anotado.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Oh, bien! Solo estaba pensando--~oh, maldita sea. Mi estúpida madre me mando la comida que no es vegetariana. Y ella sabe muy bien que soy vegetariana ahora. Dios, la mujer es insoportable.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¡Ya es momento de ir! ¡Apúrate al regresar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>25</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Apúrate y ve al armario del conserje! ¡La campana está a punto de sonar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Uff...~¿una ensalada?~ Oh...~ahora, cuando lo estoy pensando, creo que eso es vegetariano, ¿huh? Asqueroso. ¿Por qué hago esto a mí misma?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No sé.</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>FeedSalad</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Heh...~sí. Ugly Lily. Hey...~¿por qué no me haces un favor?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Comó qué?</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Si te doy este chicle, ¿podrías pegarlo en su cabello? Haré que valga la pena. \hTe doy extra puntos por hacerlo y regresa conmigo antes que el almuerzo se termina./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seguro.</OptionText>
+          <DestinationID>29</DestinationID>
+          <FunctionCall>ActivateGumMissionLunch</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>De ninguna manera.</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>¡Maravilloso! ¡Ven cuando se termina!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seguro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>31</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Bien. De todos modos no te necesito. Hay un montón de niños tontitos quien quiere hacerlo para mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¿Lo hiciste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sip.</OptionText>
+          <DestinationID>32</DestinationID>
+          <MissionLock>CindyTellPutGumLunch</MissionLock>
+          <FunctionCall>GetDoomJelly</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¡El color me impresionó!~ Podrías ser un maravilloso novio.~ Toma esta tarjeta Monstermon y no tengas pena por hablar conmigo mañana antes de las clases.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seguro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>33</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText> No puedo esperar para ver a Lily en el recreo con este chicle en su cabello. Será tan divertido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Esplendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Perdón, querido, se acabó lo de nosotros. Suerte mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Es para lo mejor</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>El director dijo que supuestamente no debemos que hablar hoy. Fuera de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Eso es justo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

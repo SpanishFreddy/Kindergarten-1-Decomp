@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¿Qué puedo hacer por ti?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Podrías leer esta nota?</OptionText>
+          <DestinationID>6</DestinationID>
+          <ItemToUse>Recipe</ItemToUse>
+          <MissionLock>CindyReadPaper</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No quiero nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="menú base">
+      <NodeID>1</NodeID>
+      <DialogueText>¿Qué puedo hacer por ti?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Podrías leer esta nota?</OptionText>
+          <DestinationID>6</DestinationID>
+          <ItemToUse>Recipe</ItemToUse>
+          <MissionLock>CindyReadPaper</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No quiero nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="menú de compra">
+      <NodeID>2</NodeID>
+      <DialogueText>Estos son los artículos que están para la venta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tarjeta Monstermon.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No importa.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="menú de venta">
+      <NodeID>3</NodeID>
+      <DialogueText> ¿Qué tienes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Puedo pagarlo">
+      <NodeID>4</NodeID>
+      <DialogueText>Es un placer hacer negocios contigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No necesito nada más.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No puedo pagarlo">
+      <NodeID>5</NodeID>
+      <DialogueText>Oh, sí. Esta es la \htarjeta del Caballero Santo./h Él es bastante poderoso en el mundo Monstermon. Te costará $12.50.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <MoneyLock>12.50</MoneyLock>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>BuyHolyKnight</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No puedo pagarlo">
+      <NodeID>6</NodeID>
+      <DialogueText>Pfff...claro que sé leer. No soy un neandertal como Buggs. Puedo leer cualquier cosa por un dólar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>7</DestinationID>
+          <MoneyLock>1</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No puedo pagarlo">
+      <NodeID>7</NodeID>
+      <DialogueText>Está bien...~veamos qué hay por aquí...~ummmm...~parece que es una receta de algo. Ayy!, es la receta del conserje para hacer esas asquerosas galletas --~ ¡Ay Dios!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No puedo pagarlo">
+      <NodeID>8</NodeID>
+      <DialogueText>Él...~¡él está usando a Galleta! ¡Está usando como ingrediente el perro desaparecido de Cindy!, Oh, eso está tan mal. Espero que nadie se haya comido ni una. ¡Eso sería asqueroso!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>iiuggg...sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReadRecipe</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Hey, chico!~~ ¡¡Ven acá!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué? ¿Por qué?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> Jerome me informó de tu pequeña misión. ~ ¿Conseguiste sacar el láser del baño?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>11</DestinationID>
+          <ItemToUse>LaserPointer</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nop.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Bien.~ No sé si lo has notado, pero el conserje está siguiendo a Jerome muy de cerca. Parece que estuviera a punto de matarlo. Tenemos que hacer algo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De qué estás hablando?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText> Ese anciano ha estado acosando a niños durante décadas. Creo que es hora de que finalmente nos desquitemos de él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo haremos?</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>TakeLaserRecess</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> ¿Él no te vende cosas?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¿Quién no?~ Y cuando se trata de eso, el hijo del director es mucho más valioso que un octogenario inestable dispuesto a venderme herramientas a un precio bajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buen punto. ¿Qué tengo que hacer?</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>TakeLaserRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText> Voy a tomar el láser como garantía por lo que tengo que hacer hoy. Se lo devolveré cuando me pague. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok. ¿Ahora qué?</OptionText>
+          <DestinationID>17</DestinationID>
+          <FunctionCall>GetBugAtRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText> Preocúpate solo por ponerlo detrás del conserje sin que te vea. ~ Yo me encargaré del resto. Ven a verme cuando termines.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+          <FunctionCall>ActivatePlaceDeviceRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¿Lo pusiste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>DetonateBomb</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Jerome me dio ésto. Es uno de los microfonitos de su papá. Las cosas pequeñas suelen estallar si no les gusta lo que escuchan. No te preocupes, lo desactivé.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué tengo que hacer con esto?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Oh.~ Por Dios, chico. ¿Qué tan bueno eres? Necesito eso como garantía antes de que pueda ayudarlos chicos. Buena suerte salvándolo por su cuenta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y si te pago?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Creo que no has entendido. Necesito el puntero láser porque es lo que Jerome más ama ... ~ y puedo extorsionarlo con esta cosa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Vete, niño!. No me sirves sin ese láser.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

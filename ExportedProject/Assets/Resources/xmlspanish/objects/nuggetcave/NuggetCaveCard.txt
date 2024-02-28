@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Hay una tarjeta Monstermon junto a unos cráneos podridos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar la tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetCaveCard</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar la tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

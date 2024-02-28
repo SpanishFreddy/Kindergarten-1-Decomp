@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using DG.Tweening;
 using DialogueTree;
@@ -61,7 +60,7 @@ public class Nugget : NPCBehavior
 
 	private void SendToOffice()
 	{
-		Teacher t = UnityEngine.Object.FindObjectOfType<Teacher>();
+		Teacher t = Object.FindObjectOfType<Teacher>();
 		t.SetAnimation("walk");
 		player.inAnim = true;
 		UI.CollapseDialogue();
@@ -200,7 +199,7 @@ public class Nugget : NPCBehavior
 
 	private IEnumerator ThrowSlopCoroutine()
 	{
-		Buggs b = UnityEngine.Object.FindObjectOfType<Buggs>();
+		Buggs b = Object.FindObjectOfType<Buggs>();
 		if (b.removedFromGame)
 		{
 			lastSelectedOption.DestinationID = 39;
@@ -238,8 +237,8 @@ public class Nugget : NPCBehavior
 	private void BuggsFallOver()
 	{
 		UI.CompleteMission(Mission.TeacherGetBuggsInTrouble);
-		UnityEngine.Object.FindObjectOfType<Buggs>().PukeAndDie();
-		UnityEngine.Object.FindObjectOfType<Teacher>().conversations[Room.Recess].Nodes[0].Options[0].IsAvailable = true;
+		Object.FindObjectOfType<Buggs>().PukeAndDie();
+		Object.FindObjectOfType<Teacher>().conversations[Room.Recess].Nodes[0].Options[0].IsAvailable = true;
 	}
 
 	private void StabNugget()
@@ -255,7 +254,7 @@ public class Nugget : NPCBehavior
 	private void ActivateNuggetCave()
 	{
 		CompleteMission(Mission.TeacherNuggetGainTrust);
-		UnityEngine.Object.FindObjectOfType<Teacher>().ActivateMission(Mission.TeacherTellGainedTrust, Room.Recess);
+		Object.FindObjectOfType<Teacher>().ActivateMission(Mission.TeacherTellGainedTrust, Room.Recess);
 	}
 
 	private void ActivateNuggetAtRecess()
@@ -274,7 +273,7 @@ public class Nugget : NPCBehavior
 			StartCoroutine(PlayerPoisoned());
 			return;
 		}
-		LunchLady lunchLady = UnityEngine.Object.FindObjectOfType<LunchLady>();
+		LunchLady lunchLady = Object.FindObjectOfType<LunchLady>();
 		lunchLady.SetCurrentConversation(12);
 		lunchLady.Interact();
 	}
@@ -331,7 +330,7 @@ public class Nugget : NPCBehavior
 		UI.showDeath = true;
 		yield return new WaitForSeconds(3f);
 		SFXManager.Instance.PlaySound("Thud");
-		UnityEngine.Object.FindObjectOfType<CameraFollow>().CameraShake(0.5f);
+		Object.FindObjectOfType<CameraFollow>().CameraShake(0.5f);
 		yield return new WaitForSeconds(1f);
 		UI.ShowDeath("Jumping into holes you can't see the bottom of is generally considered a bad idea.", "Saltar a los agujeros sin ver el fondo se considera generalmente una mala idea.");
 	}
@@ -339,7 +338,7 @@ public class Nugget : NPCBehavior
 	private void GotRidOfKnife()
 	{
 		GameObject.Find("HoleCover").GetComponent<SpriteRenderer>().enabled = false;
-		Buggs buggs = UnityEngine.Object.FindObjectOfType<Buggs>();
+		Buggs buggs = Object.FindObjectOfType<Buggs>();
 		DialogueNode currentConversation = buggs.GetCurrentConversation();
 		currentConversation.Options[0].IsAvailable = true;
 		currentConversation.Options[1].IsAvailable = false;
@@ -386,7 +385,7 @@ public class Nugget : NPCBehavior
 		{
 			yield return null;
 		}
-		UnityEngine.Object.FindObjectOfType<CameraFollow>().CameraShake(1f);
+		Object.FindObjectOfType<CameraFollow>().CameraShake(1f);
 		StartCoroutine(RunDialogueSection("\\bRAAAAAA!!/b", "\\b¡¡RAAAAAA!!/b", this));
 		while (pEmptyOptions)
 		{
@@ -418,7 +417,7 @@ public class Nugget : NPCBehavior
 		});
 		yield return new WaitForSeconds(3f);
 		SFXManager.Instance.PlaySound("Thud");
-		UnityEngine.Object.FindObjectOfType<CameraFollow>().CameraShake(0.5f);
+		Object.FindObjectOfType<CameraFollow>().CameraShake(0.5f);
 		yield return new WaitForSeconds(1f);
 		UI.ShowDeath("No means no.", "No significa no.");
 	}
@@ -644,7 +643,7 @@ public class Nugget : NPCBehavior
 		SFXManager.Instance.StopMusic();
 		player.UseItem(Item.MonstermonCardComplete);
 		GameObject.Find("beam").GetComponent<SpriteRenderer>().DOColor(Color.red, 1f);
-		UnityEngine.Object.FindObjectOfType<CameraFollow>().CameraShake(1f);
+		Object.FindObjectOfType<CameraFollow>().CameraShake(1f);
 		mEndWorld = true;
 	}
 
@@ -662,11 +661,10 @@ public class Nugget : NPCBehavior
 
 	private void WalkAwayEndDay()
 	{
-		SteamScript.UnlockAchievement("NuggetAchievement");
 		SetDirection(false);
-		WalkToPoint(new Vector3(-36f, UnityEngine.Random.Range(-2f, -1.5f), -1.14f), 7f, false);
+		WalkToPoint(new Vector3(-36f, Random.Range(-2f, -1.5f), -1.14f), 7f, false);
 		UI.CompleteDay(Item.BillyNote);
-		UnityEngine.Object.FindObjectOfType<PauseMenu>().UnlockAllHints("Nugget");
+		Object.FindObjectOfType<PauseMenu>().UnlockAllHints("Nugget");
 	}
 
 	public void CheckEndWorld()
@@ -685,18 +683,18 @@ public class Nugget : NPCBehavior
 		GameObject ps = GameObject.Find("PrincipalShooting");
 		ps.GetComponent<MeshRenderer>().enabled = true;
 		SFXManager.Instance.PlayMusic("EndWorld");
-		Principal p = UnityEngine.Object.FindObjectOfType<Principal>();
-		Teacher t = UnityEngine.Object.FindObjectOfType<Teacher>();
-		Cindy c = UnityEngine.Object.FindObjectOfType<Cindy>();
-		Jerome je = UnityEngine.Object.FindObjectOfType<Jerome>();
-		Janitor ja = UnityEngine.Object.FindObjectOfType<Janitor>();
-		Monty j = UnityEngine.Object.FindObjectOfType<Monty>();
-		Lily i = UnityEngine.Object.FindObjectOfType<Lily>();
+		Principal p = Object.FindObjectOfType<Principal>();
+		Teacher t = Object.FindObjectOfType<Teacher>();
+		Cindy c = Object.FindObjectOfType<Cindy>();
+		Jerome je = Object.FindObjectOfType<Jerome>();
+		Janitor ja = Object.FindObjectOfType<Janitor>();
+		Monty j = Object.FindObjectOfType<Monty>();
+		Lily i = Object.FindObjectOfType<Lily>();
 		t.transform.position = new Vector3(21.8f, -4.3f, -4.37f);
 		ps.transform.position = new Vector3(29.6f, -7.85f, -7.8f);
 		ja.transform.position = new Vector3(24.8f, -13.1f, -13.26f);
 		Transform bolt = GameObject.Find("LightningBolt").transform;
-		CameraFollow cf = UnityEngine.Object.FindObjectOfType<CameraFollow>();
+		CameraFollow cf = Object.FindObjectOfType<CameraFollow>();
 		cf.overrideCamera = true;
 		cf.transform.DOMoveX(cf.maxPosX, 2f);
 		yield return new WaitForSeconds(3f);
@@ -884,42 +882,29 @@ public class Nugget : NPCBehavior
 		t.GetComponent<ParticleSystem>().Play();
 		GameObject.Find("LightningBolt").transform.position = n.transform.position + Vector3.up * 10f;
 		SFXManager.Instance.PlaySound("Bang");
-		UnityEngine.Object.FindObjectOfType<CameraFollow>().CameraShake(0.25f, true);
+		Object.FindObjectOfType<CameraFollow>().CameraShake(0.25f, true);
 		int num = 0;
-		IEnumerator enumerator = t.GetEnumerator();
-		try
+		foreach (Transform item in t)
 		{
-			while (enumerator.MoveNext())
+			Rigidbody2D component = item.GetComponent<Rigidbody2D>();
+			component.isKinematic = false;
+			component.gravityScale = 2f;
+			switch (num)
 			{
-				Transform transform = (Transform)enumerator.Current;
-				Rigidbody2D component = transform.GetComponent<Rigidbody2D>();
-				component.isKinematic = false;
-				component.gravityScale = 2f;
-				switch (num)
-				{
-				case 0:
-					component.AddForce(new Vector2(UnityEngine.Random.Range(-100, 100), 700f));
-					component.AddTorque(UnityEngine.Random.Range(-100, 100));
-					break;
-				case 1:
-					component.AddForce(new Vector2(UnityEngine.Random.Range(-300, 300), 600f));
-					component.AddTorque(UnityEngine.Random.Range(-100, 100));
-					break;
-				default:
-					component.AddForce(new Vector2(UnityEngine.Random.Range(-300, 300), 400f));
-					component.AddTorque(UnityEngine.Random.Range(-100, 100));
-					break;
-				}
-				num++;
+			case 0:
+				component.AddForce(new Vector2(Random.Range(-100, 100), 700f));
+				component.AddTorque(Random.Range(-100, 100));
+				break;
+			case 1:
+				component.AddForce(new Vector2(Random.Range(-300, 300), 600f));
+				component.AddTorque(Random.Range(-100, 100));
+				break;
+			default:
+				component.AddForce(new Vector2(Random.Range(-300, 300), 400f));
+				component.AddTorque(Random.Range(-100, 100));
+				break;
 			}
-		}
-		finally
-		{
-			IDisposable disposable;
-			if ((disposable = enumerator as IDisposable) != null)
-			{
-				disposable.Dispose();
-			}
+			num++;
 		}
 	}
 
@@ -961,12 +946,11 @@ public class Nugget : NPCBehavior
 		RemoveFromGame();
 		yield return new WaitForSeconds(1.5f);
 		SFXManager.Instance.PlaySound("Thud");
-		UnityEngine.Object.FindObjectOfType<CameraFollow>().CameraShake(0.5f);
+		Object.FindObjectOfType<CameraFollow>().CameraShake(0.5f);
 		GameObject.Find("FinishGamePanel").GetComponent<CanvasGroup>().DOFade(1f, 1f);
 		yield return new WaitForSeconds(5f);
 		GameObject.Find("FinishGamePanel").GetComponent<CanvasGroup>().DOFade(0f, 1f);
 		PlayerPrefs.SetInt("SetTuesday", 1);
-		SteamScript.UnlockAchievement("WorldEnder");
 		SceneManager.LoadScene("Kindergarten");
 	}
 }

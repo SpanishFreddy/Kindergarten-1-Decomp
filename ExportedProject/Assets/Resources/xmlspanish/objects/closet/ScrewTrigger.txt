@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Parece que este tornillo está suelto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>( Desenroscar el tornillo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>Destornillador</ItemToUse>
+          <FunctionCall>UnscrewShelf</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Interesante.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡¿Eh?!~ Usted--~ ¡No debería estar aquí! ¡lo voy a llevar donde el director!~a menos que.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿A menos que, qué?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Pues...~No tengo cigarrillos.\hSi tiene unos, lo dejaré ir./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Cigarettes</ItemToUse>
+          <FunctionCall>GiveCigs</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo un pase para el vestíbulo.</OptionText>
+          <DestinationID>9</DestinationID>
+          <ItemToUse>HallPass</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Que decepción amigo. Parece que tenemos que visitar al director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ay, hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToPrincipalBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Oh, sí! ¡Muchas gracias, amiguito! Puede ir a donde quiera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super. ¡Gracias!</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText> Gracias de nuevo por la cajetilla, hombrecito. Ahora regrese a clase o lo que sea.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>No sé...~ Creo que podría dejarlos ir si ustedes \hme dan una cajetilla de cigarrillos./h Acabo de salir corriendo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí.</OptionText>
+          <DestinationID>6</DestinationID>
+          <ItemToUse>Cigarettes</ItemToUse>
+          <FunctionCall>GiveCigs</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tenemos.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Oh. Wow.~ Gracias, hermanito. Sí, puedes irte. Creo, que los tiempos han cambiado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Están seguros.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+          <FunctionCall>WalkToStallLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Sí, hombre. No te preocupes. No voy a decir nada sobre ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Nos vemos, hombrecito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToStop</FunctionCall>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText> Buen intento hombrecito, pero ese pase no sirve para almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo cigarillos.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Cigarettes</ItemToUse>
+          <FunctionCall>GiveCigs</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo cigarrillos.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Que decepción amigo. Parece que tenemos que visitar al director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ay, hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToPrincipalBathroomLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Ok, hermano. Escuchaste la campana. No puedes estar dando vueltas por aquí todo el día. Vete al recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ir al recreo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall> ForceToRecess </FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

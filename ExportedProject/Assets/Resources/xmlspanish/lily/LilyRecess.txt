@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Yo sé que él lo hizo. No sé porque, pero yo lo sé.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡¡EL DIRECTOR TIENE A BILLY!!</OptionText>
+          <MissionLock>NuggetTalkToLily</MissionLock>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>BlowUpStatue</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pegar chicle en el pelo de Lily.)</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <MissionLock>CindyPutGumLunch</MissionLock>
+          <FunctionCall>CompleteGumRecess</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Tienes alguna evidencia? ¡Sería bueno si me ayudas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo evidencia.</OptionText>
+          <DestinationID>2</DestinationID>
+          <FunctionCall>BlowUpStatue</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>~~¡Qué! ¡¿Qué has hecho!? Nos meteremos en muchos problemas. ¡espero que tengas un plan!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...¿tal vez?</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>CallOverTeacher</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¿¡Me estás jodiendo!?~ ¿Por qué lo hiciste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Porque sí.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Solo déjame en paz! ¡En estos momentosm ésto es lo último que necesito!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarte de Lily.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

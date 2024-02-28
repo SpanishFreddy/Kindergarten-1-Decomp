@@ -4,7 +4,6 @@ using DG.Tweening;
 using DialogueTree;
 using Spine.Unity;
 using UnityEngine;
-using UnityStandardAssets.ImageEffects;
 
 public class Principal : NPCBehavior
 {
@@ -570,21 +569,15 @@ public class Principal : NPCBehavior
 
 	private IEnumerator SaturateCamera()
 	{
-		ColorCorrectionCurves ccc = Camera.main.gameObject.GetComponent<ColorCorrectionCurves>();
-		while (ccc.saturation < 1.3f)
 		{
 			yield return null;
-			ccc.saturation += 0.01f;
 		}
 	}
 
 	public IEnumerator DesaturateCamera()
 	{
-		ColorCorrectionCurves ccc = Camera.main.gameObject.GetComponent<ColorCorrectionCurves>();
-		while (ccc.saturation > 1.15f)
 		{
 			yield return null;
-			ccc.saturation -= 0.01f;
 		}
 	}
 

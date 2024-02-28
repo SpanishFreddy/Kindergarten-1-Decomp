@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Oh...~um...~hey. Soy Lily. Usted tal vez ha escuchado que pasó con mi hermano Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>6</DestinationID>
+          <ItemToUse>BillyNote</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TurnOnSurprised</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Realmente no me importa.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿No?~ Ha estado en todas las noticias. Él desapareció hace unos días.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Gracias. Eso te hace una de las pocas personas a la que parece importarle. Desde que desapareció, la gente me ignora o me insulta. \hCindy ha estado intentado pegar un chicle en mi cabello./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, yo sé.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <FunctionCall>LoseGum</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¿Ella te lo dio? Wow. Ella ni siquiera es capaz de hacer el trabajo sucio por su cuenta. Ya soy lo suficientemente fea sin tener chicles en mi cabello, así que gracias por no hacerlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No eres fea.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>LilyCompliment</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Oh...~gracias. Creo que Cindy me ha estado molestando últimamente. Aprecio el cumplido. Eres agradable.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Realmente ahora no estoy buscando hacer amigos, pero \h confio en ti/h sí es que eso vale la pena. Nos vemos pronto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡¿Qué es eso?! ¡Parece la letra de Billy! ¿De dónde lo sacaste? ¡¿Qué sabes?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget me la dió.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText> Yo sé que Cindy probablemente te ofreció ser tu novia o algo así, pero yo no hago cosas así. En cambio puedes tener esto. Estoy tratando de bajar de peso para que ella me moleste menos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>8</DestinationID>
+          <FunctionCall>GetDonut</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Te veré luego. No te ahogues con esta rosquilla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>No sé, pero si yo fuera tú me alejaría de ella. Ella es realmente malvada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias por el consejo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> No intentaría ser amiga de Cindy. Puede ser muy mala.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, yo sé.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <FunctionCall>LoseGum</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super, gracias.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>GetMagnifyingGlass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ActivateInvestigation</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>GetMoney</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Bastante justo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>15</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Dejar en paz a Lily.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText> ¡Sabía que Nugget me estaba aguantando! ¿Sabes lo que dice? Que no puedo leer tan bien como mi hermano.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡Entonces tú tienes que encontrar a alguien que pueda hacerlo! ¡Apúrate!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ActivateReadNoteMission</FunctionCall>
+          <ResolutionID>18</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¿Y entonces? ¡¿Qué dice?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Algo acerca de abrir la compuerta secreta en la oficina del director. </OptionText>
+          <DestinationID>19</DestinationID>
+          <UsesAction>true</UsesAction>
+          <MissionLock>LilyTellNote</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Todavía no he encontrado a nadie para que la lea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>La compuerta secreta...~¡tal vez allá donde él esconde a Billy! ¡Tenemos que entrar a la oficina! ¡Lo salvaremos! Pero...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText> Probablemente tiene algo que ver con que Billy terminara con ella, justo antes de que desapareciera. Por qué ella se está desquitando conmigo, todavía es un misterio, pero realmente me gustaría saber que fue lo que hice para ofenderla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a ver porque ella está brava.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Ella legítimamente no tiene ninguna razón.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Eso sería genial. Yo he tratado de hablar con ella, pero ella no está interesada en ser amable conmigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ahorita regreso.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¿Todo bien? ¿Qué te dijo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No he hablado con ella todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Ella legítimamente no tiene ninguna razón.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Tengo que encontrar la manera de entrar a la oficina del director sin que él se de cuenta. Tengo un plan, pero \heso requiere obtener un teléfono y una llave para la oficina del director./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ya tengo el teléfono.</OptionText>
+          <DestinationID>29</DestinationID>
+          <ItemToUse>Phone</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo consigo el teléfono?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText> Necesito que hagas que te envíen a la oficina ... sólo. Una vez adentro, necesitas encontrar esa compuerta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo hago para que me envíen allá solo?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué no te vayas?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Nugget tiene algo que ver con esto. \hEstoy segura de que él podría ayudarte a llegar hasta allá, No importa si lo sabe o no. Sólo presionalo y estoy seguro de que algo va a pasar./h Suerte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText> Vete a molestar a Nugget por un tiempo. Probablemente él hará algo para que te envíen la oficina.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¡Ah! Otra cosa. \hSi él te da un dispositivo extraño, no vengas a hablar conmigo hasta que te deshagas de él./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>ActivateGetSentToOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText> Es un micrófono. El director se lo da a cualquiera que encuentre sospechoso. Él me hizo llevar uno durante semanas antes de que se rindiera. Estoy seguro de que Nugget tiene uno ahoram así que ten cuidado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>ActivateGetSentToOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>¡De ninguna manera! ¡Esto es genial!~ Ahora todo lo que necesitamos es la llave de la oficina.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>La tengo.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>PrincipalKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo consigo la llave?</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>UnlockKeyHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Wow...~tienes todo lo que necesito. Genial.~ ¡Ahora puedo contarte mi plan!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo es?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText> El director sabe que estoy detrás de él. De ninguna manera me dejará escapar husmeando por ahí para encontrar la compuerta secreta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo hago para que me envíen allá solo?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>No sé. Yo se que la maestra tiene uno, pero no se como quitárselo\h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Noted.</OptionText>
+          <DestinationID>33</DestinationID>
+          <FunctionCall>UnlockPhoneHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText> De cualquier manera, la nota es un gran comienzo. Muchas gracias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Gracias nuevamente por la nota. Realmente lo aprecio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>El director es muy misterioso con su oficina. Dudo que haya algún repuesto. \hSin embargo, Jerome podría saber cómo conseguir uno./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Iré hablar con él.</OptionText>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText> Puedes hacerlo si quieres, pero para que mi plan funcione, tenemos que comenzar más o menos a esta hora. No voy a continuar con el plan, hasta que tenga primero esas dos cosas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tengo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>37</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Gracias por la nota. Es un comienzo. Tal vez podamos llevar mi plan a cabo otro día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tal vez.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

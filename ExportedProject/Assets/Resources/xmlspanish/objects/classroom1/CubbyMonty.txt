@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Éste es el casillero de Monty. Obviamente hay dinero en él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Robar dinero.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StealMoney</FunctionCall>
+          <ResolutionID>1</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar dinero en su lugar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Éste es el casillero de Monty. Ya he robado todo. Espero poder vivir con la culpa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Encontrar el modo de vivir con la culpa.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

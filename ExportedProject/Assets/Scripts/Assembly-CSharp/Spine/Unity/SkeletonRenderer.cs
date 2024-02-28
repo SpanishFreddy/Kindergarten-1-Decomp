@@ -57,7 +57,7 @@ namespace Spine.Unity
 			{
 				if (mesh != null)
 				{
-					UnityEngine.Object.Destroy(mesh);
+					UnityEngine.Object.DestroyImmediate(mesh);
 				}
 				mesh = null;
 			}

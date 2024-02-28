@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Bien...~lo hicimos. Salimos con asesinato. Créeme: eso fue para el mejor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso espero.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Todavía tienes el teléfono? Te lo dí cuando caminaba buscando. Bastante furtivo, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿Sabes qué? ¿Por qué no lo tengas? Una pequeña muestra de mi apreciación. \hTal vez te sirva para algo otro día./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super. Gracias.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Eso fue divertido!~ Tal vez lo repetimos otro día.~ Te veré pronto, chico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí...nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BuggsEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

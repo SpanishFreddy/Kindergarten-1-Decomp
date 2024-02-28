@@ -836,7 +836,6 @@ public class Lily : NPCBehavior
 			yield return null;
 		}
 		UI.CollapseDialogue();
-		SteamScript.UnlockAchievement("LilyAchievement");
 		SetDirection(false);
 		b.SetDirection(false);
 		WalkToPoint(new Vector3(-36f, -2f, -1.14f), 7f, false);

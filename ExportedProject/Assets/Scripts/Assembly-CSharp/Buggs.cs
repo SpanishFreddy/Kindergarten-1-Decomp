@@ -552,7 +552,6 @@ public class Buggs : NPCBehavior
 		SetDirection(false);
 		WalkToPoint(new Vector3(-36f, UnityEngine.Random.Range(-2f, -1.5f), -1.14f), 7f, false);
 		UI.CompleteDay(Item.Phone);
-		SteamScript.UnlockAchievement("BuggsAchievement");
 		UnityEngine.Object.FindObjectOfType<PauseMenu>().UnlockAllHints("Buggs");
 	}
 }

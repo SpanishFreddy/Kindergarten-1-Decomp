@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Janitor_Material
   m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
@@ -23,7 +23,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 318eb3193acd220429016d746d032420, type: 3}
+        m_Texture: {fileID: 2800000, guid: 74ebaca98ad8a0e4d86c3fc1d13ac340, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:

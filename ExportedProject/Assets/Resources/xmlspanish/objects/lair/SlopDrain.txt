@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Esto se ve como la bazofia de la cafetería. Parece que hemos descubierto el ingrediente secreto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Asqueroso</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

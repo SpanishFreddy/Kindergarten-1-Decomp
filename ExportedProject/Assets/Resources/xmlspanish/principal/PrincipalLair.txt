@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Supongo que usted debe saber de que se trata todo ésto, antes de que lo mate.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me gustaría saberlo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Realmente no me importa.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Jeje..~Usted es un chico listo. La curiosidad lo metió en este lío. Es agradable ver que está aprendiendo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Presionar el botón amarillo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerLair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón rojo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerLair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón verde.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerLair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón azul.)</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>PressBlue</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText> Estas criaturas viven en las profundidades de la escuela. Emiten ciertas sustancias químicas que afectan el cuerpo humano de una manera interesante.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText> He estado poniendo ésta sustancia en las pastillas. Tiene un efecto diferente en cada persona que las consume. La Señora Applegate parece haber desarollado una adicción a ellas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y Nugget?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Las patillas...~ lo curan. No sé qué que tenía antes de empezar a tomarlas,  pero parece que le ayudan a sentirse mejor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay de Billy?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText> Las criaturas en los tanques junto a él son bastante ... ~ agresivos. Yo estaba tratando de replicar la producción de sustancias químicas en los seres humanos para reducir los factores de riesgo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Esto no explica lo que pasó con Billy.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText> Al principio Nugget iba a ser mi sujeto de estudio, pero Billy tropezó con el cadáver de una de las criaturas en el armario del conserje, mientras estaba lidiando con un perro o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Wow.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Ok. Así que eso es todo. Es todo lo que usted necesitaba saber. Desafortunadamente, ahora tengo que matarlo. Esta información no puede salir de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Presionar el botón amarillo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerLair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón rojo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerLair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón verde.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerLair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Presionar el botón azul.)</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>PressBlue</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

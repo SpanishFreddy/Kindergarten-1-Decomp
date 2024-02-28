@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954aac3217e2c6b005b08be3c3ee04c4, type: 3}
   m_Name: Lunchlady_Atlas
   m_EditorClassIdentifier:
-  atlasFile: {fileID: 4900000, guid: 235e89151eff3ce49afad995fdfda153, type: 3}
+  atlasFile: {fileID: 4900000, guid: 1367a1a0371fb6d4789493a3dd07ae0a, type: 3}
   materials:
-  - {fileID: 2100000, guid: 1e9474fc8abc42442ba1b309ad282908, type: 2}
+  - {fileID: 2100000, guid: d06125e5bfcfe0d4db3d640a2bbfbc19, type: 2}

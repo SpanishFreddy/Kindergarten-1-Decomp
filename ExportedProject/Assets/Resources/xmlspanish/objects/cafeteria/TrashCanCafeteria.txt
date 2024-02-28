@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Es un bote de basura. No me voy a meter ahí para encontrar cosas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Esconder láser.)</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>HideLaser</FunctionCall>
+          <ItemToUse>LaserPointer</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Tirar la papilla.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ThrowAwaySlop</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>Slop</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Irse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

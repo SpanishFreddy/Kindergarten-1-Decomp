@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Buenas días niños. Es momento de que elijan a su  compañerito para las clases de la mañana o estarán tristes, patéticos y solos. ¡Mientras tú seas el mejor "tú" puedes ser tú mismo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Buscar compañerito.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Encuentren a su ´amiguito de la mañana´, o serán unos perdedores marginados como Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Querías hablar conmigo acerca de Jerome?</OptionText>
+          <DestinationID>6</DestinationID>
+          <MissionLock>TeacherTalkMorningTimeJerome</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Siempre estás solo durante el día?</OptionText>
+          <DestinationID>38</DestinationID>
+          <MissionLock>BuggsFindOutWhenAlone</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget me dió una pastilla.</OptionText>
+          <DestinationID>49</DestinationID>
+          <ItemToUse>Pill</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Ay, no, no, no!~~~ ¡No puedes salir de la clase sin un pase!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok. ¿Puedo ir al baño?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídelo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>No sé.~ ¿Pueeeeeeedes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>...¿Me permitirías ir al baño?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Por supuesto, ahora sí lo has pedido correctamente. Aquí tienes el pase para baño.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yupiiii, gracias.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetBathroomPass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>No te demores.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToHallway</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Ay sí.~ El alto y poderoso Jerome. Siempre contestándome mal porque su padre es mi jefe. Creo que es hora de que finalmente nos desquitemos de él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo haremos?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>El director me ha informado que uno de sus pases ha desaparecido. Juro por la vida de Nugget que Jerome lo cogió.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no la tomas y ya?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> ¿Cuánto vale para ti la vida de Nugget?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Puedo hacerlo.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText> No tengo permitido investigar a un estudiante sin justa causa  y el Señor sabe que no hay causa probable para investigar al hijo del director. Por eso necesito que se lo des a él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo puedo hacerlo.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Confío en tu palabra">
+      <NodeID>9</NodeID>
+      <DialogueText> No mucho, vale casi lo mismo que mi salario como profesora en relación con el sistema de valoracion de las vidas estudiantiles, es  un porcentaje bastante significativo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no tomas el pase y ya?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo voy a hacer.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Excelente! Solo ve y haz que él te lo de.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ActivateGetPassFromJeromeMission</FunctionCall>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¿Y entonces? ¿Lo conseguiste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No soy lo suficientemente 'cool' para él.</OptionText>
+          <DestinationID>12</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Él dijo que no hay tiempo suficiente.</OptionText>
+          <DestinationID>41</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No he hablado con él todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Uggh. Odio lo obsesionado que él está con ser ´cool´. Te vas a tener que ganar al pequeño monstruo. Tal vez si podrías \hencontrar un regalo para él/h o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo qué?</OptionText>
+          <DestinationID>56</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Busca  por ahí y encuentra un regalito para Jerome. Necesito ese pase para el vestíbulo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Oh, ¡ya regresaste!~~~ No parece que nuestro pequeño truco con Buggs haya funcionado y Cindy fue capaz de librarse por acusarte de haberla violado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así parece.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TakeStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText> Desafortunadamente para ti, eso significa que tengo que quitarte la estrella dorada que te di anteriormente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay de Jerome?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡Eso significa que ella se ha ido! Ay que felicidad, ¡qué día tan feliz! Estaba harta de oír todas sus tonterías. ¡Has ganado una estrella de oro!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y para qué sirve?</OptionText>
+          <DestinationID>19</DestinationID>
+          <FunctionCall>GetStar</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>17</DestinationID>
+          <FunctionCall>GetStar</FunctionCall>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Sabes...~ Pensé que serías  un problema para mí hoy después de todo ese asunto con Buggs, pero supongo que no eres tan malo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias...Supongo.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>De nada. Ahora corre y disfruta el resto del día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Cositas por allá y por acá. \hSi recoges seis de ellas obtendrás una recompensa especial./h ¿Te gustaría conseguir más de las estrellas doradas de la maestra?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Ya tener el pase">
+      <NodeID>20</NodeID>
+      <DialogueText> Ay, ¿verdad? ¿Y de dónde exactamente sacaste eso?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Jerome.</OptionText>
+          <DestinationID>21</DestinationID>
+          <FunctionCall>RatOnJerome</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Del director.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Lo sabía!~ ¡¡¡JEROME!!! ¡Ven acá, pequeña cucaracha!~~~ ¡ya hemos pasado por ésto! ¡No puedes robar los pases de tu padre!</DialogueText>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¡Sí, él lo hizo! Él es un buen traidorcito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por favor, deja de llamarme así.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>RatOnJerome2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Oh, ¡hermoso! ¡Tengo un maravilloso plan para deshacerme de Jerome!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay de él?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Muy bien. No voy a molestarte con esto. Corre y disfruta la mañana.</DialogueText>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Oh, ¡eso fue perfecto! Tienes talento natural para ésto. Vamos a mantener este tren de niños rodando!      </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Tengo un plan especial para Nugget. Solo tienes que hacerte amigo de ese pequeño bicho raro para el momento en que empiece el recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>54</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Dame solo un minuto. Jerome me está distrayendo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Conseguí el pase de Jerome.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <ItemToUse>HallPass</ItemToUse>
+          <MissionLock>TeacherGivePass</MissionLock>
+          <FunctionCall>RatOnJerome</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Wow...solo wow.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Regresar del baño">
+      <NodeID>28</NodeID>
+      <DialogueText>Oh, ¡ya regresaste!~~~ Devuélveme el pase para el baño y regresa a las clases.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="regresar después de expulsar Cindy">
+      <NodeID>29</NodeID>
+      <DialogueText>Oh, ¡regresaste!~~~ ¿Dónde está Cindy? ¿Cuál es tu castigo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ninguno. Tenía una prueba de que no estoy involucrado.</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ninguno. Tenía una prueba de que yo no lo hice.</OptionText>
+          <DestinationID>16</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Así que ella se ha ido! Aayyy, ¡qué día tan feliz! Estaba harta de oír todas sus tonterías. ¡Te hubieses podido ganar una estrella dorada!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Hubiese podido?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText> Bueno, nuestro pequeño truco no nos deshizo de Buggs com lo había esperado, pero no te preocupes, hay mucho tiempo para lidiar con eso más tarde.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay de Jerome?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Bienvenido de regreso.~~~ Veo que Cindy salió bien librada otra vez. \hTal vez la próxima vez trata de estar más preparado por si ella te acusa./h Todavía queda tiempo por la mañana. Vete a jugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Regresar de Nugget">
+      <NodeID>33</NodeID>
+      <DialogueText>Bienvenido de regreso. ~~~Espero que todo haya salido bien con el director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mejor de lo que piensas.</OptionText>
+          <DestinationID>34</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todo está bien.</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Oooooooh, conozco ese tono de voz. El director te dio de esas famosas pastillas, ¿verdad? Jeje...~¿te importaría si tomo una?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adelante.</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>TookAPill</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Buen chico.~ *Traga*~ Es buena. Gracias. Disfruta el resto de la mañana. Yo  sí que lo haré.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo también.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+          <ResolutionID>50</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Muy bien, niños. ¡Es la campana del almuerzo! Vamos a bajar a la cafetería para comer algo nutritivo. ¡Escuché que hoy tenemos bazofia! ¡Qué emoción!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero almorzar contigo.</OptionText>
+          <DestinationID>37</DestinationID>
+          <ItemToUse>LunchPass</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ir al almuerzo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Mostrar el pase del almuerzo">
+      <NodeID>37</NodeID>
+      <DialogueText> ¡Oh, tonterías! ~ no tendré mi receso para fumar. ~ Muy bien. ~ Hoy tendrás un almuerzo especial conmigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Excelente.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>UseLunchPass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Es una...~pregunta interesante. ¿Por qué lo quieres saber?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo por curiosidad.</OptionText>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Ok...pero mi vida personal no es asunto tuyo. Ahora regresa a las clases.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Deja de molestarme con esto. No voy a contarte nada de mi vida privada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¡Oh! Él tiene razón. ¡Parece que no manejas tu tiempo correctamente! Tendrás que intentarlo de nuevo mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ay, hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>58</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Dice...~ el director que no te ha dado nada ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me dio unas pastillas.</OptionText>
+          <ItemToUse>Pills</ItemToUse>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Me dio esta cosa.</OptionText>
+          <ItemToUse>Bug</ItemToUse>
+          <DestinationID>47</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nop.</OptionText>
+          <DestinationID>48</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Oh, ¡qué día tan feliz! No te importaría si tu querida maestra tomara una, ¿verdad? </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adelante.</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>TookAPill</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Pero estas son mías.</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Te daré un dólar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>GetDollar</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>No sabes compartir. ¿No es eso lo que se supone que debes aprender en el kindergarten? Debería poder obligarte o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> No soy narcotraficante.</OptionText>
+          <DestinationID>46</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>¡Bien! Ni las quería. Las conseguiré con Nugget como siempre.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Como siempre.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>Ay. Eso no es lo que quise decir. ¿Él te dio algo más?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me dio unas pastillas.</OptionText>
+          <ItemToUse>Pills</ItemToUse>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nop.</OptionText>
+          <DestinationID>48</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>Que tristeza. Ok, todavía queda un poco de tiempo libre. Ve a jugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>¡Ay! ¡ me la pido! *Traga*~ Gracias por traer esto. No te preocupes por la maestra ... ~ uufffff ... ~ haz ... ~ lo que sea. ~ Ahora ve corriendo a jugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Bienvenido?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TookAPill</FunctionCall>
+          <ResolutionID>50</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText> Ve a disfrutar el tiempo de la mañana mientras me bajo de la nube.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿En algún momento del día estás sola?</OptionText>
+          <DestinationID>51</DestinationID>
+          <MissionLock>BuggsFindOutWhenAlone</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Eres un modelo a seguir.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>¡Por supuesto! Yo no podría soportar pasar todo el día con ustedes, niños. ¡Eso sería horrible!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuándo estás sola?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Durante el alnuerzo, por supuesto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres que almorcemos juntos?</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Solo los alumnos que ganan \hmi pase especial para el almuerzo, por recolectar seis estrellas de oro en un día/h merecen almorzar conmigo. Ve a jugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>50</ResolutionID>
+          <FunctionCall>UnlockLunchPassHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText> Siéntete libre de meter a los otros niños en problemas mientras estás allí. Aunque tendrás que ser creativo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trataré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>55</ResolutionID>
+          <FunctionCall>ActivateLunchMissions</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText> Trata de traicionar tantos niños como sea posible durante el almuerzo. Creo en ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText> Monty podría tener algo. La pequeña comadreja tiene un poco de todo. ~ Podría haber algo en los cubículos también. Me voy a hacer la de la vista gorda si quieres husmear un poco.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+          <FunctionCall>DisableBlockCubbies</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Regresar del baño después de campana">
+      <NodeID>57</NodeID>
+      <DialogueText>Oh, ¡regresaste!~~~ ¡Exacto para el almuerzo! ¡Vamos a bajar a la cafetería!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero almorzar contigo.</OptionText>
+          <DestinationID>37</DestinationID>
+          <ItemToUse>LunchPass</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ir a almorzar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="chump res">
+      <NodeID>58</NodeID>
+      <DialogueText> Tendremos que intentarlo de nuevo mañana. Ve a disfrutar de lo que queda de tu tiempo de la mañana, mi pequeña decepción.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Es mi culpa.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

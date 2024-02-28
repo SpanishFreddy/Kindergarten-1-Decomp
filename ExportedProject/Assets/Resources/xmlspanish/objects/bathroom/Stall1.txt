@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>No puedo abrir la puerta. Alguien debe estar ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>( Probar otro cubículo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CheckStall1</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

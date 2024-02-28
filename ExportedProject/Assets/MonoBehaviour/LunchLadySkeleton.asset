@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: LunchLadySkeleton
   m_EditorClassIdentifier:
   atlasAssets:
-  - {fileID: 11400000, guid: 91f443cd5c2907143ad90ec0d86afed7, type: 2}
+  - {fileID: 11400000, guid: b312bd9559382c44d8466a31377dbbb1, type: 2}
   scale: 0.125
-  skeletonJSON: {fileID: 4900000, guid: a7888e4353b805347aa120d592b9e420, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 6638670b9872e39478d7ef5f44b6703b, type: 3}
   fromAnimation:
   - idle
   toAnimation:

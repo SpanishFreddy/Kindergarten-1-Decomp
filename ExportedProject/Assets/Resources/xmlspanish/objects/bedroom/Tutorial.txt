@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Parece que es tu primera vez en este juego. ¿Quieres leer el tutorial? (Utiliza la barra espaciadora o haz clic izquierdo para seleccionar.)</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartTutorial</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ok. Cada vez que quieras podrás acceder al tutorial desde el menú de pausa, presionando 'escape'.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SetTutorial</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

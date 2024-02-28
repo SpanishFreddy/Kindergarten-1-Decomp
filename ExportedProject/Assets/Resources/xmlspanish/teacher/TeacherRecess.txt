@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Ve a jugar mientras aún eres joven y flaco!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Desapareció alguien?</OptionText>
+          <DestinationID>41</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ok...~muchas gracias por hacerlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Me estás agradeciendo por matar a Cindy?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText> ¡Oh, sí, sí lo estoy haciendo! ¿Sabes desde hace cuánto tiempo quería que esa pequeña mocosa muriera? ~ Traté de envenenarla una vez, pero al parecer el veneno no es lo suficiente 'vegano' para ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella no sabe que significa ´vegano´.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Yo sé. Esa chica sólo podría ser más tonta si sus padres fueran hermanos, si sabes a lo que me refiero.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Jaja...sí.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetStar</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>GetStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>No importa. Quiero que sepas que te mereces esta estrella dorada. Solo no le digas a nadie como la coseguiste. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>GetReallyBrightStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Quiero que tengas esta estrella dorada por hacer un favor al mundo entero. Solo no le digas a nadie como la conseguiste.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>GetReallyBrightStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Además...~ como un regalo especial ya que hubo sangre involucrada y yo tengo que ver con todo ésto, aquí tienes una tarjeta Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Esto es terrible, pero gracias.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Está todo bien? ¿Cómo te fue en el almuerzo? </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>8</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Excelente. ¿Ves ese agujero de allá? Él lo ha estado cavando por unos días. Estoy seguro de que ha llegado hasta el fondo de la caja.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Wow.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Sí. Me impresionaría si no fuera tan peligroso. Desafortunadamente, no tengo manera de probar lo peligroso que es y al director esto no parece importarle.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Qué tiene esto que ver con que yo gane su confianza?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Porque él no le permite ver el hoyo a la gente en la que él no confia. Por eso tienes que ganarte su confianza.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Él no confia en ti?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué no vas tú?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Claro que no! Él puede ser raro, feo y trastornado, pero es sólo un poco estúpido. Él sabe que no puedo conseguirlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces, qué tengo que hacer?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿Crees que yo sería capaz de encajar en ese agujero?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Jaja...no.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¿¡Entonces podrías dejar de reír y ayudarme!?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué quieres que haga?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Quiero que bajes al agujero y encuentres algo. No tiene que ser la gran cosa. Solo algo con lo que podamos meterlo en problemas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡No sé! ¡Solo sé que allí abajo debe haber algo! ¡Solo baja y encuéntralo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok...ok.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Bien. Regresa cuando encuentres algo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>33</ResolutionID>
+          <FunctionCall>StartNuggetCave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText> Hablando de ti jovencito, no quiero verte tan resentido con nuestro director, como Lily. Sólo dame una razón para no enviarte a su oficina ¡y estarás libre!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te pagaré.</OptionText>
+          <DestinationID>18</DestinationID>
+          <MoneyLock>5</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Me porté bien hoy, ¿te acuerdas?</OptionText>
+          <DestinationID>19</DestinationID>
+          <ItemToUse>GoldStar</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Te gustan las rosquillas?</OptionText>
+          <DestinationID>20</DestinationID>
+          <ItemToUse>Donut</ItemToUse>
+          <FunctionCall>BribeWithDonut</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo ni una.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText> ¡Está bien para mi! Ahora corre y disfruta el resto del recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>WalkBackRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>¡Oh, sí! ¡Qué tonta soy! ¿Cómo pude olvidarlo? Es una buena razón. Corre a jugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>WalkBackRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText> ¿Me veo como una persona a la que le gustan las rosquillas?~ Ahora estoy a dieta...~¿pero una rosquilla no me hará daño,verdad ?~ *Mastica*~ Oh, dulce Jesús, está buenísima.~ Sí, ahora eres totalmente libre.~ Ve a jugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>WalkBackRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Bueno pues no me dejas otra opción. Ve a reunirte con Lily en la oficina del director. Que Dios se apiade de tu alma.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Espero que lo haga.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToOfficeStatue</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText> Parece que has conseguido noquear a ninguno de los otros niños durante el almuerzo. Que decepción.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="solo Monty">
+      <NodeID>23</NodeID>
+      <DialogueText>¡Escuché lo que pasó con Monty! Qué listo fue usar el conserje. Has ganado una estrella dorada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" solo Buggs ">
+      <NodeID>24</NodeID>
+      <DialogueText>¡Escuché lo que pasó con Buggs! Estoy feliz de que ese pequeño monstruo está muerto, ¡y ni siquiera estoy envolucrada! ¡Mereces una estrella dorada!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="buggs y monty">
+      <NodeID>25</NodeID>
+      <DialogueText> ¡Estoy impresionada con tu desempeño durante el almuerzo! ~ Conseguir a Buggs y a Monty debe haber sido dificil. ¡Tienes dos estrellas doradas por eso!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="solo Lily">
+      <NodeID>26</NodeID>
+      <DialogueText>Wow.~ De todos los niños de los que pensé que te habrías deshecho por mí, no esperaba que agarraras a Lily. Bien hecho. ¡Has ganado esta estrella dorada!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Lily y monty">
+      <NodeID>27</NodeID>
+      <DialogueText>Pudiste atrapar a Lily y a Monty, ¿pero no a Buggs? ¿Cómo es posible? De cualquier manera, has ganado dos estrellas doradas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Lily y Buggs">
+      <NodeID>28</NodeID>
+      <DialogueText> Parece que la pequeña serpiente Monty encontró la forma de scapar, pero igual ... ~ agarraste a Lily y a Buggs hiciste un excelente trabajo. ¡Has ganado dos estrellas doradas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Los 3">
+      <NodeID>29</NodeID>
+      <DialogueText>¡Bien hecho! ¡¿Tienes a Lily, a Monty Y A Buggs?! ¡Esto no tiene precedentes! ¡Mereces tres estrellas doradas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GetRecessStars</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¿Y qué hay de Nugget? ¿Pudiste hacer amistad con ese pequeño lunático?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>8</DestinationID>
+          <MissionLock>TeacherTellGainedTrust</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" No ganar la confianza ">
+      <NodeID>31</NodeID>
+      <DialogueText>Esto es..~ lamentable. Sabía que ésto era demasiado bueno para ser verdad. Sólo ... corre a jugar. Lo intentaremos de nuevo mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y no hay nada que podamos hacer?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" No ganó la confianza ">
+      <NodeID>32</NodeID>
+      <DialogueText> Me temo que no. Simplemente corre a disfrutar del recreo como un niño normal. Me has hecho poner triste.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ayyy hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>¿Bien? ¿Qué encontraste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>El cadáver de un perro.</OptionText>
+          <ItemToUse>CindyDog</ItemToUse>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>ShowDog</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Bien...~no pasó como lo planeamos, pero estoy satisfecha con el resultado. ¡Ganaste otra estrella dorada! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Wow.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>46</ResolutionID>
+          <FunctionCall>GetNuggetStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText> Bueno, ¿Puedes ver ésto? ¡Este parque está completamente vacío! Te has librado de todos tus compañeros de clase y recogido seis estrellas de oro!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>¡Ahora yo me voy temprano!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿No me toca una recompensa?</OptionText>
+          <DestinationID>37</DestinationID>
+          <FunctionCall>GetLunchPass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Oh, ¡cierto! ¡Tu recompensa! Aquí tienes. Es un pase de almuerzo especial. Puedes usarlo en cualquier momento para almorzar conmigo. Es mi manera de proteger a mis pequeños traidores por traicionar a sus amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Bieeeen...~ no se quedo nadie para enseñar hoy. Asi queeeee yo me voy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay de mi?</OptionText>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Mira niñito. Puedes ganar una estrella dorada, o puedes ir a casa. La elección es tuya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo me voy a casa, entonces.</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Bien. Nos vemos mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Empezar a caminar).</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText> Ahora que lo mencionas ... ~ No veo a Buggs por ninguna parte. ~ Juro que si la cocinera lo dejó salir otra vez, voy a ahogarla en su propia comida.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo me encargué de él.</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Ahora...~cuando dices, 'me encargué de él,' te refieres a...~ya sabes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>¡¿Lo hiciste?!~ ¡Pues  muchísisisimas gracias por  esto!~ ¡Quiero entregarte esta estrella dorada por ser un buen alumno hoy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>TellAboutBuggs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>¡Es la campana! ¡Entremos para jugar ´Mostrar y Contar´!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Entrar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToCS2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>¡De nada! ¡Ahora entremos para jugar ´Mostrar y Contar´!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Entrar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToClassroom2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText> No creo que vayas a tener tiempo suficiente para conseguir todas las estrellas doradas  Mejor te deseo suerte mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ayyyy, hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

@@ -17,7 +17,7 @@
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2017.4.2f2</UnityVersion>
+    <UnityVersion>2017.1.2p3</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_2;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_2;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -38,7 +38,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_2;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_2;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -51,187 +51,43 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClothModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AIModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UNETModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.WebModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ARModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StyleSheetsModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AudioModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GridModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.InputModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ParticlesLegacyModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VideoModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.WindModule">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIAutomation">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GoogleAudioSpatializer">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HoloLens">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Program Files/Unity 2017/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.4/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/UnityWiiU/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    <Reference Include="DOTween">
+      <HintPath>Assets/Plugins/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/Plugins/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets/Plugins/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/Plugins/DOTween50.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -429,8 +285,6 @@
     <Compile Include="Assets\Scripts\Assembly-CSharp\Spine\Unity\WaitForSpineEvent.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\Spine\Unity\WaitForSpineTrackEntryEnd.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\Spine\VertexAttachment.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\SteamManager.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\SteamScript.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\Teacher.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\TextFx\ACTION_TYPE.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\TextFx\ActionColorProgression.cs" />
@@ -490,150 +344,9 @@
     <Compile Include="Assets\Scripts\Assembly-CSharp\TrailerChoreography.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\UIController.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\UnityEngine\UI\BoxSlider.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\AAMode.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Antialiasing.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Bloom.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\BloomAndFlares.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\BloomOptimized.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\BloomScreenBlendMode.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Blur.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\BlurOptimized.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\CameraMotionBlur.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ColorCorrectionCurves.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ColorCorrectionLookup.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ColorCorrectionRamp.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ContrastEnhance.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ContrastStretch.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\CreaseShading.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\DepthOfField.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\DepthOfFieldDeprecated.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\EdgeDetection.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Fisheye.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\GlobalFog.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Grayscale.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\HDRBloomMode.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ImageEffectBase.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ImageEffects.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\LensflareStyle34.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\MotionBlur.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\NoiseAndGrain.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\NoiseAndScratches.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\PostEffectsBase.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\PostEffectsHelper.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Quads.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ScreenOverlay.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ScreenSpaceAmbientObscurance.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\ScreenSpaceAmbientOcclusion.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\SepiaTone.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\SunShafts.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\TiltShift.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Tonemapping.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Triangles.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\TweakMode34.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Twirl.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\VignetteAndChromaticAberration.cs" />
-    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityStandardAssets\ImageEffects\Vortex.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\UnlockableObject.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\Vector3VariableSetting.cs" />
     <Compile Include="Assets\Scripts\Assembly-CSharp\VertexColour.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\AutoPlay.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\AxisConstraint.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Color2.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\ABSSequentiable.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Debugger.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\DOGetter.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\DOSetter.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\DOTweenComponent.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\DOTweenSettings.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Easing\Bounce.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Easing\EaseCurve.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Easing\EaseManager.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Easing\Flash.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Enums\FilterType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Enums\OperationType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Enums\SpecialStartupMode.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Enums\UpdateMode.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Enums\UpdateNotice.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Extensions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\SequenceCallback.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Surrogates\ColorWrapper.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Surrogates\QuaternionWrapper.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Surrogates\Vector2Wrapper.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Surrogates\Vector3Wrapper.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Surrogates\Vector4Wrapper.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\TweenerCore.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\TweenManager.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Core\Utils.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\CustomPlugins\PureQuaternionPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\DOTween.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\DOVirtual.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Ease.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\EaseFactory.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\EaseFunction.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\IDOTweenInit.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\LogBehaviour.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\LoopType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\PathMode.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\PathType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Color2Plugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\ColorWrapperPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\ABSTweenPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\IPlugSetter.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\ITPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\ITweenPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\PathCore\ABSPathDecoder.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\PathCore\CatmullRomDecoder.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\PathCore\ControlPoint.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\PathCore\LinearDecoder.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\PathCore\Path.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\PluginsManager.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Core\SpecialPluginsUtils.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\DoublePlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\FloatPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\IntPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\LongPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\ColorOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\FloatOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\NoOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\OrientType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\PathOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\QuaternionOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\RectOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\StringOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\Vector3ArrayOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Options\VectorOptions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\PathPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\QuaternionWrapperPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\RectOffsetPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\RectPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\StringPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\StringPluginExtensions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\UintPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\UlongPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Vector2WrapperPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Vector3ArrayPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Vector3WrapperPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Plugins\Vector4WrapperPlugin.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\RotateMode.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\ScrambleMode.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Sequence.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\ShortcutExtensions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Tween.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\TweenCallback.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\Tweener.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\TweenExtensions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\TweenParams.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\TweenSettingsExtensions.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\TweenType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\DG\Tweening\UpdateType.cs" />
-    <Compile Include="Assets\Scripts\DOTween\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\Scripts\DOTween43\DG\Tweening\ShortcutExtensions43.cs" />
-    <Compile Include="Assets\Scripts\DOTween43\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\Scripts\DOTween46\DG\Tweening\DOTweenUtils46.cs" />
-    <Compile Include="Assets\Scripts\DOTween46\DG\Tweening\ShortcutExtensions46.cs" />
-    <Compile Include="Assets\Scripts\DOTween46\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\Scripts\DOTween50\DG\Tweening\ShortcutExtensions50.cs" />
-    <Compile Include="Assets\Scripts\DOTween50\Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\xml\BaseXML.txt" />
@@ -904,21 +617,22 @@
     <None Include="Assets\Resources\xmlspanish\teacher\TeacherClassroomLunch.txt" />
     <None Include="Assets\Resources\xmlspanish\teacher\TeacherRecess.txt" />
     <None Include="Assets\Resources\xmlspanish\teacher\TeacherSchoolYard.txt" />
-    <None Include="Assets\Shader\BlurAndFlares.shader" />
-    <None Include="Assets\Shader\BrightPassFilter2.shader" />
-    <None Include="Assets\Shader\ColorCorrectionCurves.shader" />
-    <None Include="Assets\Shader\ColorCorrectionCurvesSimple.shader" />
-    <None Include="Assets\Shader\ColorCorrectionSelective.shader" />
-    <None Include="Assets\Shader\DLAA.shader" />
-    <None Include="Assets\Shader\FXAA2.shader" />
-    <None Include="Assets\Shader\FXAA3Console.shader" />
-    <None Include="Assets\Shader\FXAAPreset2.shader" />
-    <None Include="Assets\Shader\FXAAPreset3.shader" />
-    <None Include="Assets\Shader\LensFlareCreate.shader" />
-    <None Include="Assets\Shader\NFAA.shader" />
-    <None Include="Assets\Shader\SSAA.shader" />
-    <None Include="Assets\Shader\Skeleton.shader" />
-    <None Include="Assets\Shader\SkeletonGhost.shader" />
+    <None Include="Assets\Shader\Hidden_BlendForBloom.shader" />
+    <None Include="Assets\Shader\Hidden_BlurAndFlares.shader" />
+    <None Include="Assets\Shader\Hidden_BrightPassFilter2.shader" />
+    <None Include="Assets\Shader\Hidden_ColorCorrectionCurves.shader" />
+    <None Include="Assets\Shader\Hidden_ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Shader\Hidden_ColorCorrectionSelective.shader" />
+    <None Include="Assets\Shader\Hidden_DLAA.shader" />
+    <None Include="Assets\Shader\Hidden_FXAA II.shader" />
+    <None Include="Assets\Shader\Hidden_FXAA III (Console).shader" />
+    <None Include="Assets\Shader\Hidden_FXAA Preset 2.shader" />
+    <None Include="Assets\Shader\Hidden_FXAA Preset 3.shader" />
+    <None Include="Assets\Shader\Hidden_LensFlareCreate.shader" />
+    <None Include="Assets\Shader\Hidden_NFAA.shader" />
+    <None Include="Assets\Shader\Hidden_SSAA.shader" />
+    <None Include="Assets\Shader\Spine_Skeleton.shader" />
+    <None Include="Assets\Shader\Spine_Special_SkeletonGhost.shader" />
     <None Include="Assets\TextAsset\Buggs.atlas.txt" />
     <None Include="Assets\TextAsset\Character.atlas.txt" />
     <None Include="Assets\TextAsset\Hallmonitor.atlas.txt" />

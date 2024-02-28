@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Hay unos papeles y una tarjeta Monstermon aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetMonstermonTrash</FunctionCall>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Aquí no hay nada importante.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Retirarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

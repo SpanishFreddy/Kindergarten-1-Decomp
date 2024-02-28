@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Oh. A mi ya no me importa todo eso del "amigo de la mañana". Mi hermano Billy solía ser "mi amigo de la mañana", pero desapareció.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Pegar el chicle en el cabello de Lily.)</OptionText>
+          <ItemToUse>Gum</ItemToUse>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>PutGumInHair</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una carta de Nugget.</OptionText>
+          <ItemToUse>LoveLetter</ItemToUse>
+          <DestinationID>4</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Acabas de..~oh. Sí, lo hiciste. Pegaste chicle en mi cabello. Es...~tan cruel. Cindy te mando a hacerlo, ¿verdad? Ok. Ni siquiera me importa. Déjame en paz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡¿Qué?! ¿Tienes otro chicle para pegar en mi cabello? Te dije que me dejaras en paz, así que ¡déjame en paz! Ya me has lastimado lo suficiente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Hola. Gracias por haber sido tan amable conmigo esta mañana, pero en realidad no estoy buscando un "amigo de la mañana".</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo la carta de Nugget.</OptionText>
+          <ItemToUse>LoveLetter</ItemToUse>
+          <DestinationID>5</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Oh. Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Mira...~no quiero ofenderte, pero \hyo no confío mucho ni en ti ni en Nugget, como para abrirla./h Dile que lo agradezco, pero que no gracias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FailGiveLetter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Oh!~ Yo no sabía que él...~podía tener sentimientos tan profundos. Es un gesto muy dulce. Ojalá pudiera leerla. ~ ¡Supongo que le voy a pedir a la profesora que la lea por mí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+          <FunctionCall>TeacherReadLetter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Bien...~ eso fue mortificante. Por favor, vete de acá.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText> No fuiste enviado la oficina. De acuerdo con mi plan,\h Necesitas hacer que te envíen a la oficina antes de las clases de la mañana./h Tal vez inténtalo de nuevo mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¡Y entonces? ¿Viste la compuerta? ¿Sabes dónde está Billy?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ví la compuerta.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>CheckForBug</FunctionCall>
+          <MissionLock>LilyTellAboutTheHatch</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tomé pastillas para sentirme bien.</OptionText>
+          <DestinationID>9</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <FunctionCall>CheckForBug</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No pude encontrarla.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¿Tomaste pastillas? ¡Oh, no! Tienes esa misma mirada en blanco que Nugget. ¿Así que no sabes nada de la compuerta?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál compuerta?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Perfecto! ¡Perfecto! ¡Ahora eres completamente inservible para mi! Mañana volveremos a intentarlo. ¡No puedes tomar esas pastillas! Te vuelven...~conformista.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Como quieras Lily.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Lárgate. Ya no me puedes ayudarme. No puedo confiar en ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Como quieras Lily.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Excelente. Ahora pasemos a la siguiente fase. Necesitamos encontrar la manera de entrar a la oficina del director cuando él no este allí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo haremos?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Tenemos que encontrar la forma de sacar al director y la forma para nosotros entrar. Creo que puedo hacer que salga si puedo llamarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entonces iré a hablar con él.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo.</OptionText>
+          <DestinationID>18</DestinationID>
+          <ItemToUse>PrincipalKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> ¿Cómo podría conseguirlo?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Unused</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces que hacemos?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Monty dijo que él conseguirá el código de la compuerta durante el almuerzo, ¿verdad? Cuando la tengas, ven a verme.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Sin embargo hay otra cosa. Si las cosas se ponen muy mal, vamos a necesitar una buena excusa para hacer lo que hicimos. Necesitamos alguna evidencia real.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde la conseguimos?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+
+      <NodeID>21</NodeID>
+      <DialogueText>Bien...~ si hay un desastre en esta escuela, ¿quién lo limpia? Supongo que el conserje tiene algo que ver con todo esto. Ve a ver si está haciendo algo sospechoso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+          <FunctionCall>ActivateJanitorMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¿Encontraste algo? Necesitamos un seguro antes de hacer cualquier cosa loca.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Encontré este zapato en la bolsa.</OptionText>
+          <ItemToUse>Shoe</ItemToUse>
+          <DestinationID>23</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseShoe</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Encontré este dedo amputado.</OptionText>
+          <ItemToUse>SeveredFinger</ItemToUse>
+          <DestinationID>24</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseFinger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Ese es el zapato de Billy!~ Esto es exactamente lo que necesitamos. ¡Ok! Seguimos con el plan. Te veré en el almuerzo. Haremos nuestra movida después de que consigamos el código que tiene Monty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hasta entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>GoForwardWithPlan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¡Es asqueroso!~ Oh, Dios...~Espero que este dedo no sea el de Billy.~ Oh, Jesús.~ Ok...*ufff*...~Funciona de todos modos. No tiene que ser de Billy. El dedo amputado es una buena razón para entrar en pánico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces funciona?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Seguro...~solo aléjalo de mi. Es tan asqueroso.~ Te veré en el almuerzo. Haremos nuestra movida después de que consigamos el código que tiene Monty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <FunctionCall>GoForwardWithPlan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText> Sólo cuida eso por ahora. Lo necesitamos como evidencia por si nos agarran. Haremos nuestra próximo movida en el almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¡Mierda! No voy a entrar ahí a ciegas. Tendremos que intentarlo mañana nuevamente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>28</ResolutionID>
+          <FunctionCall>FailFindHatch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText> Tendremos que intentarlo mañana nuevamente. Necesitamos encontrar esa compuerta antes de que yo pueda seguir con mi plan.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vale.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Éste es el casillero de Nugget. Parece que hay un nugget o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar el nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetNuggetFromCubby</FunctionCall>
+          <ResolutionID>1</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar el nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Éste es el casillero de Nugget. Está vacío por dentro...~al igual que Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse del casillero de Nugget).</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

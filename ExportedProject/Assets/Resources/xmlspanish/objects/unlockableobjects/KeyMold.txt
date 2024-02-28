@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Este es el molde para una llave de la oficina del director que recibí de Jerome. \hSi me lo llevo a Monty, él debería ser capaz de hacermelo ... ~ por un precio./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Traerlo a la escuela.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>Bringmold</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejarlo aquí.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

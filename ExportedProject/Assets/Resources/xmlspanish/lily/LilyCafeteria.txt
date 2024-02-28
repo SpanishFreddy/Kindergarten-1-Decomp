@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Por favor, no sientes conmigo. No quiero hablar con nadie hasta que encuentran a mi hermano.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Hey, perdón por comportarme como loco. No quería quitartelo. Sé que Nugget es raro y que no sabías que iba a decir esas cosas en la carta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Quero regalarte esta rosquilla como una disculpa. Está bien si no te gusta, pero aquí la tienes de todos modos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetDonut</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Vete allá. Quiero terminar mi almuerzo sin ti, pero qué bueno que estamos bien ahora. Nos vemos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Espero que te guste esta rosquilla, pero no crees que algo se cambió entre nosotros. Todavía no quiero compañía para comer. Gracias de todos modos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh, está buen, dime si cambias la decisión. Estaré aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sipi.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¿Quieres esta rosquilla ahora?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetDonut</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Encontraste algo? Necesitamos un seguro antes de hacer cualquier cosa loca.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Encontré este zapato en la bolsa.</OptionText>
+          <ItemToUse>Shoe</ItemToUse>
+          <DestinationID>8</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> He encontrado este dedo amputado.</OptionText>
+          <ItemToUse>SeveredFinger</ItemToUse>
+          <DestinationID>9</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>El conserje estaba guardando algo.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¡Es zapato de Billy!~ Es lo que necesitamos. ¡Ok! Seguimos con el plan.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>GoForwardWithPlanLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Es asqueroso!~ Oh, Dios...~Espero que no sea el dedo de Billy.~ Oh, Jesús.~ Ok...*ufff*...~Funciona. No debe ser de Billy. Un dedo amputado es una buena razón para pánico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Asi que esto funciona?</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>GoForwardWithPlanLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Claro...~solo quítalo de mi. Es tan asqueroso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText> Es hora de averiguar qué le pasó a mi hermano. ¿Recibiste el código de Monty?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sipi. ¿Qué sigue?</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>BillyCode</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Yo ya pagué a la cocinera. Hay que ir al baño. De allí llamamos a la oficina del director y lo mandamos al salón.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te veré allí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MeetLilyInBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Consíguelo! Ven, cuando lo tengas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¿Y?~ ¿Lo tienes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sip. ¿Qué sigue?</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>BillyCode</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Sí, ¡tienes que alejarlo de lo que sea que está guardando allí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Que haga su trabajo. Este baño jamás ha estado limpio. \hSeguro, que hay un baño que necesita limpieza./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vale.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Puede ser que él ha limpiado todo. Volvemos a hacerlo mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>18</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Lo volvemos a hacer mañana. Necesitamos a esta evidencia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vale.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

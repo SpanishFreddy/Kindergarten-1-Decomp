@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> El cajón del escritorio está cerrado con llave. \hParece que tiene un código o algo así./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Abrir cajón.)</OptionText>
+          <DestinationID>1</DestinationID>
+          <ItemToUse>BillyCode</ItemToUse>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> Hay una extravagante llave dentro del cajón del escritorio</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar la llave.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+          <FunctionCall>GetHatchKey</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar la llave.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>El cajón del escritorio está vacío.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(No hacer nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

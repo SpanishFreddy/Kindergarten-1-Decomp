@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Dialogue>
+   <Nodes>
+     <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Éste es el casillero de Jerome. Con un dispositivo raro adentro.</DialogueText>
+       <Options>
+         <DialogueOption>
+          <OptionText>(Tomar el dispositivo.)</OptionText>
+          <DestinationID> 1</DestinationID>
+          <FunctionCall>GetBugFromCubby</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+         <DialogueOption>
+          <OptionText>(Dejar el dispositivo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+     <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Éste es el casillero de Jerome. Está vacío.</DialogueText>
+       <Options>
+         <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

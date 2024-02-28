@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Esto es \hla tarjeta/h Tornado Fly. Es una mosca que genera tornados  moviendo a sus alitas. Ellas no son muy grandes porque ella es un bicho. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Dejar de leer la tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

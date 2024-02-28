@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Galletas! ¡Toma tus galletas! ¡Mientras están calientes!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Galletas?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tu deletreaste mal "galleta”.</OptionText>
+          <DestinationID>3</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No las quiero.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Mi propia receta! Surgió después de un pequeño ... ~ incidente que sucedió recientemente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué tienen las galletas?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuánto cuestan?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuál incidente?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText> Lo que sea que haya en una galleta y alguito extra.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Esa parte extra es la que me preocupa.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuánto cuestan?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡¿Qué?!~ ¡Yo no lo hice!~ ¡¿Cómo lo sabes?!~ ¡Ni siquiera spuedes leer!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Monty puede leer.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>KillMonty</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Oh, no inventes! ¡Pruébala! ¡No te matará!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuánto cuestan?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Un dólar cada una! Un buen negocio para mi y estoy seguro de que a tu amiguita Cindy ... ~ jejejeje ... ¡le ENCANTARÍA probar una!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok, tomaré una.</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>GetBiscuitBall</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué a Cindy le encantaría probar una?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Tan solo...~jejejejeje...~ una corazonada que tengo. Ve y dale una. ¡Estoy seguro de que le encantará!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok, tomaré una. </OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>GetBiscuitBall</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Estás siendo espeluznante!</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Siempre soy espeluznante!Tan sólo dale una maldita galleta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Bien! Tomaré una.</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>GetBiscuitBall</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Pusiste drogas en la galleta o algo así?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¡¿Qué?!~ ¡claro que no! ¡No soy ese tipo de conserje! Es algo más. Es algo más...divertido. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien. Tomaré una.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetBiscuitBall</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ella quiere algo vegano.</OptionText>
+          <DestinationID>9</DestinationID>
+          <MissionLock>CindyFindVegan</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>21</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡?Vegano?! ¡Jajaja!~ ¡Eres su novio!~ ¡Wow! Hablemos de establecer la barra baja. ¡Te haré un trato!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál es el trato?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" No se puede pagar ">
+      <NodeID>10</NodeID>
+      <DialogueText> ¡Ahí vas amiguito! ¡Ahora dale eso a esa chica Cindy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>24</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No se puede pagar">
+      <NodeID>11</NodeID>
+      <DialogueText> ¡Wow tú niñito! ¡Guarda un poco para el resto de nosotros! ¡Sólo una por día! Tengo que asegurarme de que queden suficientes para Cindy...~jejeje.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok, entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText> Eres un buen chico por dejarne saber que ese pequeño monstruo está corrigiendo la ortografía. ¡Y así pasa en las escuelas por todos lados! ~ Es una vergüenza la forma en que los niños se comportan por estos días.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Está él muerto?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí...que vergüenza.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Pero parece que tú eres uno de los buenos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText> Tan sólo avisa al viejo conserje si alguien más tiene algo que decir sobre su ortografía.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No creo que pase de nuevo.</OptionText>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>GetGlasses</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡¿Qué?!~ ¡No!~ Tan sólo lo golpeé hasta que se puso nervioso. Pero se recuperará en un año o dos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Es mucho tiempo.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Oh, sabes...~el perrito de esa niñita...~pues le dije a ella que no podía traerlo al colegio, así que lo dejé en mi armario hasta que su mamá pueda venir a recogerla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Esta cosita me mordió y...~él...~se escapó. Sí. Escapó.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Te estás comiendo al perro?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¡¿Qué?! ¡No! Tonterías, y el hecho de que el nombre de la perrita era "Galleta" es sólo una cruel ironía. ¡Solo olvídalo! ¡Aléjate de mi puesto!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde conseguiste la receta?</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok. Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>19</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>¡Fuera de mi puesto! ¡No quiero niños asquerosos que me acusan de comer perros mientras vendo mis galletas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuánto cuestan?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok. Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText> ¡Es una receta que inventé yo mismo!\hLa he escrito en un pedazo de papel en una caja en mi armario../h Ahora si no vas a comprar una, ¡lárgate!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuánto cuestan?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok entonces...No las quiero.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Todavía hay tiempo para que le des una galleta a esa niña Cindy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perfecto. Tomaré una.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetBiscuitBall</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ella quiere algo vegano.</OptionText>
+          <DestinationID>9</DestinationID>
+          <MissionLock>CindyFindVegan</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText> ¡Te daré una galleta gratis! No te preocupes ... ~ jeje ... ~ es vegana. ¡También agregaré una de las tarjetas Monstermon! Todo lo que tienes que hacer es asegurarte de que ella se coma la galleta! ¡¿Qué dices?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>GetBiscuitBall</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tal vez más tarde.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Perfecto! ¡Regresa cuando ella acabe con la galleta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>24</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¿Se la comió?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sip.</OptionText>
+          <DestinationID>25</DestinationID>
+          <IsAvailable>false</IsAvailable>
+          <FunctionCall>GetCardBiscuit</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Jejeje...~bien. Aquí hay una de las tarjetas que les gustan a los niños. ~ Ahora largo de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(largarse)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Como sea...~ahora que todo esto se solucionó, ¿quieres comprar una de mis galletas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Galletas?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¡Oh! ¡Estos lentes volaron de la cara del nerdo cuando yo lo golpeé. Aquí están. Estos viejos ojos no pierden nada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto...gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

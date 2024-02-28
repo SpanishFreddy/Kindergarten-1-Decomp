@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Perdón, querido, pero estoy pasando la mañana con mi novio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo que sea, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Bien? ¿Qué estás esperando? ¡Pega este chicle a su cabello!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo ya se lo dije de lo que tú tratabas de hacer.</OptionText>
+          <DestinationID>54</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿Lo hiciste? Oh por Dios, tú lo hiciste. ¡Wow! ¿Qué pasó? ¿Qué ella dijo? ¿Lloró? Creo que sí, lloró.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella lloró.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Sí! ¡Estoy feliz! ¡Ahora tú puedes ser mi amiguito de la mañana lo que tambien te hace mi novio! ¡Y como mi novio tú tienes el honor de jugar a la casita conmigo! ¡Nos vemos en la casa de muñecas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estaré en casa pronto, querida.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+          <FunctionCall>GoToDollHouse</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Empezar casa">
+      <NodeID>4</NodeID>
+      <DialogueText>¡Bienvenido a casa, esposo! Espero que el trabajo no haya sido demasiado duro, porque vas a hacer la cena esta noche.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, mi amor.</OptionText>
+          <DestinationID>5</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué yo tengo que hacer la cena?</OptionText>
+          <DestinationID>6</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Creo que olvidé algo en el coche.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>...Y después quiero que tú...~ *huele* *huele*...~¿Has bebido otra vez?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, mi amor, solo estoy cansado.</OptionText>
+          <DestinationID>7</DestinationID>
+          <FunctionCall>TurnOnBreathalyzer</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Espera, ¿qué?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Porque yo estaba tan ocupada en la casa y yo...~ *huele* *huele*...~¿Has bebido otra vez?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, mi amor, solo estoy cansado.</OptionText>
+          <DestinationID>7</DestinationID>
+          <FunctionCall>TurnOnBreathalyzer</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Espera, ¿qué?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Solo cansado">
+      <NodeID>7</NodeID>
+      <DialogueText>Oh, por supuesto estás. Siempre estás taaaaan cansado. Estoy segura de que no te importaría soplar en esto, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Es un alcoholímetro?</OptionText>
+          <DestinationID>8</DestinationID>
+          <FunctionCall>GetBreathalyzer</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Te dije, estoy BIEN!</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>GetFlask</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ya no quiero jugar.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Alcoholímetro">
+      <NodeID>8</NodeID>
+      <DialogueText>¡Apuestas que eso es! Y si soplas tanto como un 0,01, ¡llamaré a tu patrocinador!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pasaré el examen.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Te dije que estoy BIEN!</OptionText>
+          <DestinationID>10</DestinationID>
+          <FunctionCall>GetFlask</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ya no quiero jugar.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Pasar el examen">
+      <NodeID>9</NodeID>
+      <DialogueText>Bien. Sopla...~ ¿¡0.32!? ¡Estás destrozado ahora mismo! ¡¿Cómo pudiste hacerme esto?! ¡Dijiste que te pondrías sobrio!~ ¡¿Cómo puedes ser padre si no puedes cuidarte a ti mismo?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ser padre?</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ya no quiero jugar.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Estoy bien">
+      <NodeID>10</NodeID>
+      <DialogueText> ¡Ahí está este genio de que mi madre me advirtió! ¡Tenía tanta razón acerca de ti! ¡Toma tu frasco estúpido! ¡Obviamente, él te importa más que yo o tu hijo por nacer!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Hijo por nacer?</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ya no quiero jugar.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Ser padre">
+      <NodeID>11</NodeID>
+      <DialogueText>Yo...~bien...~mientras estabas en la cárcel...~Él...~Tal vez el bebé no es tuyo. ~Perdóname. Como veo tengo mis propios problemas por resolver.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¡¿Tú me engañaste?!</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero el divorcio.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Podemos superarlo.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ya no quiero jugar.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="¿Tú engañaste?">
+      <NodeID>12</NodeID>
+      <DialogueText>¡Solo una vez!~ ¡Estaba sola!~ ¡Él estuvo aquí conmigo, y tú no!~ ¡No sabía cómo seguir!~ ¡Por favor, no te enojes! ¡Podemos superarlo! Yo...~Todavía te amo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo quiero el divorcio.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Podemos superarlo.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ya no quiero jugar.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>TurnOnTears</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Querer el divorcio">
+      <NodeID>13</NodeID>
+      <DialogueText>Yo...~Tienes razón. Esto no está funcionando.~ ¿Qué harémos?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vete a dormir con tu madre.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Me voy.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Superarlo">
+      <NodeID>14</NodeID>
+      <DialogueText>*Oliendo*~ ¿Crees?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> No, puta sucia.</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No quiero jugar">
+      <NodeID>15</NodeID>
+      <DialogueText>¿Jugar? ¡¿Es un juego para tí?! ¡¿Soy un juego para tí?! ¡Son nuestras vidas! ¡Sí no vas a tomarlo en serio, nuestra relación se acabó!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me voy.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Me voy">
+      <NodeID>16</NodeID>
+      <DialogueText>¡No puedes irte!~ Estás totalmente borracho. ¡El hecho de que lo hayas hecho en casa es un milagro! ¡No puedo dejar que te vayas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fuera de mi camino.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien, me quedo.</OptionText>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Vete a pasar la noche con tu madre">
+      <NodeID>17</NodeID>
+      <DialogueText>Ok...~Creo, es justo. Te llamaré mañana. Espero que podamos solucionar esto amistosamente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo tambien.</OptionText>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>ResetTexture</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Fuera de mi camino">
+      <NodeID>18</NodeID>
+      <DialogueText>¡No!~ ¡No quiero dejarte! ¡No podremos ocultar otro incidente si matamos a alguien de nuevo! ¡No puedes irte! ¡Voy a tener que detenerte!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo harás?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CantLeave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Sí, querida">
+      <NodeID>19</NodeID>
+      <DialogueText> Bueno, al menos estás siendo honesto conmigo Y más importante contigo mismo. Tienes un problema.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo ningún problema.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Sí, querida2">
+      <NodeID>20</NodeID>
+      <DialogueText> Quiero que llamas a tu patrocinador y le cuentas todo. También quiero que me das dinero para comprar un nuevo bolso para ayudar a manejar el trauma y el TEP que me causaste.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>21</DestinationID>
+          <MoneyLock>1</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No te voy a comprar nada.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Sí, querida3">
+      <NodeID>21</NodeID>
+      <DialogueText>Estoy feliz que me cuidas tanto. Gracias, amor. Lo superaremos juntos. Ahora vé a hacer mi cena.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>ResetTexture</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Espera que">
+      <NodeID>22</NodeID>
+      <DialogueText> ¡No te hagas tontito conmigo, señor! ¡¡TÚ. ~ HAS. ~ SIDO. ~ BORRACHO !!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, amor, solo estoy cansado.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Vamos a jugar a la casita?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="¿Jugar a la casita?">
+      <NodeID>23</NodeID>
+      <DialogueText>"¡¿Jugar a la casita?!"~ ¿¡Tú quieres "jugar a la casita"!?~ ¡ESTO ES JUGAR A LA CASITA!~ ¡Ahora contesta la maldita pregunta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, amor, solo estoy cansado.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí, querida.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No tengo priblema">
+      <NodeID>24</NodeID>
+      <DialogueText>¡Oh! ¡No tienes ningún problema!~ ¡Tonta de mí! Debo haber imaginado el accidente de coche que causaste y los meses de terapia que yo tomé! Pero noooooooo. Tú definitivamente no tienes ningún problema.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo tengo.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tal vez lo tengo.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No comprar">
+      <NodeID>25</NodeID>
+      <DialogueText>¿No?~ Es posible que deseas reconsiderarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>26</DestinationID>
+          <FunctionCall>ShowKnife</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>21</DestinationID>
+          <MoneyLock>1</MoneyLock>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Por qué">
+      <NodeID>26</NodeID>
+      <DialogueText> Porque de lo contrario ... ~ ¡puedes resultar herido!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡¿Es un cuchillo?!</OptionText>
+          <DestinationID>48</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Ok! Jesús.</OptionText>
+          <DestinationID>21</DestinationID>
+          <FunctionCall>HideKnife</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo dinero para comprarte algo.</OptionText>
+          <DestinationID>49</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>...~¡Wow! Eso fue lo más divertido que he tenido jugando a la casita. Vas a hacer un espléndido novio. Quiero que almuerzas conmigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Sí, querida3">
+      <NodeID>28</NodeID>
+      <DialogueText>¡Maravilloso! Te veré luego.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seguro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+          <FunctionCall>EnableLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Puta sucia">
+      <NodeID>29</NodeID>
+      <DialogueText>¿¡Cómo lo atreviste!? Se acabó entre nosotros. ¡Nadie quien me llama así puede ser mi novio! ¡Vete!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ya no estamos jugando?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Puta sucia">
+      <NodeID>30</NodeID>
+      <DialogueText>¡NO!~ ¡Lo llevaste demasiado lejos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Esto fue demasiado?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Puta sucia">
+      <NodeID>31</NodeID>
+      <DialogueText>¡Duf!~ ¡Ahora aléjate de mí antes de que me vuelva loca! ¡Todo se acabó!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Fue divertido mientras duró.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BreakUp</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Poder superarlo">
+      <NodeID>32</NodeID>
+      <DialogueText>Wow. El alcoholismo va a un lado, realmente eres un gran tipo. ~ Así que ... ~ ¿qué debemos hacer con respecto al ... ~ bebé?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sálvalo.</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Haz un aborto.</OptionText>
+          <DestinationID>34</DestinationID>
+          <FunctionCall>ResetTexture</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Puta sucia">
+      <NodeID>33</NodeID>
+      <DialogueText> Eso es tan maravilloso que harías eso. Gracias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>ResetTexture</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText> Sí, eso es lo que estaba pensando, pero no sé exactamente como hacerlo. Creo que hay una pastilla que puedes tomar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo una pastilla que puedes tomar.</OptionText>
+          <ItemToUse>Pill</ItemToUse>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>UsePill</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Puedes tomar una de estas pastillas.</OptionText>
+          <ItemToUse>Pills</ItemToUse>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo pastillas.</OptionText>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>¡Perfecto! ~*Traga*~ Wow...~¿quien sabía que hacer un aborto se siente tan bonito? Eres el mejor novio del mundo. Creo que mereces un premio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super.</OptionText>
+          <DestinationID>46</DestinationID>
+          <FunctionCall>GetCardHouse</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Uff...~solo fingimos que yo tomé la pastilla y me deshice del bebé.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>37</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Perfecto. ¡El bebé fue abortado y vivimos felices para siempre!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hooray.</OptionText>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>ResetTexture</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Bien. Al menos tienes algún sentido incluso si eres un alcohólico furioso. Dame tus llaves.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText> Más tarde veremos el resto. Ahora ve a hacerme la cena, imbécil.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>ResetTexture</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡Te veré en el almuerzo, novio!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te veré luego.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¡Sí! ¡Estoy tan feliz! ¡Ahora puedes ser mi amiguito de la mañana que también te hace mi novio! ¡Como mi novio consigues el honor de jugar a la casita conmigo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok, entonces.</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Ummm...~pero antes de que lo harémos, tienes que limpiarte. De ninguna manera ningun novio mío va a sangrar encima de mí.\hVe al baño y lávate./h Estaré en la casita de muñecas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>43</ResolutionID>
+          <FunctionCall>ActivateWashUp</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>¡Vé a limpiarte! ¡No voy a jugar contigo a la casita hasta que tu limpies la sangre de tu cara!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>¡¿Qué?! ¡¿Por qué harías eso?! ¡Qué desperdicio total de chicle!~ ¡De ninguna manera podrás ser mi novio!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Siento que evité una bala.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>45</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>No vamos a ser parejita. No me escuchas. Vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Es mejor de esta forma.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText> Puedes tener esta tarjeta Monstermon ya que te esforzaste a tope aquí y en realidad tenías una pastilla para aborto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Gracias!</OptionText>
+          <DestinationID>47</DestinationID>
+          <FunctionCall>EnableLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText> Deberíamos almorzar juntos. Te veré en la cafetería.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te veré luego.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>48</NodeID>
+      <DialogueText> ¡Es mi cuchillito rosado bonito! ¡Ahora dame algo de dinero para  calmarme!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Ok! Jesús.</OptionText>
+          <DestinationID>21</DestinationID>
+          <MoneyLock>1</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo tengo suficiente.</OptionText>
+          <DestinationID>49</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>49</NodeID>
+      <DialogueText>Qué pena...~ mostraste una promesa. Oh, bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ya terminamos de jugar?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StabPlayerNoMoney</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>50</NodeID>
+      <DialogueText> Si no puedes admitir tu problema de beber, entonces ¿cómo puedo confiar en tí para admitir tu amor?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No puedes.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>51</NodeID>
+      <DialogueText>Ok, entonces. Supongo que eso es todo para nosotros. Ya hemos terminado de jugar. Ya no te quiero como mi novio. Hemos terminado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Así?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>52</NodeID>
+      <DialogueText>¡Síp! Así. Ahora vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que adios.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>53</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>53</NodeID>
+      <DialogueText>Ya no hables conmigo. Hemos terminado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="cuchillo">
+      <NodeID>54</NodeID>
+      <DialogueText>Awww, ¡hombre! ¿Por qué tienes que ir a hacer eso? ~ Lo que sea. ~ Supongo que no tienes lo que se necesita para ser mi novio. Ya hemos terminado. Vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>53</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>¡Todo se acabó entre nosotros! Vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>El director dijo que ya no podemos hablar. ¡Vete!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

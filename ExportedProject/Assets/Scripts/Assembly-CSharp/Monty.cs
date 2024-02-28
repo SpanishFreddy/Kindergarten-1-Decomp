@@ -421,7 +421,6 @@ public class Monty : NPCBehavior
 
 	private void EndDayMonty()
 	{
-		SteamScript.UnlockAchievement("MontyAchievement");
 		UI.CompleteDay(Item.PrincipalKey);
 		SetDirection(false);
 		WalkToPoint(new Vector3(-36f, Random.Range(-2f, -1.5f), -1.14f), 7f, false);

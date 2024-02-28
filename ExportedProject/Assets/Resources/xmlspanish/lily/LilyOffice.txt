@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>No lo puedo creer.~ Estamos adentro.~ ¿Dónde está la compuerta?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Debajo de la alfombra en el rincón.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>WalkToHatch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>La llave debe estar escondida en algún lugar por aquí. ¡Apúrate y búscala!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>La encontré.</OptionText>
+          <DestinationID>4</DestinationID>
+          <ItemToUse>GoldKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Perfecto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ok...~Lo hice.~ Hey, ummmm...~antes de que bajemos, te quiero agradecer.~ No hubiera podido llegar tan lejos sin ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Si algo pasa allí abajo...~quédate cerca. Lo haremos juntos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Bajar a través de la compuerta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoDownHatch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡¿Ok, qué estás esperando?! ¡Ponla en la cerradura de la compuerta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

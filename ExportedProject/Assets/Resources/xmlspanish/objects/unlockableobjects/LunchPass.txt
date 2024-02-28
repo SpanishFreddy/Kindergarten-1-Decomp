@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Es el pase de almuerzo que tú conseguiste de la maestra quien te lo dio por seis estrellas de oro ganadas en un solo día. Tú puedes usarlo para almorzar con la maestra.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Traer el pase de almuerzo al cole.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BringLunchPass</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejarlo aquí.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

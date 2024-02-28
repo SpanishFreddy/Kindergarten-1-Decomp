@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Fuera de aquí. Estoy ocupado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tú no te ves ocupado.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ok. Está claro que alguien se dio cuenta de que la maestra no está presente, de lo contrario ese viejo loco no nos estaría observando mientras estamos aquí. Necesitamos esconder ese cuchillo antes de entrar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde lo escondemos?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿No puedo solo dejarlo en algun lugar?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>El único lugar que sirve para esto \hes este hoyo que escavó Nugget./h El único problema es que Nugget puede ser...~teritorial y no somos amigos. ¿Tal vez tu Podrás convencerlo a enterrar el cuchillo para nosotros?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo trataré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ActivateHoleMission</FunctionCall>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>No. Tú quieres a esta cosa escondida donde nadie jamás lo encontrará. Créeme. Lo sé por experiencia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde lo escondemos?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¿Entonces? ¿Te deshiciste de él?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Se fue.</OptionText>
+          <DestinationID>5</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Él no me lo permitirá.</OptionText>
+          <DestinationID>8</DestinationID>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No he hablado con él todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Carambas! ¡No puedo creer que estemos a punto de salirnos con la nuestra! Sólo mantén la calma cuando regresemos y todo saldrá bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué hay de su teléfono?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo puedo hacer.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText> Sólo mantén la calma cuando regresamos y estaremos en casa libres.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Puedo hacerlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>No te preocupes. Simplemente mantén los ojos abiertos y estés listo cuando llegue el momento adecuado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Maldita sea.~ Odio a ese pequeño bicho raro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿No puedes amenazarlo o algo así?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Y ahora qué?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Diablos, no!~ Nugget puede recibir golpes como un campeón. Escuché que es porque le falta la mitad de su cerebro o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> Bueno, ¡si no es mi pequeño amigo de esta mañana! ~ Esperaba que te viera por ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>BeatUpAtRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Bien...~ Supongo que sería mejor dejar el cuchillo aquí y esperar que nadie lo encuentre. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Supongo que sí.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>LeaveKnife</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Ok.~ Eso es. Me aseguraré de que esté cubierto antes de entrar. ~ Ahora sal de aquí para que no parezcamos sospechosos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Fuera de aquí, chico! No quiero que nos parezcamos sospechosos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>SOY BU--aw ¿de que se trata?~ No es divertido ser un matón cuando no importa cuántos niños te pegan, mi papá todavía no está de vuelta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Un poco sentimental.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>UnlockShroomHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText> Extraño todo de él. \hHasta su modo de beber en exceso./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí está.</OptionText>
+          <DestinationID>16</DestinationID>
+          <ItemToUse>Breathalyzer</ItemToUse>
+          <FunctionCall>UseBreathalyzer</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aquí está.</OptionText>
+          <DestinationID>17</DestinationID>
+          <ItemToUse>Flask</ItemToUse>
+          <FunctionCall>UseFlask</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Voy a irme ahora.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¿Un alcoholímetro? ~ Es igual al que mi mamá solía forzar a mi papá a usar. Gracias amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetShroomTurtle</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¿Un matraz?~ Aww Es como el que mi papá solía tener completamente martillado. Gracias amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>GetShroomTurtle</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Aquí está la tarjeta Monstermon. Realmente aprecio tener esto. Te veré más tarde.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>19</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText> Gracias de nuevo por esto, chico. Te veré por ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText> Extraño todo sobre mi papá. \hIncluso la forma en que solía beber excesivamente./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí.</OptionText>
+          <DestinationID>16</DestinationID>
+          <ItemToUse>Breathalyzer</ItemToUse>
+          <FunctionCall>UseBreathalyzer</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aquí.</OptionText>
+          <DestinationID>17</DestinationID>
+          <ItemToUse>Flask</ItemToUse>
+          <FunctionCall>UseFlask</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Voy a irme ahora.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

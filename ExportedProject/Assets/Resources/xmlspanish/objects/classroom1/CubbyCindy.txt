@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Éste es el casillero de Cindy. Hay una tarjeta Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar la tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetCardFromCubby</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar la tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Éste es el casillero de Cindy. Está vacío.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

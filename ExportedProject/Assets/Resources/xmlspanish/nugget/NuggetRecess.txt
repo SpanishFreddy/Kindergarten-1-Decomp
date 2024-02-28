@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡He aquí! ¡La Cueva Nugget!~ ¡Muy profunda y muy oscura!~ ¿Cuáles secretos guarda? ¿Quiéres saberlo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedo esconder algo en el hoyo?</OptionText>
+          <DestinationID>1</DestinationID>
+          <MissionLock>BuggsConvinceHide</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JumpIntoHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <!--<DialogueOption>
+<OptionText>Test end world</OptionText>
+ <DestinationID>-1</DestinationID>
+ <FunctionCall>FinishGame</FunctionCall>
+ </DialogueOption>-->
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> ¿Quieres hacer una contribución a la Cueva Nugget? ¿Qué quieres poner?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Un cuchillo.</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>BloodyKnife</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Oh, por Dios...~este cuchillo ha visto muchas cosas malas. Nugget lo sabe. ¡Nugget no lo quiere en la Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero somos amigos, ¿recuerdas?</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Nugget</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TakeNugget</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué hago para convencerte?</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>UnlockKnifeHint</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡¿Tienes un nugget de amistad?!~ Muy bien. Te permito poner el cuchillo del demonio en la Cueva de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>ThrowKnife</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Ahora véte! Nugget tiene asuntos que resolver con ésta ... ~ adición malsana a la cueva.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro. Adios.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>34</ResolutionID>
+          <FunctionCall>GotRidOfKnife</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Solo aquellos que descubren \hel símbolo de la amistad de Nugget/h pueden pedir semejante favor a Nugget. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Te refieres a este nugget?</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Nugget</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Símbolo de amistad?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Tal vez sería bueno primero\hser amigo de Nugget y después pedir favores./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo este nugget. Esto nos hace amigos.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Nugget</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Lo voy a tirar de todos modos.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡No pidas tirar tu maldad en la Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo este nugget. Esto nos hace amigos.</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Nugget</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo voy a tirar de todos modos.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¡Sería bueno que no lo hicieras! ¡Nugget no tolera este tipo de cosas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tirarlo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ThrewKnifeInHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <REsolutionID>7</REsolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Créeme! ¡Te encantará!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien. Ya me voy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JumpIntoHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo creo.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> ¡Nadie nunca ha amado la Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien. Yo me voy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JumpIntoHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No me voy a ir. Punto.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Oh, te irás...~ De una manera u otra...~ te irás.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse de Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿Cambiaste de opinion?~ ¿Entrarás a la Cueva de Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedo esconder algo en el hoyo?</OptionText>
+          <DestinationID>1</DestinationID>
+          <MissionLock>BuggsConvinceHide</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JumpIntoHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Tú viniste como Nugget te lo pidió. ¿Estás listo para entrar a la Cueva de Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>14</DestinationID>
+          <!--<UsesAction>true</UsesAction>-->
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Excelente, pero primero Nugget debe hacer algo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>15</ResolutionID>
+          <FunctionCall>DropNuggetsInHole</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Aquí está. Ahora estamos preparados.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué acabas de tirar todos esos nuggets al hoyo?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText> Así no morimos al aterrizar. Lo nuggets de Nugget son tan suavecitos como sabrosos. ¡Ahora, por favor, entra a la Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Entrar a la Cueva de Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>35</ResolutionID>
+          <FunctionCall>EnterNuggetCave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText> Así que ... ~ hemos llegado hasta aquí. El amigo de Nugget se prepara para buscar el último nugget de la amistad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>18</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText> ¿Todavía tienes el extraño dispositivo que Nugget te dio al inicio de tu búsqueda?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ésta cosa?</OptionText>
+          <DestinationID>20</DestinationID>
+          <ItemToUse>Bug</ItemToUse>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Blank</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Ésta cosa?</OptionText>
+          <DestinationID>20</DestinationID>
+          <ItemToUse>Bug</ItemToUse>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText> Nugget tiene una simple solicitud con respecto al dispositivo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Entrégale el dispositivo a Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+          <FunctionCall>GiveBugToNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Aquí está...~ahora podemos hablar sobre este dispositivo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué lo pusiste allá?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Esta cosa está escuchando! El sabe lo que Nugget dice y si no le gusta lo que escucha...~¡explota! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué haremos con ésto?</OptionText>
+          <DestinationID>25</DestinationID>
+          <FunctionCall>CheckForDevice</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Por qué solo no lo dejamos allá?</OptionText>
+          <DestinationID>24</DestinationID>
+          <FunctionCall>CheckForDevice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText> El director sabe cuándo se abandona. El director sabe y hará daño al pobre Nugget, como le hace daño al pobre Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué haremos con ésto?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText> Debemos hacerlo explotar, pero debemos hacerlo correctamente. ¿Ves la estatua del director allá? ~ Nos observa al igual que el dispositivo nos escucha.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Vamos a volar la estatua?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>No, no, tonto. ¡TÚ vas a volar la estatua!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText> Pon el dispositivo detrás de la estatua. Una vez que hayas hecho eso, habla con la linda Lily sobre el pobre Billy. Al dispositivo no le gusta cuando se habla sobre el pobre Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tengo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RetrieveBug</FunctionCall>
+          <ResolutionID>28</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Mucha suerte. Regresa cuando lo hayas hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>29</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Hazlo como Nugget te lo pidió. No hablaremos más hasta que lo hayas hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText> Has hecho bien al volar la estatua. Toma el último nugget de amistad y recuerda que ahora eres un verdadero amigo de Nugget. Es hora de que entres a la Cueva de Nugget, en su forma verdadera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy listo.</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>GetFinalNugget</FunctionCall>
+          <!--<UsesAction>true</UsesAction>-->
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Solo necesito un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>33</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Gracias por venir como Nugget te lo pidió. Nugget normalmente no tiene amigos para mostrar su trabajo, pero hoy lo hace. ¿Estás listo para entrar en la Cueva de Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>14</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>32</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¿Y ahora ya estás listo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>14</DestinationID>
+          <!--<UsesAction>true</UsesAction>-->
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>¿Estás listo para tomar el ultimo nugget de la amistad y entrar en la Cueva de Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy listo.</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>GetFinalNugget</FunctionCall>
+          <!--<UsesAction>true</UsesAction>-->
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>¡Véte! Nugget tiene cosas que hacer con ésta...~ adición malsana a la cueva.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hazlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Gracias por visitar la Cueva de Nugget. Nugget espera que vuelvas pronto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ufff...bienvenidos.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Está hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mataste a todos.</OptionText>
+          <DestinationID>37</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText> ¡Nugget no hizo tal cosa! Nugget y el amigo de Nugget siguen vivos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>¿Ahora? Bueno, Nugget ya no puede estudiar en esta escuela, así que parece que debemos \hirnos a otra./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De qué estás hablando?</OptionText>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>¡Otra escuela! ¡Debemos irnos a otra escuela! ¡Y debemos hacerlo otra vez! ¡Pero de una manera más grande y mejor!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Volver a hacer qué?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡Kindergarten!~ Nugget debe hacer kindergarten de nuevo en nueva escuela.\h¡Kindergarten 2!/h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me voy a casa.</OptionText>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText> Nugget lo respeta, pero el amigo de Nugget también tendrá que cambiar de escuela. ¡¡¡Nugget te verá allí!!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adios, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+          <FunctionCall>PlayerWalkAway</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText> ¡Nugget quiere agradecerte por unirte a él para hacer el Kindergarten!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>¡Para siempre!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Terminar el juego.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FinishGame</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>El amigo de Nugget no pasó la prueba. El amigo de Nugget no regresó a tiempo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh. Perdón.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Está bien...~¡¡¡NUGGET SABE DONDE ESTÁ BILLY!!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué lo gritaste?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DetonatePlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>Qué raro...~ ¡El amigo fracasado de Nugget debería estar volando en mil pedazos! ¡¿Dónde está el extraño dispositivo?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ya no lo tengo.</OptionText>
+          <DestinationID>47</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText> ¡Esto desagrada mucho a Nugget! ¡Véte! Nugget ya no quiere ser tu amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedo esconder algo en el hoyo?</OptionText>
+          <DestinationID>49</DestinationID>
+          <MissionLock>BuggsConvinceHide</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Para mi está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>48</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>¡Ya no eres amigo de Nugget! ¡Fuera!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedo esconder algo en el hoyo?</OptionText>
+          <DestinationID>49</DestinationID>
+          <MissionLock>BuggsConvinceHide</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Es por una buena causa.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>¡¿Primero le fallas a Nugget y luego pides entrar a la Cueva de Nugget?! ¡¿Dónde termina?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo es esta cosa.</OptionText>
+          <DestinationID>50</DestinationID>
+          <ItemToUse>BloodyKnife</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>48</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Ay por Dios...~este cuchillo ha visto cosas malas. Nugget lo sabe. ¡Nugget no lo quiere en la Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Sólo hazlo por lo que pudo haber sido.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText> ¡Muy bien! Si dejas de molestar a Nugget, ¡puedes poner el cuchillo del demonio en la Cueva Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>ThrowKnife</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

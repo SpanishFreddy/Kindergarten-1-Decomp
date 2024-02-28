@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Éste es el casillero de Buggs. Es un cuchillo. \hSi me atrapan con ésto tendré problemas./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar el cuchillo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetKnifeFromCubby</FunctionCall>
+          <ResolutionID>1</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar el cuchillo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Éste es el casillero de Buggs. Ya he robado el cuchillo que estaba aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mierda.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

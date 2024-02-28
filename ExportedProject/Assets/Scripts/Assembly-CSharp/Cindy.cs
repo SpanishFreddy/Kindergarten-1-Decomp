@@ -877,7 +877,6 @@ public class Cindy : NPCBehavior
 		WalkToPoint(new Vector3(-36f, Random.Range(-2f, -1.5f), -1.14f), 7f, false);
 		UI.CompleteDay(Item.Flower);
 		Object.FindObjectOfType<PauseMenu>().UnlockAllHints("Cindy");
-		SteamScript.UnlockAchievement("CindyAchievement");
 	}
 
 	private void BreakUp()

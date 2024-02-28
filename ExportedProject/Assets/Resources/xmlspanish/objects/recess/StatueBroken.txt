@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Aquí es donde solía estar la estatua del director. Ya sabes antes de que... ~ Yo la explotara.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ir a ver.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

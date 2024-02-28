@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954aac3217e2c6b005b08be3c3ee04c4, type: 3}
   m_Name: Buggs_Atlas
   m_EditorClassIdentifier:
-  atlasFile: {fileID: 4900000, guid: 2d31d338aed9049408be5d4ef840d3a5, type: 3}
+  atlasFile: {fileID: 4900000, guid: 24def37230971464a8967579a02e043c, type: 3}
   materials:
-  - {fileID: 2100000, guid: e81e14e4f108a814984a0bf9a3f58c0f, type: 2}
+  - {fileID: 2100000, guid: 117b410abdb860b409a3c484774e1a78, type: 2}

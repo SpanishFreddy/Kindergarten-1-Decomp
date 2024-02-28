@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Hola, mis amigos me llaman Nugget...~o lo harían si tuviera alguno. A Nugget nadie lo \hama/h ni tampoco tiene amigos desde que Billy desapareció.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo seré tu amigo.</OptionText>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasó con Billy?</OptionText>
+          <DestinationID>19</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> No recibirás nada de mí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> ¿Qué me vas a dar?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo una flor.</OptionText>
+          <ItemToUse>Flower</ItemToUse>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo solo tengo amistad.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿darte?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Tú tienes que dar algo, para aprobar tu amistad a Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo tengo una flor.</OptionText>
+          <ItemToUse>Flower</ItemToUse>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo solo tengo amistad.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tal vez por eso no tienes amigos?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Tal vez...~pero no es Nugget quien pone las reglas. Nugget solo las sigue. Ahora por favor muestrame lo que le vas a dar a Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo tengo una flor.</OptionText>
+          <ItemToUse>Flower</ItemToUse>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo solo tengo amistad.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Y quien pone las reglas?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>El director pone las reglas para Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y por qué él te las pone?</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetBug</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Y por qué las sigues?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Tú haces muchas preguntas. El director le pidió a Nugget que le diera ésto a cualquiera que se ponga muy curioso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué hago con esto?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Nugget no lo sabe.~ El director es muy misterioso. También dijo que no hablara con nadie que lo tenga. Adiós.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Guárdalo. El director dijo que tú lo sabrás cuando sea el momento correcto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Eso es inquietante.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Así es, pero ahora que lo tienes, Nugget no tiene ninguna razón para seguir hablando contigo. Adios.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="No amigo de nugget">
+      <NodeID>9</NodeID>
+      <DialogueText>Nugget ha visto cosas.~ Cosas malas.~ Nugget sabe cosas que no debe saber. El director dice que sus reglas van a ayudar. Sus pastillas van a ayudar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué has visto?</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetBug</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Él te da pastillas?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Las pastillas ayudan a Nugget a olvidar. Mira, aquí están. Tóma una. Te ayudarán a hacerle menos preguntas a Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...gracias.</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>GetPill</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Ya no quiero hablar más. Quítate.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Jum...~Tal vez esto es todo lo que Nugget necesita. Tú puedes tomar el nugget de Nugget. Ésto representa nuestra amistad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>mmmm...¿gracias?</OptionText>
+          <DestinationID>13</DestinationID>
+          <FunctionCall>GetNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>No te comas el nugget de la amistad, porque mientras se deshace en tu panza, se deshace la amistad entre nosotros también.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo haré.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Bien. Nugget te verá más tarde...~amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Nugget es bastante misterioso. ¡No preguntes por los misterios de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo quiero saber.</OptionText>
+          <DestinationID>16</DestinationID>
+          <FunctionCall>GetGlass</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok. Jesús.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Tal vez deberías esforzarte más, para saber los misterios de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Una lupa?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Ten cuidado.~ A veces la verdad duele.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué debo hacer con ésto?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Encuentra la verdad. Te deseo mucha suerte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien..... me inagino.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Billy está desaparecido. El pobre Nugget extraña a Billy, pero Nugget no puede ayudarle ahora. Es demasiado tarde.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tú sabes dónde está él?</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Nugget no lo sabe. Nugget sabe quien lo sabe.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quién lo sabe?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Tus preguntas molestan al pobre Nugget. Tú presionas demasiado. Nugget necesita sus pastillas. ~*Traga*~ Mucho mejor. ¿De qué estábamos hablando?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Billy.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¿Quién?~ Yo no sé de que estás hablando.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo estábamos hablando de él.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Ya estás hablando normal?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué tienen estas pastillas?</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>No. El director me ha prohibido hablar sobre ésto, y si me sigues presionando lo informaré a él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesito saber.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien. Olvídalo.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>No. No lo harás. ¡Disfruta tu viaje a la oficina del director!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Como sea Nugget.</OptionText>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>SendToOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText> ¿Supongo que sí? ¿Estaba hablando raro antes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>En tercera persona.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText> Jum...pues eso es tan sólo otro buen efecto secundario de esas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Antes de eso estábamos hablando de Billy.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué tienen esas pastillas?</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText> No sé. El director me las dio después de que vi algo traumático o algo así. ¡Son grandiosas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿El director te dio las pastillas?</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿No acuerdas lo que te traumó?</OptionText>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>¡Síp!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Eso es legal?</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>¡Tal vez no!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿No crees que es sospechoso?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Sí, pero él dijo que es un efecto secundario de las pastillas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¿Quieres una?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>32</DestinationID>
+          <FunctionCall>GetPill</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¡Aquí tienes! Disfruta la pastilla. Tómala si empiezas a pensar demasiado en Billy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Exacto.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Ay, Que vergüenza. Ellas me han ayudado tanto. Déjame saber si el dolor de la desaparición de Billy comienza a pesarte demasiado y te daré una.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro. Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>34</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>¿Quieres una pastilla ahora?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>32</DestinationID>
+          <FunctionCall>GetPill</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText> Esta flor te  la dio Cindy, ¿verdad? Hay un gran amor en esta flor. Ella realmente se preocupa por ti más que por los otros 7 novios que ha tenido esta semana. Tal vez tú sí conoces lo que es el amor..</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tal vez.</OptionText>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText> Hay cosas que Nugget ha visto, pero le han dicho que debe olvidarlas. Nugget olvidó el amor. No quiero olvidar más. Toma este nugget de amistad..</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué?</OptionText>
+          <DestinationID>37</DestinationID>
+          <FunctionCall>GetNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText> Trae los otros nuggets de la amistad en la hora del recreo y Nugget te contará todo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuántos son?</OptionText>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Son cinco en total. Ya tienes uno. Ven a verme durante las clases de la mañana y Nugget te dirá como conseguir más.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.... supongo</OptionText>
+          <DestinationID>43</DestinationID>
+          <FunctionCall>GetBug</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Nop. Lo olvidé poco después. Todo lo que sé es que algo malo pasó, pero el director estaba allí para arreglarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Con pastillas...</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡Sí! Son buenísimas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Me das una?</OptionText>
+          <DestinationID>41</DestinationID>
+          <FunctionCall>GetPill</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Por supuesto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿No te meterá en problemas?</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>No, si cierras el hocico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Una última cosa. Nugget insiste en que conserves este extraño dispositivo. Si tienes éxito en esta tarea, Nugget te revelará para que sirve.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y si fallo?</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>ActivateTalkToNuggetInCS1</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText> Nugget aún revelará lo que hace.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Super.</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>ActivateTalkToNuggetInCS1</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

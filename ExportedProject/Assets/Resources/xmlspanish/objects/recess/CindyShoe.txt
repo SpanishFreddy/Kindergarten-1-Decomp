@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Es el zapato de Cindy. Está un poco manchado de sangre, pero probablemente ella habría querido que yo lo tuviera ~ ... creo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tomaré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetShoe</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

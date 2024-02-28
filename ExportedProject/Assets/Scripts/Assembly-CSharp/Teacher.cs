@@ -1103,7 +1103,6 @@ public class Teacher : NPCBehavior
 		base.transform.DOMoveX(38f, 1.5f).SetEase(Ease.Linear).OnComplete(delegate
 		{
 			UI.CompleteDay(Item.LunchPass);
-			SteamScript.UnlockAchievement("TeacherAchievement");
 			UnityEngine.Object.FindObjectOfType<PauseMenu>().UnlockAllHints("Teacher");
 		});
 	}

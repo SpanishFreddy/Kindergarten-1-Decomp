@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Es un cubo que está lleno de la sangre de esa cosa en la mesa. \hSería realmente malvado arrojar ésto en la cabeza de alguien./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar el cubo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeBucket</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Asqueroso.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

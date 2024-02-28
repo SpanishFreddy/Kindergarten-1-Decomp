@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Hay una compuerta en el piso. Está cerrada. La alfombra está manchada con la sangre ya seca</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Abrir la compuerta.)</OptionText>
+          <ItemToUse>GoldKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-2</DestinationID>
+          <FunctionCall>OpenHatch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Retirarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> No puedo meter la llave en la cerradura. \hDebe tener otra llave./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Retirarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText> Hay una compuerta en el piso. Está cerrada. La alfombra está manchada con la sangre ya seca.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Abrir la escotilla.)</OptionText>
+          <ItemToUse>GoldKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>OpenHatch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Retirarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954aac3217e2c6b005b08be3c3ee04c4, type: 3}
   m_Name: Jerome_Atlas
   m_EditorClassIdentifier:
-  atlasFile: {fileID: 4900000, guid: 112dc49ccd18aa749af904efdd9073e5, type: 3}
+  atlasFile: {fileID: 4900000, guid: cdbb76d98ae57d343a05a009087de2d6, type: 3}
   materials:
-  - {fileID: 2100000, guid: 462194347ec1cdf4eb4ba57372560827, type: 2}
+  - {fileID: 2100000, guid: 6af86e67c18559d4c81eba5f3e27cc78, type: 2}

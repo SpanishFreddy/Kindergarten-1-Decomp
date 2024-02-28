@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Esto es \hla tarjeta/h Giraffe Serpent. Es una vibora con un cuello  realmente  largo...~o cuerpo...~no lo sabemos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Dejar de leer la carta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

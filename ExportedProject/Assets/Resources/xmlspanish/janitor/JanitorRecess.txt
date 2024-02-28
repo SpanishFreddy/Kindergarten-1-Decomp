@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Ve a correr y a jugar, niñito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué estás aquí afuera?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Wii.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText> Su maestra se escapó durante el almuerzo. Ella tampoco contesta el teléfono. Probablemente se enfermó por tener que lidiar con ustedes todo el día. Estoy aquí para asegurarme de que no se maten entre ustedes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesante.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText> Ve a correr y a jugar, niñito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Ok, niños podridos! ¡Es la campana! ¡Lleven sus traseros inútiles de regreso a clase!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Entran.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToCS2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Vete a la mierda niño. Estoy buscando una buena razón para empalar con mi trapeador al directorsito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Irse a la mierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TurnBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡La cosita de lasercito! ¡Estás en ésto! ¡Sabes lo que significa!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estoy muerto, verdad?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>TurnBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡¡Vale!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maldita sea.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

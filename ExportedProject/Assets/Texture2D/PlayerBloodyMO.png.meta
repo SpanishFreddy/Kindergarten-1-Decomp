@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 77fd63db26762eb4488c27f50d0231ca
-timeCreated: 1689096215
+guid: 9cc4706881aa3444c82cb4b92a5e281b
+timeCreated: 1709154777
 licenseType: Free
 TextureImporter:
   serializedVersion: 4
@@ -54,7 +54,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

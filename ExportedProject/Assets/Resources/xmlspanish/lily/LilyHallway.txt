@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Largo de aquí niño! ¡Me meteré en problemas si el director te escucha!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Pegar chicle en el cabello de Lily.)</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <MissionLock>CindyPutGumLunch</MissionLock>
+          <FunctionCall>CompleteGumLunch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Alejarse de Lily.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Hagámoslo! ¡Abre la puerta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡¿Me estás jodiendo!?~ ¡¿Me has perseguido hasta aquí para pegar un chicle en mi cabello?! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Parece que así es.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Solo déjame en paz!~ ¡Tengo cosas más importantes de que preocuparme que idiotas como tú!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse de Lily).</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Hazlo! ¡Abre la puerta! ¡Tenemos que apurarnos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Bien chico, estoy impresionado. ~ Soportaste todo este loco día, solo porque te dije que valdría la pena.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ojalá sea así.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Así es. Créeme. Aunque es una pena que requiera que Monty tenga el puntero láser hasta que yo le pague. De cualquier manera, te has ganado esto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>Getmold</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Magnífico. Gracias. Es para ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>Getmold</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Es un molde para la llave de la oficina de mi padre! ¡Si haces una copia podrás entrar a la oficina en cualquier momento!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿No podrías darme la llave sin tantas complicaciones?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo lo hago?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText> Mi padre es muy reservado con su oficina. Estoy seguro de que él solo tiene una llave, así que agradéceme por que al menos tienes la oportunidad de tener este molde.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo lo hago?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Monty te puede ayudar. Sólo entrégaselo al principio del día y él encontrará la forma de hacerlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText> Aquí es donde nos separamos, hombre. Eres muy 'cool'. Te veré por ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JeromeEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

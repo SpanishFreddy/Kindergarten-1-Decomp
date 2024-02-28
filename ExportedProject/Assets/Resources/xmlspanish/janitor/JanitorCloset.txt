@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡¿Qué carajos-?!~ ¡¿Qué diablos estás haciendo en mi armario? ¡Nadie tiene acceso al armario del conserje excepto el  MALDITO CONSERJE!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Perdón.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>"’¡¿Perdón?!"~ Lo siento, no voy a cortarlo niño. Lo siento no voy a cortarlo en absoluto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Realmente lo siento?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Yo también...~pero no tanto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué pides perdón?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KilledInCloset</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

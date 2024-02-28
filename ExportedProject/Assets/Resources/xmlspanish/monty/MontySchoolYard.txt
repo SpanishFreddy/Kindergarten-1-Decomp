@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Soy Monty. Si necesitas algo, ven a hablar conmigo. Probablemente puedo  conseguirte cosas al mejor precio. Lo que compro y lo que vendo cambia a lo largo del día, así que ven a verme a menudo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesito hacer una llave.</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>KeyMold</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>Givemold</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Necesito que leas esto por mí.</OptionText>
+          <DestinationID>14</DestinationID>
+          <ItemToUse>BillyNote</ItemToUse>
+          <MissionLock>LilyReadNote</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No quiero nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="menú base">
+      <NodeID>1</NodeID>
+      <DialogueText>¿Qué puedo hacer para ti?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesito hacer una llave.</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>KeyMold</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>Givemold</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Necesito que leas esto por mí</OptionText>
+          <DestinationID>14</DestinationID>
+          <ItemToUse>BillyNote</ItemToUse>
+          <MissionLock>LilyReadNote</MissionLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nada por ahora.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="menú de compra">
+      <NodeID>2</NodeID>
+      <DialogueText>Éstos son lo artículos que están para la venta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo-yo.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Cigarillos.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> Grabadora de Voz.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Destornillador</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="menú de venta">
+      <NodeID>3</NodeID>
+      <DialogueText>¿Qué tienes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Una de las pastillas de Nugget.</OptionText>
+          <ItemToUse>Pill</ItemToUse>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>El frasco de las pastillas de Nugget.</OptionText>
+          <ItemToUse>Pills</ItemToUse>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Una estrella de oro.</OptionText>
+          <ItemToUse>GoldStar</ItemToUse>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Un pase para almuerzo.</OptionText>
+          <ItemToUse>LunchPass</ItemToUse>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nada.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Puedo Pagarlo">
+      <NodeID>4</NodeID>
+      <DialogueText>Es un placer hacer negocios contigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No necesito nada más.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="sin uso">
+      <NodeID>5</NodeID>
+      <DialogueText> No vayas a ir por ahí mostrándolo a todo el mundo. \hPodría meternos a los dos en problemas./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Comprar yo-yo">
+      <NodeID>6</NodeID>
+      <DialogueText>Jum...~Yo-yos.~ \hNo sé qué le ven a esta cosa, pero Jerome los ama./h Te lo puedo dar por $ 1.00. ¿Qué dices?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>BuyYoyo</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <MoneyLock>1</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="comprar destornillador">
+      <NodeID>7</NodeID>
+      <DialogueText> Conseguí ésto del idiota del conserje para un robo. Es extraño que él esté dispuesto a venderme las herramientas proporcionadas por la escuela, pero yo no me quejo. Te lo vendo por $ 1,00..</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>BuyScrewdriver</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Vender pastilla">
+      <NodeID>8</NodeID>
+      <DialogueText>Wow¿Es una de las pastillas de Nugget? Conozco un amigo a quien le encantan. Te doy $1.00 por ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellPill</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Vender pastilla">
+      <NodeID>9</NodeID>
+      <DialogueText>¡Wow un frasco lleno de estas pastillas?!~ ¡Mi amigo a quien le encantan estará muy emocionado!~ Te daré $5.00 por todo el frasco.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellPills</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Comprar cigarros">
+      <NodeID>10</NodeID>
+      <DialogueText>¡¿Los quieres?!~ ¡Jamás pensé que eras una de las manzanas podridas!~ Solo quedan un par en la cajetilla, así que te haré un descuento. Te los dejo por $1.00.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>BuyCigs</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Comprar vr">
+      <NodeID>11</NodeID>
+      <DialogueText> Es un dispositivo genial. \hTe Puede ayudar a mantenerte alejado de los problemasm en caso de que alguien te acuse de algo que no hiciste./h Cuesta $2.50. ¿Qué dices?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>BuyVoiceRecorder</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <MoneyLock>2.5</MoneyLock>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿Esto es el molde que quieres usar? Claro. No hay problema. Te costará  $20. Te lo haré para el final del día. ¿Me puedes pagar cuando lo termine?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Cómo voy a conseguir tanto dinero?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>ActivatemoldMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Estoy seguro de que hay un montón de posibilidades para hacerlo. \hTodavía estoy disponible para venderte todas estas cosas. Trata de reunir algunos objetos bien raros. Definitivamente es posible./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>ActivatemoldMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Por supuesto. Voy a leer esto para ti, pero te costará un dólar. ¿Vale?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>GiveNote</FunctionCall>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Ok...~Vamos a ver.~ Jesús, esta letra es terrible. Dice algo sobre una compuerta en la oficina del director, que se puede abrir con el código escrito abajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál código?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText> Ahí es donde la letra se vuelve especialmente terrible. Esto me llevará un poco de tiempo para descifrar. Trataré de hacerlo de aquí a la hora del almuerzo..</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>ActivateTellLilyAboutNote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Vender el pase para almuerzo">
+      <NodeID>17</NodeID>
+      <DialogueText>Mírate, pequeña mascota de la maestra. Te doy  $3.00 por ésto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellLunchPass</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="Vender estrella dorada">
+      <NodeID>18</NodeID>
+      <DialogueText>¿Una estrella de oro? No vale mucho la pena, pero supongo que algunos de los niños malos podrían estar interesados. Lo máximo que te puedo ofrecer es $ 1.00.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>SellGoldStar</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

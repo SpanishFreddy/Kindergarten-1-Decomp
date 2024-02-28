@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Esto es el teléfono de la maestra que Buggs robó de su  cadáver. Hay contactos para varios miembros del personal de la escuela guardados aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Traer teléfono al cole.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BringPhone</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejarlo aquí.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

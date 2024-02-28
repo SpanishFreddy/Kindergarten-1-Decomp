@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Este es el trapeador favorito del conserje. Al parecer no es muy eficiente para protegerse de chicas enojadas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tomar el trapeador.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>PickUpMop</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar el trapeador.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

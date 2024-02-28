@@ -88,51 +88,25 @@ public class NPCBehavior : Interactable
 			currentTextureBlock = defaultTextureBlock;
 			if (!EnvironmentController.Instance.isSpanish)
 			{
-				IEnumerator enumerator = Enum.GetValues(typeof(Room)).GetEnumerator();
-				try
+				foreach (Room value in Enum.GetValues(typeof(Room)))
 				{
-					while (enumerator.MoveNext())
+					TextAsset textAsset = Resources.Load("XML/" + base.transform.name + "/" + base.transform.name + value, typeof(TextAsset)) as TextAsset;
+					if (textAsset != null)
 					{
-						Room key = (Room)enumerator.Current;
-						TextAsset textAsset = Resources.Load("XML/" + base.transform.name + "/" + base.transform.name + key, typeof(TextAsset)) as TextAsset;
-						if (textAsset != null)
-						{
-							conversations.Add(key, Dialogue.LoadDialogue(textAsset));
-							conversations[key].Nodes.Sort();
-						}
-					}
-				}
-				finally
-				{
-					IDisposable disposable;
-					if ((disposable = enumerator as IDisposable) != null)
-					{
-						disposable.Dispose();
+						conversations.Add(value, Dialogue.LoadDialogue(textAsset));
+						conversations[value].Nodes.Sort();
 					}
 				}
 			}
 			else
 			{
-				IEnumerator enumerator2 = Enum.GetValues(typeof(Room)).GetEnumerator();
-				try
+				foreach (Room value2 in Enum.GetValues(typeof(Room)))
 				{
-					while (enumerator2.MoveNext())
+					TextAsset textAsset2 = Resources.Load("XMLSpanish/" + base.transform.name + "/" + base.transform.name + value2, typeof(TextAsset)) as TextAsset;
+					if (textAsset2 != null)
 					{
-						Room key2 = (Room)enumerator2.Current;
-						TextAsset textAsset2 = Resources.Load("XMLSpanish/" + base.transform.name + "/" + base.transform.name + key2, typeof(TextAsset)) as TextAsset;
-						if (textAsset2 != null)
-						{
-							conversations.Add(key2, Dialogue.LoadDialogue(textAsset2));
-							conversations[key2].Nodes.Sort();
-						}
-					}
-				}
-				finally
-				{
-					IDisposable disposable2;
-					if ((disposable2 = enumerator2 as IDisposable) != null)
-					{
-						disposable2.Dispose();
+						conversations.Add(value2, Dialogue.LoadDialogue(textAsset2));
+						conversations[value2].Nodes.Sort();
 					}
 				}
 			}

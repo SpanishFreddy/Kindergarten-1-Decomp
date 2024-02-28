@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText> Resolver el acertijo parece haber causado que aparezca una tarjeta  Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Recoger tarjeta)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PickUpDuckCard</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejar tarjeta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

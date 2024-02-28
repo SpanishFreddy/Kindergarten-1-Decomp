@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Esto es la flor que Cindy me dió por ser buen novio todo el día. \hTal vez podré mostrarla a alguien a quien le falta un poco de amor./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Traer la flor al cole.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BringFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Dejarla aquí.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

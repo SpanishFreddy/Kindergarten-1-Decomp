@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Soy la Sra. Applegate. He sido bien dotada ... ~ *ejem* ... ~ con excelentes cualidades de enseñanza.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buggs robó mi dinero.</OptionText>
+          <MissionLock>TeacherTellOnBuggs</MissionLock>
+          <DestinationID>6</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Seguro que lo tienes.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mmmm..¿Gracias?</OptionText>
+          <ItemToUse>None</ItemToUse>
+          <DestinationID>2</DestinationID>
+          <FunctionCall>GetNuggetStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> ¿Para qué sirven estas cosas?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> No soy un soplón.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Está bien para mi!</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText> No usado </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No soy un soplón.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Suena bien para mi!</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tal vez lo seré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No importa, señora.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¿Él lo hizo?~ Interesante...~Te ofrezco un trato. Buggs es un chico-problema. Él es violento y agresivo. Si vas allí y lo desafías, haré que valga la pena.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y si me hace daño?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>BuildCharacter</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Es legal?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>IsThisLegal</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Y yo ¿qué gano con eso?</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>WhatsInIt</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Mmmm...ok.</OptionText>
+          <DestinationID>7</DestinationID>
+          <FunctionCall>WatchingBugs</FunctionCall>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>De ninguna manera.</OptionText>
+          <DestinationID>9</DestinationID>
+          <FunctionCall>WontRat</FunctionCall>
+          <IsAvailable>false</IsAvailable>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Oh, ¡cómo me fascina una buena pelea entre niños! Sólo ve allá y empújalo un poco. Cuando él te ataque, grita por mi ayuda y yo voy a detenerlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¡ Date prisa y comienza la pelea ya! ¡La campana pronto sonará y mamá quiere ver un poco sangre de niño!...~Mmm...~Digo...~hay que hacerlo para proteger a los demás.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Corrrrrecto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Debo decirlo...~No me gusta cuando mis queridos estudiantes me dicen ´no´. Espero que nada malo te pase hoy. Eso sería simplemente ... terrible.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mmm...Yo también.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>10</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> ¿Has cambiado de opinión por el bien de los niños?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>7</DestinationID>
+          <FunctionCall>WatchingBugs</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Oh. Eso es inesperado, pero puedo respetarlo. Disfruta el resto de tu día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText> Ve a correr y a disfrutar del resto de tu día. No te preocupes por ayudarme o por nada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cambié de opinión.</OptionText>
+          <DestinationID>16</DestinationID>
+          <FunctionCall>ActivateJeromeMission</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Ven a verme en las clases de la mañana. Tengo un plan especial para Jerome.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText> Oh, ¡qué día tan feliz! ¡Finalmente estoy libre de ese pequeño degenerado! Aquí está tu estrella dorada como te lo prometí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>GetBugsStar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Mmmmm...~ Ahora me tienes pensando. Jerome piensa que es tan grande y  poderoso porque es el hijo del director. ¿Por qué no organizamos un viaje para que visite a papi?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tal vez lo podamos hacer.</OptionText>
+          <DestinationID>16</DestinationID>
+          <FunctionCall>ActivateJeromeMission</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No gracias.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Oh,¡eso es lo que me gusta escuchar! ¡Ven a verme en la clase de la mañana y te contaré que es lo que tienes que hacer! </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te veré luego.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name="ir a la clase">
+      <NodeID>17</NodeID>
+      <DialogueText>Ok, ¡niños! ¡Es el momento de empezar el día! ¡Entren todos al salón!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Entrar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToClassroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>El director me acaba de llamar. Te quiere ver en su oficina. ¿Qué fue lo que hicieron tú y tu pequeño fenómeno? </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Es una buena pregunta.</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText> ¡Pues muévete entonces! El director es un hombre impaciente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>NuggetSendToPrincipal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
+

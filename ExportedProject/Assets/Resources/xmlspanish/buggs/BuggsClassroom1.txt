@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialogue>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¿Por qué por todos los santos tú crees que yo quiero ser tu amiguito de la mañana?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buen punto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Pssst. ¡Hey!~ ¡Niño!~~~ Escuché que la maestra trataba hacerme. Nuestra  Applegate ya me lo ha hecho una vez. Es bueno saber que alguien está dispuesto a enfrentarse a ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Sí...~realmente sí, es un problema. Probablemente está preparando algo para que tengas problemas mientras hablamos. Así es como conseguí mis dos primeros golpes. Si me vuelve a cachar, seré expulsado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Será tan malo?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText> Teniendo en cuenta que el último chico a ser "expulsado" era ese niño desaparecido Billy, sí...~ sería malo ser expulsado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText> Lo tendré en mente.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText> Debemos trabajar juntos para tenerla antes de que ella nos tenga.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy en esto.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetKnife</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText> ¿En qué te estás metiendo?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText> Fue listo. Toma esto. Si ella intenta algo chistocito contigo, no tengas miedo de usarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Un cuchillo?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Sí, es un cuchillo.~ Mira, algo horrible se está pasando en esta escuela. Todos lo saben, pero nadie habla de esto. No me rindo sin luchar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tal vez eres un paranoico?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Buen punto.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Tal vez lo soy, pero es mejor ser un paranoico y sobrevivir que ser  descuidado y desaparecer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buen punto.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText> Necesitamos buscar una forma de hallar a nuestra niña sola. No quiero que alguien chismea.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo el pase de almuerzo.</OptionText>
+          <ItemToUse>LunchPass</ItemToUse>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo lo harémos?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText> ¡Qué maestra no nos vea juntos! ¡Largate!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Largarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText> ¿En qué me estoy metiendo? ¿Qué tan grueso eres? Tenemos que SACAR A LA PROFESORA.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Vas a matarla?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText> Ahora lo estás captando. ¿Qué dices?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy en esto.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetKnife</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>De ninguna manera.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Uff. Sabía que eres débil. Sal de aquí y mantén la boca cerrada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Hey, mira! Es un muerto caminando. Jódete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo cambié de opinión.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetKnife</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Largarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>No usado</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Blanco.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Mírate, pequeña mascota de la maestra! ¡Eso va a hacer todo mucho más fácil! Así que después de que las clases matutinas hayan terminado, tú vas a tener un almuerzo muy especial con la maestra. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Y solo…¿Matarla?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText> Casi. ¡Espera hasta que se voltea y golpéala! ~ Estaré esperando afuera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Se va a voltear?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ummmm...ok.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡Y no te eches atrás! Si ella piensa que algo va mal, quién sabe que pasará.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo puedo hacer.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText> Todo bien. No queda nada más que esperar a las clases matutinas. Probablemente deberíamos dejar de hablar ahora, antes de que se sospeche.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>9</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText> No estoy completamente seguro. Tendremos que hacer algún reconocimiento. Pregunta por ahí. A ver si alguien sabe cuando está sola.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+          <FunctionCall>ActivateFindMission</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¿Que has encontrado?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella está sola en el almuerzo.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nada todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Hmmm...~buen punto. Vamos a encontrar \huna distracción. A ver si Monty tienga algo para hacer este trabajo./h</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo harémos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+          <FunctionCall>EnableMontyDistraction</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¿Bien? ¿Encontraste algo para causar la distracción?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Síp.</OptionText>
+          <DestinationID>23</DestinationID>
+          <ItemToUse>Remote</ItemToUse>
+          <FunctionCall>EnableDistractionTriggers</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Todavía no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Ven y pégalo debajo de una de las mesas delanteras. Te alegrarás de haberlo hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode name=" Necesidad de encontrar un dispositivo ">
+      <NodeID>24</NodeID>
+      <DialogueText>Ok. Esto es. Ahora todo lo que tenemos que hacer es esperar a que suene la campana del almuerzo. Probablemente deberíamos evitar ser vistos juntos para que no nos sospechen.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por supuesto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Diablos. Esto es lo que temía. ¿Cómo demonios podemos llegar a ella durante el almuerzo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesitamos juntar seis estrellas de oro.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText> Uff. Nunca he conseguido una de esas en mi vida. Tenemos que preguntar por ellas en el almuerzo. Averígüa si algunos de los niños han conseguido una y cómo la consiguieron.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Ven conmigo al almuerzo y nosotros hablaremos de a dónde vamos después.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ok.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

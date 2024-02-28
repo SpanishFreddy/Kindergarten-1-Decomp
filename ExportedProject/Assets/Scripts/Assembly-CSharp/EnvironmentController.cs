@@ -100,28 +100,15 @@ public class EnvironmentController : MonoBehaviour
 	{
 		mRooms.Clear();
 		InitializeActions();
-		IEnumerator enumerator = Enum.GetValues(typeof(Room)).GetEnumerator();
-		try
+		foreach (Room value in Enum.GetValues(typeof(Room)))
 		{
-			while (enumerator.MoveNext())
+			if ((bool)base.transform.Find(value.ToString()))
 			{
-				Room key = (Room)enumerator.Current;
-				if ((bool)base.transform.Find(key.ToString()))
+				mRooms.Add(value, base.transform.Find(value.ToString()).gameObject);
+				if (mRooms[value].activeSelf)
 				{
-					mRooms.Add(key, base.transform.Find(key.ToString()).gameObject);
-					if (mRooms[key].activeSelf)
-					{
-						startRoom = key;
-					}
+					startRoom = value;
 				}
-			}
-		}
-		finally
-		{
-			IDisposable disposable;
-			if ((disposable = enumerator as IDisposable) != null)
-			{
-				disposable.Dispose();
 			}
 		}
 	}
@@ -801,22 +788,9 @@ public class EnvironmentController : MonoBehaviour
 
 	private void RestoreEnvironments()
 	{
-		IEnumerator enumerator = base.transform.GetEnumerator();
-		try
+		foreach (Transform item in base.transform)
 		{
-			while (enumerator.MoveNext())
-			{
-				Transform transform = (Transform)enumerator.Current;
-				UnityEngine.Object.Destroy(transform.gameObject);
-			}
-		}
-		finally
-		{
-			IDisposable disposable;
-			if ((disposable = enumerator as IDisposable) != null)
-			{
-				disposable.Dispose();
-			}
+			UnityEngine.Object.Destroy(item.gameObject);
 		}
 		GameObject[] array = mStoreEnvironments;
 		foreach (GameObject gameObject in array)

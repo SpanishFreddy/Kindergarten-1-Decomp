@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HintList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Hints>
+    <Hint>
+      <NPC>General</NPC>
+      <Number>1</Number>
+      <Description>
+        Esta es la página de pistas. Se llenará a medida que juegas el juego.
+      </Description>
+      <UnlockedByDefault>true</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>General</NPC>
+      <Number>2</Number>
+      <Description> No necesitas ningún artículo especial para completar las misiones de Jerome, Cindy o la profesora.</Description>
+      <UnlockedByDefault>true</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>General</NPC>
+      <Number>3</Number>
+      <Description> Buggs tomará la mitad de tu dinero si traes más de $3.00.</Description>
+      <UnlockedByDefault>false</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>General</NPC>
+      <Number>4</Number>
+      <Description> La cocinera te dejará salir de la cafetería si le das las gafas de Monty, una lupa, o $2.00.</Description>
+    </Hint>
+    <Hint>
+      <NPC>General</NPC>
+      <Number>5</Number>
+      <Description>
+        Si vas al baño sin cigarrillos durante el almuerzo, el vigilante del pasillo te llevará a la oficina del director.
+        .
+      </Description>
+    </Hint>
+    <Hint>
+      <NPC>General</NPC>
+      <Number>6</Number>
+      <Description> Si te quedas sin tiempo en el armario del conserje, él aparecerá y te matará.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Cindy</NPC>
+      <Number>1</Number>
+      <Description> Necesitas deshacerte de Buggs en el patio de la escuela. Empieza el día con más de $ 3.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Cindy</NPC>
+      <Number>2</Number>
+      <Description>Lleva un dólar a casa por si acaso.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Cindy</NPC>
+      <Number>3</Number>
+      <Description> Cuando juegues con Cindy a la casita, normalmente es más seguro si estás de acuerdo con ella. </Description>
+    </Hint>
+    <Hint>
+      <NPC>Cindy</NPC>
+      <Number>4</Number>
+      <Description> Cindy no sabe lo que significa vegano. Puedes conseguirle una galleta del conserje o una ensalada de Monty.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Cindy</NPC>
+      <Number>5</Number>
+      <Description> El cubo de sangre que está en el armario del conserje es la solución perfecta para los planes de Cindy.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Cindy</NPC>
+      <Number>6</Number>
+      <Description> Muestra la flor en el  juego ´Mostrar y Contar´ mientras Buggs no esté y Cindy te deje tenerla.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Jerome</NPC>
+      <Number>1</Number>
+      <Description> Necesitas comprar tres cosas de Monty antes de las clase de la mañana.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Jerome</NPC>
+      <Number>2</Number>
+      <Description>Jerome va a hablar contigo en las clase de la mañana si le das un yo-yo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Jerome</NPC>
+      <Number>3</Number>
+      <Description>Necesitarás un destornillador para conseguir el puntero láser del estante.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Jerome</NPC>
+      <Number>4</Number>
+      <Description>Esconde el láser en el bote de basura y luego ve al baño para tomarlo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Jerome</NPC>
+      <Number>5</Number>
+      <Description>Necesitarás cigarrillos cuando vayas al baño por el puntero láser.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Jerome</NPC>
+      <Number>6</Number>
+      <Description>No hables con Jerome en el recreo. Solo haz lo que Monty dice.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>1</Number>
+      <Description>Comienza el día siendo robado por Buggs y chismoseando de él. </Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>2</Number>
+      <Description> Compra la grabadora de voz antes de ser enviado a la oficina con Cindy, preguntándole si tu amor es suficiente .</Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>3</Number>
+      <Description> Deshazte de Jerome durante las clases de la mañana, dándole un yo-yo y luego dale a la profesora su pase del vestíbulo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>4</Number>
+      <Description> Habla con Nugget después de que Jerome haya sido suspendido.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>5</Number>
+      <Description> Buggs, Monty y Lily deben ser eliminados durante el almuerzo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>6</Number>
+      <Description> Lily debería ser eliminada después de que Buggs y Monty golpeen la puerta del director.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Teacher</NPC>
+      <Number>7</Number>
+      <Description> Nugget solo puede ser eliminado en el recreo y sólo si Cindy ha sido eliminada. </Description>
+    </Hint>
+    <Hint>
+      <NPC>Buggs</NPC>
+      <Number>1</Number>
+      <Description> Necesitas una cosa especial de la maestra antes de poder completar la misión de Buggs.</Description>
+      <UnlockedByDefault>true</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>Buggs</NPC>
+      <Number>2</Number>
+      <Description> Delata a Buggs por haberte robado, pero no aceptes iniciar una pelea.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Buggs</NPC>
+      <Number>3</Number>
+      <Description> Puedes obtener el dispositivo que Monty necesita, dándole a Nugget una flor antes de que empiecen las clases o haciendo que te envíen donde el director por culpa de Nugget .</Description>
+    </Hint>
+    <Hint>
+      <NPC>Buggs</NPC>
+      <Number>4</Number>
+      <Description> Utiliza el pase del almuerzo para almorzar con la maestra después de las clases de la mañana. Es la única manera de verla a solas.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Buggs</NPC>
+      <Number>5</Number>
+      <Description>Necesitas obtener un nugget antes del recreo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Nugget</NPC>
+      <Number>1</Number>
+      <Description> Necesitas un artículo especial de Cindy antes de que puedas comenzar la misión de Nugget.</Description>
+      <UnlockedByDefault>true</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>Nugget</NPC>
+      <Number>2</Number>
+      <Description> Puedes ganar la confianza de Lily diciéndole sobre el chicle que Cindy iba a poner en su cabello.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Nugget</NPC>
+      <Number>3</Number>
+      <Description> La profesora te permitirá buscar en los estantes si le das una pastilla.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Nugget</NPC>
+      <Number>4</Number>
+      <Description> Lily te dará una rosquilla en la cafetería después de que le des la tarjeta de amor.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Nugget</NPC>
+      <Number>5</Number>
+      <Description>Puedes sobornar a la maestra después de lo que sucede con la estatua, con una estrella dorada, dulces o dinero.
+      </Description>
+    </Hint>
+    <Hint>
+      <NPC>Nugget</NPC>
+      <Number>6</Number>
+      <Description> Nugget realmente quiere que el homenaje a Billy se vea bien de nuevo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monty</NPC>
+      <Number>1</Number>
+      <Description> Necesitas un artículo especial de Jerome y tanto dinero como puedas conseguir para completar la misión de Monty.</Description>
+      <UnlockedByDefault>true</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>Monty</NPC>
+      <Number>2</Number>
+      <Description> Puedes vender el pase del vestíbulo de Jerome sin repercusiones saliendo de la clase y volviendo después de que suene la campana.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monty</NPC>
+      <Number>3</Number>
+      <Description> El conserje puede bajar el precio de la barra de chocolate en la cafetería, si le hablas en el baño.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monty</NPC>
+      <Number>4</Number>
+      <Description> Una caja en el armario del conserje tiene $5.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monty</NPC>
+      <Number>5</Number>
+      <Description> El pase de almuerzo, las pastillas del director y la barra de chocolate son los artículos más caros.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>1</Number>
+      <Description> Necesitas tener artículos especiales de Monty, Nugget y Buggs para completar la misión de Lily.</Description>
+      <UnlockedByDefault>true</UnlockedByDefault>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>2</Number>
+      <Description> Necesitas comprar cigarrillos en el patio de la escuela.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>3</Number>
+      <Description> Monty puede descifrar la nota que Nugget te dio.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>4</Number>
+      <Description> Nugget te enviará a la oficina solo, si no dejas de hablar de Billy.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>5</Number>
+      <Description> Puedes obtener evidencia convenciendo al conserje de que vaya a limpiar el baño.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>6</Number>
+      <Description> Amarillo es para cambiar. Rojo es para neutralizar. Verde es para revertir. Azul es para liberar. .</Description>
+    </Hint>
+    <Hint>
+      <NPC>Lily</NPC>
+      <Number>7</Number>
+      <Description> Las criaturas atacarán al que esté más cerca a ellas.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>1</Number>
+      <Description> Buggs te dará la tarjeta Cactus Outlaw si tu le das cigarrillos .</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>2</Number>
+      <Description> La tarjeta Freezyguy Jim está en uno de los cubículos .</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>3</Number>
+      <Description> La tarjeta Martian Orbman está escondida en el escondite secreto de Buggs. Puedes acceder a él apuñalando a Buggs y siguiéndolo hacia el pasillo. </Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>4</Number>
+      <Description> Nugget te dará la tarjeta King Tower Beetle si le traes una lupa durante la mañana.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>5</Number>
+      <Description> Buggs te dará la tarjeta Shroom Turtle si le das un termo o alcoholímetro en el recreo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>6</Number>
+      <Description> Cindy te dará la tarjeta Giraffe Serpent si le das una pastilla mientras juegan a la casita.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>7</Number>
+      <Description> Literalmente la tarjeta Grass se esconde detrás del parque infantil.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>8</Number>
+      <Description> Cindy te dará la tarjeta Oh Faka Tornado si descubres lo que le pasó a su perro en lugar de sacar algo asqueroso del armario.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>9</Number>
+      <Description> La maestra te dará la tarjeta Really Bright Star si le arrojas la sangre a Cindy en lugar de a Lily en el recreo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>10</Number>
+      <Description> Cindy te dará la tarjeta Doom Jelly si pones chicle en el cabello de Lily y regresas con ella durante el almuerzo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>11</Number>
+      <Description> Desatornilla el conducto de aire del pasillo con el destornillador para obtener la tarjeta Tornado Fly.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>12</Number>
+      <Description> La tarjeta Wizard Worm se encuentra en la Cueva de Nugget junto a los cráneos.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>13</Number>
+      <Description> La tarjeta Cyclops Duckling sólo se puede encontrar resolviendo el acertijo de Jerome en el recreo.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>14</Number>
+      <Description> La tarjeta Sneaky Snake está escondida en una caja en el armario del conserje.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>15</Number>
+      <Description> La tarjeta Oglebop Golem se oculta debajo de la mesa donde Nugget almuerza.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>16</Number>
+      <Description> La tarjeta Eye of the Buttholder está en una de las cajas del baño.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>17</Number>
+      <Description> El conserje te dará la tarjeta Evil Thwater si le muestras el pase del vestíbulo de Jerome.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>18</Number>
+      <Description> El conserje te dará la tarjeta Evil Thwarter si logras que Cindy se coma una de sus galletas.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>19</Number>
+      <Description> El director te dará la tarjeta Spikey Flimflam si le dices que estabas peleando con Billy por las tarjetas de Monstermon.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>20</Number>
+      <Description> La cocinera te dará la tarjetaUneaten Cake si cree que comiste 3 platos de papilla.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>21</Number>
+      <Description> Puedes comprar la tarjeta Holy Knight de Monty durante el recreo por $ 12.50.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>22</Number>
+      <Description> La tarjeta Faptain Calcon está en tu Comida Tonta del almuerzo especial con la maestra.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>23</Number>
+      <Description> La tarjeta Wall of Castle se puede encontrar en la basura de la oficina del director..</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>24</Number>
+      <Description> La tarjeta Magical Airship está dentro de la Comida Tonta que Monty vende en el almuerzo. Muestra tu Comida Tonta en ´Mostrar y Contar´ para conseguirla.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>25</Number>
+      <Description> Conseguirás la tarjeta  Blue Eyes Gold Dragon después de completar la misión de Lily.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>26</Number>
+      <Description> Después de que recolectes las 25 tarjetas, desbloquearás un artículo especial.</Description>
+    </Hint>
+    <Hint>
+      <NPC>Monstermon</NPC>
+      <Number>27</Number>
+      <Description> Llevar este artículo especial a la Cueva de Nugget en su forma verdadera puede causar que algo suceda.</Description>
+    </Hint>
+  </Hints>
+</HintList>
+

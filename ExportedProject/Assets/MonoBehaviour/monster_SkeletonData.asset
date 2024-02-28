@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: monster_SkeletonData
   m_EditorClassIdentifier:
   atlasAssets:
-  - {fileID: 11400000, guid: 69305afb99823c947bcb7220a414ea95, type: 2}
+  - {fileID: 11400000, guid: e75843d47590d6345b0f999612f4027b, type: 2}
   scale: 0.125
-  skeletonJSON: {fileID: 4900000, guid: b2a1fc06643455c40a61cfee173c973e, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 1fb95cc339914774aa562ceab90aa2bc, type: 3}
   fromAnimation: []
   toAnimation: []
   duration: []

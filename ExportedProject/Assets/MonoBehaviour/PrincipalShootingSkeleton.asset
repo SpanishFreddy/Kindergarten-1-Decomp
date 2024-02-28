@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: PrincipalShootingSkeleton
   m_EditorClassIdentifier:
   atlasAssets:
-  - {fileID: 11400000, guid: 7050be60e67f95741973477467762f12, type: 2}
+  - {fileID: 11400000, guid: b50e35a9ea4cb784cb1756c9ab9ea2ed, type: 2}
   scale: 0.125
-  skeletonJSON: {fileID: 4900000, guid: 5246ec8717061f84c9293c20c8a6fd2c, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 44ef6975427f38745b404454ca1657d7, type: 3}
   fromAnimation: []
   toAnimation: []
   duration: []
